@@ -1,0 +1,16 @@
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\Sprint3\Sprint3\bin\Debug\Sprint3.exe.config
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\Sprint3\Sprint3\bin\Debug\Sprint3.exe
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\Sprint3\Sprint3\bin\Debug\Sprint3.pdb
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\Sprint3\Sprint3\obj\Debug\Sprint3.csproj.AssemblyReference.cache
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\Sprint3\Sprint3\obj\Debug\Sprint3.csproj.SuggestedBindingRedirects.cache
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\Sprint3\Sprint3\obj\Debug\Sprint3.csproj.CoreCompileInputs.cache
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\Sprint3\Sprint3\obj\Debug\Sprint3.exe
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\Sprint3\Sprint3\obj\Debug\Sprint3.pdb
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\Rique\Sprint3\bin\Debug\Sprint3.exe.config
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\Rique\Sprint3\bin\Debug\Sprint3.exe
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\Rique\Sprint3\bin\Debug\Sprint3.pdb
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\Rique\Sprint3\obj\Debug\Sprint3.csproj.AssemblyReference.cache
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\Rique\Sprint3\obj\Debug\Sprint3.csproj.SuggestedBindingRedirects.cache
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\Rique\Sprint3\obj\Debug\Sprint3.csproj.CoreCompileInputs.cache
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\Rique\Sprint3\obj\Debug\Sprint3.exe
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\Rique\Sprint3\obj\Debug\Sprint3.pdb

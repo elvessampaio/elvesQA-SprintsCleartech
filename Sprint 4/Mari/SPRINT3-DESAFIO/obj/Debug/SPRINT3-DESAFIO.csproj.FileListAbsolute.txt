@@ -1,0 +1,24 @@
+C:\Users\Cleartech\source\repos\SPRINT3-DESAFIO\SPRINT3-DESAFIO\bin\Debug\SPRINT3-DESAFIO.exe.config
+C:\Users\Cleartech\source\repos\SPRINT3-DESAFIO\SPRINT3-DESAFIO\bin\Debug\SPRINT3-DESAFIO.exe
+C:\Users\Cleartech\source\repos\SPRINT3-DESAFIO\SPRINT3-DESAFIO\bin\Debug\SPRINT3-DESAFIO.pdb
+C:\Users\Cleartech\source\repos\SPRINT3-DESAFIO\SPRINT3-DESAFIO\obj\Debug\SPRINT3-DESAFIO.csproj.AssemblyReference.cache
+C:\Users\Cleartech\source\repos\SPRINT3-DESAFIO\SPRINT3-DESAFIO\obj\Debug\SPRINT3-DESAFIO.csproj.SuggestedBindingRedirects.cache
+C:\Users\Cleartech\source\repos\SPRINT3-DESAFIO\SPRINT3-DESAFIO\obj\Debug\SPRINT3-DESAFIO.csproj.CoreCompileInputs.cache
+C:\Users\Cleartech\source\repos\SPRINT3-DESAFIO\SPRINT3-DESAFIO\obj\Debug\SPRINT3-DESAFIO.exe
+C:\Users\Cleartech\source\repos\SPRINT3-DESAFIO\SPRINT3-DESAFIO\obj\Debug\SPRINT3-DESAFIO.pdb
+C:\Users\Cleartech\Desktop\DESAFIOS\T4-MarianaCardoso\C#\SPRINT3-DESAFIO\SPRINT3-DESAFIO\bin\Debug\SPRINT3-DESAFIO.exe.config
+C:\Users\Cleartech\Desktop\DESAFIOS\T4-MarianaCardoso\C#\SPRINT3-DESAFIO\SPRINT3-DESAFIO\bin\Debug\SPRINT3-DESAFIO.exe
+C:\Users\Cleartech\Desktop\DESAFIOS\T4-MarianaCardoso\C#\SPRINT3-DESAFIO\SPRINT3-DESAFIO\bin\Debug\SPRINT3-DESAFIO.pdb
+C:\Users\Cleartech\Desktop\DESAFIOS\T4-MarianaCardoso\C#\SPRINT3-DESAFIO\SPRINT3-DESAFIO\obj\Debug\SPRINT3-DESAFIO.csproj.AssemblyReference.cache
+C:\Users\Cleartech\Desktop\DESAFIOS\T4-MarianaCardoso\C#\SPRINT3-DESAFIO\SPRINT3-DESAFIO\obj\Debug\SPRINT3-DESAFIO.csproj.SuggestedBindingRedirects.cache
+C:\Users\Cleartech\Desktop\DESAFIOS\T4-MarianaCardoso\C#\SPRINT3-DESAFIO\SPRINT3-DESAFIO\obj\Debug\SPRINT3-DESAFIO.csproj.CoreCompileInputs.cache
+C:\Users\Cleartech\Desktop\DESAFIOS\T4-MarianaCardoso\C#\SPRINT3-DESAFIO\SPRINT3-DESAFIO\obj\Debug\SPRINT3-DESAFIO.exe
+C:\Users\Cleartech\Desktop\DESAFIOS\T4-MarianaCardoso\C#\SPRINT3-DESAFIO\SPRINT3-DESAFIO\obj\Debug\SPRINT3-DESAFIO.pdb
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\Mari\SPRINT3-DESAFIO\bin\Debug\SPRINT3-DESAFIO.exe.config
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\Mari\SPRINT3-DESAFIO\bin\Debug\SPRINT3-DESAFIO.exe
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\Mari\SPRINT3-DESAFIO\bin\Debug\SPRINT3-DESAFIO.pdb
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\Mari\SPRINT3-DESAFIO\obj\Debug\SPRINT3-DESAFIO.csproj.AssemblyReference.cache
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\Mari\SPRINT3-DESAFIO\obj\Debug\SPRINT3-DESAFIO.csproj.SuggestedBindingRedirects.cache
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\Mari\SPRINT3-DESAFIO\obj\Debug\SPRINT3-DESAFIO.csproj.CoreCompileInputs.cache
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\Mari\SPRINT3-DESAFIO\obj\Debug\SPRINT3-DESAFIO.exe
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\Mari\SPRINT3-DESAFIO\obj\Debug\SPRINT3-DESAFIO.pdb
