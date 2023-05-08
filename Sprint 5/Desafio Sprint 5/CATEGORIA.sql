@@ -18,7 +18,7 @@ WHERE Categoria = 'Bebida';
 UPDATE tbcategoria SET Status = 0
 WHERE Categoria = 'Roupas';
 
-DELETE FROM tbcategoria WHERE Categoria =  'Calçados';
+DELETE FROM tbcategoria WHERE Categoria = 'Roupas';
 
 SELECT * FROM tbcategoria;
 

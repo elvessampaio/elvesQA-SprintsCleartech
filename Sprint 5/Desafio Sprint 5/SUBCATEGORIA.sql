@@ -18,7 +18,7 @@ WHERE Subcategoria = 'Vodca';
 UPDATE tbsubcategoria SET Status = 0
 WHERE Subcategoria = 'Vestidos';
 UPDATE tbsubcategoria SET Subcategoria = 'Sandália'
-WHERE Subcategoria = 'Rasteirinha';
+WHERE Subcategoria = 'Rasteira';
 
 DELETE FROM tbsubcategoria WHERE Subcategoria =  'Sandália';
 
