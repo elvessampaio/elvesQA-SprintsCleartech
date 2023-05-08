@@ -20,6 +20,8 @@ WHERE Subcategoria = 'Vestidos';
 UPDATE tbsubcategoria SET Subcategoria = 'Sandália'
 WHERE Subcategoria = 'Rasteirinha';
 
+DELETE FROM tbsubcategoria WHERE Subcategoria =  'Sandália';
+
 SELECT * FROM tbsubcategoria;
 SELECT * FROM tbcategoria;
 

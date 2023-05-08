@@ -11,11 +11,14 @@ Categoria) VALUES ('Bebida');
 INSERT INTO tbcategoria (
 Categoria) VALUES ('Calçados');
 
+
 UPDATE tbcategoria SET Categoria = 'Bebidas'
 WHERE Categoria = 'Bebida';
 
 UPDATE tbcategoria SET Status = 0
 WHERE Categoria = 'Roupas';
+
+DELETE FROM tbcategoria WHERE Categoria =  'Calçados';
 
 SELECT * FROM tbcategoria;
 

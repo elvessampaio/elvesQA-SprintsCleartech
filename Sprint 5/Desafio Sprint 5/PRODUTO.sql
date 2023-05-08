@@ -25,6 +25,7 @@ WHERE Produto = 'Smirnoff ice';
 UPDATE tbproduto SET Status = 0
 WHERE Produto = 'Longo, P ao GG';
 
+DELETE FROM tbproduto WHERE Produto =  'Rasteirinha';
 
 SELECT * FROM tbcategoria;
 SELECT * FROM tbsubcategoria;
