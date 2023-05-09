@@ -24,7 +24,7 @@ DELETE FROM tbsubcategoria WHERE Subcategoria =  'Sandália';
 
 SELECT * FROM tbsubcategoria;
 SELECT * FROM tbcategoria;
-
+SELECT * FROM tbsubcategoria WHERE Subcategoria = 'Chinelo';
 
 SELECT Subcategoria, tb_Categoria, Criado_em, Modificado_em, 
 CASE WHEN Status = 1 THEN 'Ativo' ELSE 'Inativo' END AS Status FROM tbsubcategoria;

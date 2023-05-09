@@ -30,7 +30,7 @@ DELETE FROM tbproduto WHERE Produto =  ' Samsung Book, 4GB, 256GB SSD';
 SELECT * FROM tbcategoria;
 SELECT * FROM tbsubcategoria;
 SELECT * FROM tbproduto;
-
+SELECT * FROM tbproduto WHERE Produto = 'Longo';
 
 SELECT Produto, tb_Categoria, tb_Subcategoria,Criado_em, Modificado_em, 
 CASE WHEN Status = 1 THEN 'Ativo' ELSE 'Inativo' END AS Status FROM tbproduto;

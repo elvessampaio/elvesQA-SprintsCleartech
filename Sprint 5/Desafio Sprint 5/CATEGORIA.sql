@@ -20,6 +20,7 @@ WHERE Categoria = 'Roupas';
 
 DELETE FROM tbcategoria WHERE Categoria = 'Roupas';
 
+SELECT * FROM tbcategoria WHERE Categoria = 'Roupas';
 SELECT * FROM tbcategoria;
 
 SELECT Categoria, Criado_em, Modificado_em, 
