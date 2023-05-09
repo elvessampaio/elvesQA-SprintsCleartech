@@ -1,0 +1,24 @@
+C:\Users\Cleartech\Desktop\DESAFIOS\T4-MarianaCardoso\C#\SPRINT4-DESAFIO\SPRINT-4\SPRINT-4\bin\Debug\SPRINT-4.exe.config
+C:\Users\Cleartech\Desktop\DESAFIOS\T4-MarianaCardoso\C#\SPRINT4-DESAFIO\SPRINT-4\SPRINT-4\bin\Debug\SPRINT-4.exe
+C:\Users\Cleartech\Desktop\DESAFIOS\T4-MarianaCardoso\C#\SPRINT4-DESAFIO\SPRINT-4\SPRINT-4\bin\Debug\SPRINT-4.pdb
+C:\Users\Cleartech\Desktop\DESAFIOS\T4-MarianaCardoso\C#\SPRINT4-DESAFIO\SPRINT-4\SPRINT-4\obj\Debug\DESAFIO4.csproj.AssemblyReference.cache
+C:\Users\Cleartech\Desktop\DESAFIOS\T4-MarianaCardoso\C#\SPRINT4-DESAFIO\SPRINT-4\SPRINT-4\obj\Debug\DESAFIO4.csproj.SuggestedBindingRedirects.cache
+C:\Users\Cleartech\Desktop\DESAFIOS\T4-MarianaCardoso\C#\SPRINT4-DESAFIO\SPRINT-4\SPRINT-4\obj\Debug\DESAFIO4.csproj.CoreCompileInputs.cache
+C:\Users\Cleartech\Desktop\DESAFIOS\T4-MarianaCardoso\C#\SPRINT4-DESAFIO\SPRINT-4\SPRINT-4\obj\Debug\SPRINT-4.exe
+C:\Users\Cleartech\Desktop\DESAFIOS\T4-MarianaCardoso\C#\SPRINT4-DESAFIO\SPRINT-4\SPRINT-4\obj\Debug\SPRINT-4.pdb
+C:\Users\Cleartech\Desktop\SPRINT4-DESAFIO\SPRINT-4\SPRINT-4\obj\Debug\DESAFIO4.csproj.AssemblyReference.cache
+C:\Users\Cleartech\Desktop\SPRINT4-DESAFIO\SPRINT-4\SPRINT-4\obj\Debug\DESAFIO4.csproj.SuggestedBindingRedirects.cache
+C:\Users\Cleartech\Desktop\SPRINT4-DESAFIO\SPRINT-4\SPRINT-4\obj\Debug\DESAFIO4.csproj.CoreCompileInputs.cache
+C:\Users\Cleartech\Desktop\SPRINT4-DESAFIO\SPRINT-4\SPRINT-4\obj\Debug\SPRINT-4.exe
+C:\Users\Cleartech\Desktop\SPRINT4-DESAFIO\SPRINT-4\SPRINT-4\obj\Debug\SPRINT-4.pdb
+C:\Users\Cleartech\Desktop\SPRINT4-DESAFIO\SPRINT-4\SPRINT-4\bin\Debug\SPRINT-4.exe.config
+C:\Users\Cleartech\Desktop\SPRINT4-DESAFIO\SPRINT-4\SPRINT-4\bin\Debug\SPRINT-4.exe
+C:\Users\Cleartech\Desktop\SPRINT4-DESAFIO\SPRINT-4\SPRINT-4\bin\Debug\SPRINT-4.pdb
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\SPRINT4-Mari\SPRINT4-DESAFIO-CORRETA\SPRINT4-DESAFIO\SPRINT-4\SPRINT-4\bin\Debug\SPRINT-4.exe.config
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\SPRINT4-Mari\SPRINT4-DESAFIO-CORRETA\SPRINT4-DESAFIO\SPRINT-4\SPRINT-4\bin\Debug\SPRINT-4.exe
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\SPRINT4-Mari\SPRINT4-DESAFIO-CORRETA\SPRINT4-DESAFIO\SPRINT-4\SPRINT-4\bin\Debug\SPRINT-4.pdb
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\SPRINT4-Mari\SPRINT4-DESAFIO-CORRETA\SPRINT4-DESAFIO\SPRINT-4\SPRINT-4\obj\Debug\DESAFIO4.csproj.AssemblyReference.cache
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\SPRINT4-Mari\SPRINT4-DESAFIO-CORRETA\SPRINT4-DESAFIO\SPRINT-4\SPRINT-4\obj\Debug\DESAFIO4.csproj.SuggestedBindingRedirects.cache
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\SPRINT4-Mari\SPRINT4-DESAFIO-CORRETA\SPRINT4-DESAFIO\SPRINT-4\SPRINT-4\obj\Debug\DESAFIO4.csproj.CoreCompileInputs.cache
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\SPRINT4-Mari\SPRINT4-DESAFIO-CORRETA\SPRINT4-DESAFIO\SPRINT-4\SPRINT-4\obj\Debug\SPRINT-4.exe
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\SPRINT4-Mari\SPRINT4-DESAFIO-CORRETA\SPRINT4-DESAFIO\SPRINT-4\SPRINT-4\obj\Debug\SPRINT-4.pdb

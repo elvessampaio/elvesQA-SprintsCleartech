@@ -1,0 +1,16 @@
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\Sprint4\Sprint4\bin\Debug\Sprint4.exe.config
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\Sprint4\Sprint4\bin\Debug\Sprint4.exe
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\Sprint4\Sprint4\bin\Debug\Sprint4.pdb
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\Sprint4\Sprint4\obj\Debug\Sprint4.csproj.AssemblyReference.cache
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\Sprint4\Sprint4\obj\Debug\Sprint4.csproj.SuggestedBindingRedirects.cache
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\Sprint4\Sprint4\obj\Debug\Sprint4.csproj.CoreCompileInputs.cache
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\Sprint4\Sprint4\obj\Debug\Sprint4.exe
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\Sprint4\Sprint4\obj\Debug\Sprint4.pdb
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\Sprint4-Rique\Sprint4\Sprint4\bin\Debug\Sprint4.exe.config
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\Sprint4-Rique\Sprint4\Sprint4\bin\Debug\Sprint4.exe
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\Sprint4-Rique\Sprint4\Sprint4\bin\Debug\Sprint4.pdb
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\Sprint4-Rique\Sprint4\Sprint4\obj\Debug\Sprint4.csproj.AssemblyReference.cache
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\Sprint4-Rique\Sprint4\Sprint4\obj\Debug\Sprint4.csproj.SuggestedBindingRedirects.cache
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\Sprint4-Rique\Sprint4\Sprint4\obj\Debug\Sprint4.csproj.CoreCompileInputs.cache
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\Sprint4-Rique\Sprint4\Sprint4\obj\Debug\Sprint4.exe
+C:\Users\Cleartech\OneDrive - Clearsale S.A\Área de Trabalho\Sprint4-Rique\Sprint4\Sprint4\obj\Debug\Sprint4.pdb
