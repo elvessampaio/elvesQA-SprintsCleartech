@@ -4,6 +4,12 @@ SELECT * FROM categorias WHERE Nome = 'Móveis';
 
 SELECT * FROM categorias WHERE Status = 1;
 
+SELECT Id, Nome, Status, DataEHoraCriacao, DataEHoraModificacao FROM categorias
+ORDER BY Nome DESC;
+
+SELECT Id, Nome, Status, DataEHoraCriacao, DataEHoraModificacao FROM categorias
+ORDER BY Nome ASC;
+
 SELECT Nome, DataEHoraCriacao, DataEHoraModificacao, 
 CASE WHEN Status = 1 THEN 'Ativo' ELSE 'Inativo' END AS Status FROM categorias;
 
