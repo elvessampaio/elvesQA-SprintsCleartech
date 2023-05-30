@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "3f1f1189-5536-4f71-aa60-23edc6b0185e",
+		"name": "Sprint 6 - Rique",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27481442"
+	},
+	"item": [
+		{
+			"name": "Consultar todos os dados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7296/Categoria",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7296",
+					"path": [
+						"Categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar dados",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Nome\": \"Roupas\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7296/Categoria",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7296",
+					"path": [
+						"Categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar dados",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Nome\": \"Calçados\",\r\n\t\"Status\": false\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7296/Categoria?id=c12b02f3-39f0-468a-97d8-25459659dd91",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7296",
+					"path": [
+						"Categoria"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "c12b02f3-39f0-468a-97d8-25459659dd91"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar dado único",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"op\": \"replace\",\r\n        \"path\": \"/status\",\r\n        \"value\": false\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7296/Categoria?id=c12b02f3-39f0-468a-97d8-25459659dd91",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7296",
+					"path": [
+						"Categoria"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "c12b02f3-39f0-468a-97d8-25459659dd91"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir dados",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7296/Categoria?id=107ddbad-ace5-4237-97c0-7062a0000001",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7296",
+					"path": [
+						"Categoria"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "107ddbad-ace5-4237-97c0-7062a0000001"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta por ID/Nome/Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7296/Categoria/?ordem=c",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7296",
+					"path": [
+						"Categoria",
+						""
+					],
+					"query": [
+						{
+							"key": "ordem",
+							"value": "c"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
