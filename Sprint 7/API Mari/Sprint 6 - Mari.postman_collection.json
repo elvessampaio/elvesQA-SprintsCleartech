@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "3f1f1189-5536-4f71-aa60-23edc6b0185e",
-		"name": "Sprint 6 - Rique",
+		"_postman_id": "70db3f80-491f-4273-a649-e7f311a03d40",
+		"name": "Sprint 6 - Mari",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "27481442"
 	},
@@ -11,18 +11,31 @@
 			"item": [
 				{
 					"name": "Consultar todos os dados",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "https://localhost:7296/Categoria",
+							"raw": "https://localhost:7161/Categoria/PesquisaTodos",
 							"protocol": "https",
 							"host": [
 								"localhost"
 							],
-							"port": "7296",
+							"port": "7161",
 							"path": [
-								"Categoria"
+								"Categoria",
+								"PesquisaTodos"
 							]
 						}
 					},
@@ -34,21 +47,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:7296/Categoria/?id=",
+							"raw": "https://localhost:7161/Categoria/1",
 							"protocol": "https",
 							"host": [
 								"localhost"
 							],
-							"port": "7296",
+							"port": "7161",
 							"path": [
 								"Categoria",
-								""
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": ""
-								}
+								"1"
 							]
 						}
 					},
@@ -60,46 +67,20 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:7296/Categoria/?nome=",
+							"raw": "https://localhost:7161/Categoria/PesquisaFiltro?nome=inf",
 							"protocol": "https",
 							"host": [
 								"localhost"
 							],
-							"port": "7296",
+							"port": "7161",
 							"path": [
 								"Categoria",
-								""
+								"PesquisaFiltro"
 							],
 							"query": [
 								{
 									"key": "nome",
-									"value": ""
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Consulta por status",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://localhost:7296/Categoria/?status=",
-							"protocol": "https",
-							"host": [
-								"localhost"
-							],
-							"port": "7296",
-							"path": [
-								"Categoria",
-								""
-							],
-							"query": [
-								{
-									"key": "status",
-									"value": ""
+									"value": "inf"
 								}
 							]
 						}
@@ -112,20 +93,20 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:7296/Categoria/?ordem=c",
+							"raw": "https://localhost:7161/Categoria/PesquisaFiltro?decrescente=false",
 							"protocol": "https",
 							"host": [
 								"localhost"
 							],
-							"port": "7296",
+							"port": "7161",
 							"path": [
 								"Categoria",
-								""
+								"PesquisaFiltro"
 							],
 							"query": [
 								{
-									"key": "ordem",
-									"value": "c"
+									"key": "decrescente",
+									"value": "false"
 								}
 							]
 						}
@@ -138,20 +119,46 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:7296/Categoria/?ordem=d",
+							"raw": "https://localhost:7161/Categoria/PesquisaFiltro?decrescente=true",
 							"protocol": "https",
 							"host": [
 								"localhost"
 							],
-							"port": "7296",
+							"port": "7161",
 							"path": [
 								"Categoria",
-								""
+								"PesquisaFiltro"
 							],
 							"query": [
 								{
-									"key": "ordem",
-									"value": "d"
+									"key": "decrescente",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta por status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7161/Categoria/PesquisaFiltro?status=true",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria",
+								"PesquisaFiltro"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "true"
 								}
 							]
 						}
@@ -175,12 +182,12 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:7296/Categoria",
+					"raw": "https://localhost:7161/Categoria",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
-					"port": "7296",
+					"port": "7161",
 					"path": [
 						"Categoria"
 					]
@@ -195,7 +202,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\t\"Nome\": \"Calçados\",\r\n\t\"Status\": false\r\n}\r\n",
+					"raw": "{\r\n\t\"Nome\": \"Informática\",\r\n\t\"Status\": false\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -203,54 +210,15 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:7296/Categoria?id=c12b02f3-39f0-468a-97d8-25459659dd91",
+					"raw": "https://localhost:7161/Categoria/1",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
-					"port": "7296",
+					"port": "7161",
 					"path": [
-						"Categoria"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "c12b02f3-39f0-468a-97d8-25459659dd91"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Atualizar dado único",
-			"request": {
-				"method": "PATCH",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "[\r\n    {\r\n        \"op\": \"replace\",\r\n        \"path\": \"/status\",\r\n        \"value\": false\r\n    }\r\n]",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "https://localhost:7296/Categoria?id=c12b02f3-39f0-468a-97d8-25459659dd91",
-					"protocol": "https",
-					"host": [
-						"localhost"
-					],
-					"port": "7296",
-					"path": [
-						"Categoria"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "c12b02f3-39f0-468a-97d8-25459659dd91"
-						}
+						"Categoria",
+						"1"
 					]
 				}
 			},
@@ -262,20 +230,15 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:7296/Categoria?id=107ddbad-ace5-4237-97c0-7062a0000001",
+					"raw": "https://localhost:7161/Categoria/3",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
-					"port": "7296",
+					"port": "7161",
 					"path": [
-						"Categoria"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "107ddbad-ace5-4237-97c0-7062a0000001"
-						}
+						"Categoria",
+						"3"
 					]
 				}
 			},
