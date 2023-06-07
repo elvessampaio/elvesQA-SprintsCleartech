@@ -19,4 +19,8 @@ VALUES (3, 'Brinquedos', 1, '2023-05-07', '2023-05-07');
 UPDATE categorias SET Nome = 'BRINQUEDOS'
 WHERE Nome = 'Brinquedos';
 
+UPDATE categorias SET Status = 0
+WHERE Nome = 'ROUPAS';
+
+
 DELETE FROM categorias WHERE Nome =  'Brinquedos';

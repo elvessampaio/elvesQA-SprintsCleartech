@@ -19,5 +19,8 @@ VALUES ('107ddbad-ace5-4237-97c0-7062a0000001', 'Brinquedos', 1, '2023-05-30', '
 UPDATE categorias SET Nome = 'Smartphones'
 WHERE Nome = 'Celular';
 
+UPDATE categorias SET Status = 0
+WHERE Nome = 'Móveis';
+
 DELETE FROM categorias WHERE Nome =  'Brinquedos';
 
