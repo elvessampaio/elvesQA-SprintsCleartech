@@ -1,3 +1,4 @@
+
 SELECT * FROM categorias;
 
 SELECT * FROM categorias WHERE Nome = 'Móveis';

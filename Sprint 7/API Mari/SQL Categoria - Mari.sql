@@ -1,6 +1,7 @@
+
 SELECT * FROM categorias;
 
-SELECT * FROM categorias WHERE Nome = 'Roupas';
+SELECT * FROM categorias WHERE Nome = 'Animais';
 
 SELECT * FROM categorias WHERE Status = 1;
 
