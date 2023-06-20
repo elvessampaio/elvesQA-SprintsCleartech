@@ -1,0 +1,2426 @@
+{
+	"info": {
+		"_postman_id": "70db3f80-491f-4273-a649-e7f311a03d40",
+		"name": "Sprint 8 - Mari",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27481442"
+	},
+	"item": [
+		{
+			"name": "Cadastrar dados categoria",
+			"item": [
+				{
+					"name": "Cadastrar dados",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"SMARTPHONES\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"Smartphones\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/Categoria",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastro com mais de 128 caracteres",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/Categoria",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastro com números",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"R0UPAS\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"R0upas\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/Categoria",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastro com caracteres especiais",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"ROUP@S\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"Roup@s\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/Categoria",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastro em branco",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/Categoria",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Categoria já cadastrada",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"SMARTPHONES\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"Smartphones\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/Categoria",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Edição da categoria",
+			"item": [
+				{
+					"name": "Atualizar dados",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"   var textoEsperado = \"Roupas\";\r",
+									"   var textoRetornado = \"Roupas\";\r",
+									"   pm.response.text();\r",
+									"\r",
+									"   pm.expect(textoRetornado).to.equal(textoEsperado);\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"Smartphones\",\r\n\t\"Status\": false\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/Categoria/17",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria",
+								"17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edição com mais de 128 caracteres",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"   var textoEsperado = \"Roupas\";\r",
+									"   var textoRetornado = \"Roupas\";\r",
+									"   pm.response.text();\r",
+									"\r",
+									"   pm.expect(textoRetornado).to.equal(textoEsperado);\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\",\r\n\t\"Status\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/Categoria/17",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria",
+								"17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edição com números",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"   var textoEsperado = \"Roupas\";\r",
+									"   var textoRetornado = \"Roupas\";\r",
+									"   pm.response.text();\r",
+									"\r",
+									"   pm.expect(textoRetornado).to.equal(textoEsperado);\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"1nformática\",\r\n\t\"Status\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/Categoria/17",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria",
+								"17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edição com caracteres especiais",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"   var textoEsperado = \"Roupas\";\r",
+									"   var textoRetornado = \"Roupas\";\r",
+									"   pm.response.text();\r",
+									"\r",
+									"   pm.expect(textoRetornado).to.equal(textoEsperado);\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"Informátic@\",\r\n\t\"Status\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/Categoria/17",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria",
+								"17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edição em branco",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi em branco\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"\",\r\n\t\"Status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/Categoria/17",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria",
+								"17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edição com categoria já cadastrada",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"   var textoEsperado = \"Roupas\";\r",
+									"   var textoRetornado = \"Roupas\";\r",
+									"   pm.response.text();\r",
+									"\r",
+									"   pm.expect(textoRetornado).to.equal(textoEsperado);\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"Smartphones\",\r\n\t\"Status\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/Categoria/16",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria",
+								"16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inativação da categoria",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"   var textoEsperado = \"Roupas\";\r",
+									"   var textoRetornado = \"Roupas\";\r",
+									"   pm.response.text();\r",
+									"\r",
+									"   pm.expect(textoRetornado).to.equal(textoEsperado);\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"Smartphones\",\r\n\t\"Status\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/Categoria/17",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria",
+								"17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ativação da categoria",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"   var textoEsperado = \"Roupas\";\r",
+									"   var textoRetornado = \"Roupas\";\r",
+									"   pm.response.text();\r",
+									"\r",
+									"   pm.expect(textoRetornado).to.equal(textoEsperado);\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"Smartphones\",\r\n\t\"Status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/Categoria/17",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria",
+								"17"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pesquisa de dados categoria",
+			"item": [
+				{
+					"name": "Consultar todos os dados",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/Categoria",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta por ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"SMARTPHONES\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7161/Categoria/17",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria",
+								"17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta por nome",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"SMARTPHONES\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7161/Categoria?nome=Smartphones",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "Smartphones"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta por ordem crescente",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7161/Categoria?decrescente=false",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria"
+							],
+							"query": [
+								{
+									"key": "decrescente",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta por ordem decrescente",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7161/Categoria?decrescente=true",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria"
+							],
+							"query": [
+								{
+									"key": "decrescente",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta por status ativo",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"O status é correto\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"true\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7161/Categoria?status=true",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta por status inativo",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"O status é correto\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"false\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7161/Categoria?status=false",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pesquisa com apenas 3 letras",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"SMARTPHONES\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7161/Categoria?nome=Sma",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "Sma"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pesquisa com menos de 3 letras",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"SMARTPHONES\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7161/Categoria?nome=sm",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "sm"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Excluir categoria",
+			"item": [
+				{
+					"name": "Excluir dados",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7161/Categoria/16",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"Categoria",
+								"16"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cadastrar dados subcategoria",
+			"item": [
+				{
+					"name": "Cadastrar dados",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"IPHONE\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"iPhone\",\r\n    \"CategoriaID\": 17\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastro com mais de 128 caracteres",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\",\r\n    \"CategoriaID\": 17\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastro com números",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"1Phone\",\r\n    \"CategoriaID\": 17\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastro com caracteres especiais",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"Motorol@\",\r\n    \"CategoriaID\": 17\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastro em branco",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"\",\r\n    \"CategoriaID\": 17\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Subcategoria já cadastrada",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"iPhone\",\r\n    \"CategoriaID\": 17\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Subcategoria com mesmo nome da Categoria",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"Smartphones\",\r\n    \"CategoriaID\": 17\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Edição da subcategoria",
+			"item": [
+				{
+					"name": "Atualizar dados",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"GALAXY\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"Galaxy\",\r\n    \"CategoriaID\": 17,\r\n\t\"Status\": true\r\n    \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edição com mais de 128 caracteres",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\",\r\n\t\"Status\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edição com números",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"1Phone\",\r\n\t\"Status\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edição com caracteres especiais",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"G@laxy\",\r\n\t\"Status\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edição em branco",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi em branco\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"\",\r\n    \"CategoriaID\": 17,\r\n\t\"Status\": true\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edição com  mesmo nome de categoria já cadastrada",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"Smartphones\",\r\n\t\"Status\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ativação da categoria",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"Galaxy\",\r\n    \"CategoriaID\": 17,\r\n\t\"Status\": true\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inativação da categoria",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"Galaxy\",\r\n    \"CategoriaID\": 17,\r\n\t\"Status\": false\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edição com nome de subcategoria já cadastrada",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"SMARTPHONES\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Nome\": \"iPhone\",\r\n\t\"Status\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pesquisa de dados subcategoria",
+			"item": [
+				{
+					"name": "Consultar todos os dados",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta por ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"SMARTPHONES\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta por nome",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"SMARTPHONES\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria?nome=galaxy",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "galaxy"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta com apenas 3 letras",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"SMARTPHONES\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria?nome=gal",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "gal"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta com menos de 3 letras",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"SMARTPHONES\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria?nome=ga",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "ga"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta por ordem crescente",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria?decrescente=false",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria"
+							],
+							"query": [
+								{
+									"key": "decrescente",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta por ordem decrescente",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria?decrescente=true",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria"
+							],
+							"query": [
+								{
+									"key": "decrescente",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta por status ativo",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"O status é correto\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"true\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria?status=true",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta por status inativo",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"O status é correto\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"true\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria?status=false",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Excluir subcategoria",
+			"item": [
+				{
+					"name": "Excluir dados",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7161/SubCategoria/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"SubCategoria",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

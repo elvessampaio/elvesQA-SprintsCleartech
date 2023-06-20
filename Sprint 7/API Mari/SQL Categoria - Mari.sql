@@ -1,5 +1,6 @@
 
 SELECT * FROM categorias;
+SELECT * FROM subcategorias;
 
 SELECT * FROM categorias WHERE Nome = 'Animais';
 
