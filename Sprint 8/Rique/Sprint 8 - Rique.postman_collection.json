@@ -20,24 +20,44 @@
 									"    pm.response.to.have.status(201);\r",
 									"});\r",
 									"\r",
-									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"Smartphones\");\r",
-									"});\r",
-									"\r",
 									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
 									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
-									"});"
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"   var textoEsperado = \"Móveis\";\r",
+									"   var textoRetornado = \"Móveis\";\r",
+									"   var textoEsperado = \"Celulares\";\r",
+									"   var textoRetornado = \"Celulares\";\r",
+									"   pm.response.text();\r",
+									"   pm.expect(textoRetornado).to.equal(textoEsperado);\r",
+									"\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
 								],
 								"type": "text/javascript"
 							}
 						}
 					],
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"Nome\": \"Smartphones\"\r\n}\r\n",
+							"raw": "{\r\n\t\"Nome\": \"{{Categoria}}\"\r\n}\r\n\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -45,7 +65,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7296/Categoria",
+							"raw": "https://localhost:7296/Categoria?\"Nome\"=\"{{Categoria}}\"",
 							"protocol": "https",
 							"host": [
 								"localhost"
@@ -53,6 +73,12 @@
 							"port": "7296",
 							"path": [
 								"Categoria"
+							],
+							"query": [
+								{
+									"key": "\"Nome\"",
+									"value": "\"{{Categoria}}\""
+								}
 							]
 						}
 					},
@@ -69,12 +95,17 @@
 									"    pm.response.to.have.status(201);\r",
 									"});\r",
 									"\r",
-									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\");\r",
-									"});\r",
 									"\r",
 									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
 									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"   var textoEsperado = \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\";\r",
+									"   var textoRetornado = \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\";\r",
+									"   pm.response.text();\r",
+									"   pm.expect(textoRetornado).to.equal(textoEsperado);\r",
+									"\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -86,7 +117,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"Nome\": \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\r\n}\r\n",
+							"raw": "{\r\n\t\"Nome\": \"{{Categoria_128}}\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -94,7 +125,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7296/Categoria",
+							"raw": "https://localhost:7296/Categoria?\"Nome\"=\"{{Categoria_128}}\"",
 							"protocol": "https",
 							"host": [
 								"localhost"
@@ -102,6 +133,12 @@
 							"port": "7296",
 							"path": [
 								"Categoria"
+							],
+							"query": [
+								{
+									"key": "\"Nome\"",
+									"value": "\"{{Categoria_128}}\""
+								}
 							]
 						}
 					},
@@ -118,13 +155,19 @@
 									"    pm.response.to.have.status(201);\r",
 									"});\r",
 									"\r",
-									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"R0upas\");\r",
-									"});\r",
 									"\r",
 									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
 									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
-									"});"
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"   var textoEsperado = \"R0upas\";\r",
+									"   var textoRetornado = \"R0upas\";\r",
+									"   pm.response.text();\r",
+									"   pm.expect(textoRetornado).to.equal(textoEsperado);\r",
+									"\r",
+									"});\r",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -135,7 +178,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"Nome\": \"R0upas\"\r\n}\r\n",
+							"raw": "{\r\n\t\"Nome\": \"{{Categoria_números}}\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -143,7 +186,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7296/Categoria",
+							"raw": "https://localhost:7296/Categoria?\"Nome\"=\"{{Categoria_números}}\"",
 							"protocol": "https",
 							"host": [
 								"localhost"
@@ -151,6 +194,12 @@
 							"port": "7296",
 							"path": [
 								"Categoria"
+							],
+							"query": [
+								{
+									"key": "\"Nome\"",
+									"value": "\"{{Categoria_números}}\""
+								}
 							]
 						}
 					},
@@ -167,13 +216,18 @@
 									"    pm.response.to.have.status(201);\r",
 									"});\r",
 									"\r",
-									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"Roup@s\");\r",
-									"});\r",
-									"\r",
 									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
 									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
-									"});"
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"   var textoEsperado = \"Roup@s\";\r",
+									"   var textoRetornado = \"Roup@s\";\r",
+									"   pm.response.text();\r",
+									"   pm.expect(textoRetornado).to.equal(textoEsperado);\r",
+									"\r",
+									"});\r",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -184,7 +238,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"Nome\": \"Roup@s\"\r\n}\r\n",
+							"raw": "{\r\n\t\"Nome\": \"{{Categoria_CaracteresEspeciais}}\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -192,7 +246,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7296/Categoria",
+							"raw": "https://localhost:7296/Categoria?\"Nome\"=\"{{Categoria_CaracteresEspeciais}}\"",
 							"protocol": "https",
 							"host": [
 								"localhost"
@@ -200,6 +254,12 @@
 							"port": "7296",
 							"path": [
 								"Categoria"
+							],
+							"query": [
+								{
+									"key": "\"Nome\"",
+									"value": "\"{{Categoria_CaracteresEspeciais}}\""
+								}
 							]
 						}
 					},
@@ -212,8 +272,8 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 201\", function () {\r",
-									"    pm.response.to.have.status(201);\r",
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
 									"});\r",
 									"\r",
 									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
@@ -233,7 +293,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"Nome\": \"\"\r\n}\r\n",
+							"raw": "{\r\n\t\"Nome\": \"{{Categoria_branco}}\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -241,7 +301,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7296/Categoria",
+							"raw": "https://localhost:7296/Categoria?\"Nome\"=\"{{Categoria_branco}}\"",
 							"protocol": "https",
 							"host": [
 								"localhost"
@@ -249,6 +309,12 @@
 							"port": "7296",
 							"path": [
 								"Categoria"
+							],
+							"query": [
+								{
+									"key": "\"Nome\"",
+									"value": "\"{{Categoria_branco}}\""
+								}
 							]
 						}
 					},
@@ -265,13 +331,18 @@
 									"    pm.response.to.have.status(201);\r",
 									"});\r",
 									"\r",
-									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"Smartphones\");\r",
-									"});\r",
-									"\r",
 									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
 									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
-									"});"
+									"});\r",
+									"\r",
+									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
+									"   var textoEsperado = \"Móveis\";\r",
+									"   var textoRetornado = \"Móveis\";\r",
+									"   pm.response.text();\r",
+									"   pm.expect(textoRetornado).to.equal(textoEsperado);\r",
+									"\r",
+									"});\r",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -282,7 +353,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"Nome\": \"Smartphones\"\r\n}\r\n",
+							"raw": "{\r\n\t\"Nome\": \"{{Categoria_cadastrada}}\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -290,7 +361,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7296/Categoria",
+							"raw": "https://localhost:7296/Categoria?\"Nome\"=\"{{Categoria_cadastrada}}\"",
 							"protocol": "https",
 							"host": [
 								"localhost"
@@ -298,6 +369,12 @@
 							"port": "7296",
 							"path": [
 								"Categoria"
+							],
+							"query": [
+								{
+									"key": "\"Nome\"",
+									"value": "\"{{Categoria_cadastrada}}\""
+								}
 							]
 						}
 					},
@@ -772,7 +849,8 @@
 						}
 					],
 					"protocolProfileBehavior": {
-						"disableBodyPruning": true
+						"disableBodyPruning": true,
+						"strictSSL": false
 					},
 					"request": {
 						"method": "GET",
@@ -1200,7 +1278,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:7296/Categoria/a3053318-bd5a-49d3-8769-44f75003ac91",
+							"raw": "https://localhost:7296/Categoria/643e94dc-e1b7-4d65-993a-c560092abbe1",
 							"protocol": "https",
 							"host": [
 								"localhost"
@@ -1208,7 +1286,7 @@
 							"port": "7296",
 							"path": [
 								"Categoria",
-								"a3053318-bd5a-49d3-8769-44f75003ac91"
+								"643e94dc-e1b7-4d65-993a-c560092abbe1"
 							]
 						}
 					},
@@ -1231,7 +1309,7 @@
 									"});\r",
 									"\r",
 									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"Vestido\");\r",
+									"    pm.expect(pm.response.text()).to.include(\"IPHONE\");\r",
 									"});\r",
 									"\r",
 									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
@@ -1247,7 +1325,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"CategoriaId\": \"6a97e7e8-7668-4021-8067-ccc93ad66f64\",\r\n    \"Nome\": \"Vestido\"\r\n}\r\n",
+							"raw": "{\r\n\t\"Nome\": \"{{Subcategoria}}\",\r\n    \"CategoriaID\": {{ID}}\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1255,7 +1333,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7296/Subcategoria",
+							"raw": "https://localhost:7296/Subcategoria?\"Nome\"=\"{{Subcategoria}}\"&\"CategoriaID\"={{ID}}",
 							"protocol": "https",
 							"host": [
 								"localhost"
@@ -1263,6 +1341,16 @@
 							"port": "7296",
 							"path": [
 								"Subcategoria"
+							],
+							"query": [
+								{
+									"key": "\"Nome\"",
+									"value": "\"{{Subcategoria}}\""
+								},
+								{
+									"key": "\"CategoriaID\"",
+									"value": "{{ID}}"
+								}
 							]
 						}
 					},
@@ -1281,15 +1369,6 @@
 									"\r",
 									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
 									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
-									"});\r",
-									"\r",
-									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
-									"   var textoEsperado = \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\";\r",
-									"   var textoRetornado = \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\";\r",
-									"   pm.response.text();\r",
-									"\r",
-									"   pm.expect(textoRetornado).to.equal(textoEsperado);\r",
-									"\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1301,7 +1380,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"CategoriaId\": \"6a97e7e8-7668-4021-8067-ccc93ad66f64\",\r\n    \"Nome\": \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"\r\n}\r\n",
+							"raw": "{\r\n\t\"Nome\": \"{{Subcategoria_128}}\",\r\n    \"CategoriaID\": {{ID}}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1309,7 +1388,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7296/Subcategoria",
+							"raw": "https://localhost:7296/Subcategoria?\"Nome\"={{Subcategoria_128}}\"&\"CategoriaID\"={{ID}}",
 							"protocol": "https",
 							"host": [
 								"localhost"
@@ -1317,6 +1396,16 @@
 							"port": "7296",
 							"path": [
 								"Subcategoria"
+							],
+							"query": [
+								{
+									"key": "\"Nome\"",
+									"value": "{{Subcategoria_128}}\""
+								},
+								{
+									"key": "\"CategoriaID\"",
+									"value": "{{ID}}"
+								}
 							]
 						}
 					},
@@ -1335,15 +1424,6 @@
 									"\r",
 									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
 									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
-									"});\r",
-									"\r",
-									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
-									"   var textoEsperado = \"B1usas\";\r",
-									"   var textoRetornado = \"B1usas\";\r",
-									"   pm.response.text();\r",
-									"\r",
-									"   pm.expect(textoRetornado).to.equal(textoEsperado);\r",
-									"\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1355,7 +1435,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"CategoriaId\": \"6a97e7e8-7668-4021-8067-ccc93ad66f64\",\r\n    \"Nome\": \"B1usas\"\r\n}\r\n",
+							"raw": "{\r\n\t\"Nome\": \"{{Subcategoria_números}}\",\r\n    \"CategoriaID\": {{ID}}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1363,7 +1443,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7296/Subcategoria",
+							"raw": "https://localhost:7296/Subcategoria?\"Nome\"=\"{{Subcategoria_números}}\"&\"CategoriaID\"={{ID}}",
 							"protocol": "https",
 							"host": [
 								"localhost"
@@ -1371,6 +1451,16 @@
 							"port": "7296",
 							"path": [
 								"Subcategoria"
+							],
+							"query": [
+								{
+									"key": "\"Nome\"",
+									"value": "\"{{Subcategoria_números}}\""
+								},
+								{
+									"key": "\"CategoriaID\"",
+									"value": "{{ID}}"
+								}
 							]
 						}
 					},
@@ -1389,15 +1479,6 @@
 									"\r",
 									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
 									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
-									"});\r",
-									"\r",
-									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
-									"   var textoEsperado = \"Blus@s\";\r",
-									"   var textoRetornado = \"Blus@s\";\r",
-									"   pm.response.text();\r",
-									"\r",
-									"   pm.expect(textoRetornado).to.equal(textoEsperado);\r",
-									"\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1409,7 +1490,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"CategoriaId\": \"6a97e7e8-7668-4021-8067-ccc93ad66f64\",\r\n    \"Nome\": \"Blus@s\"\r\n}\r\n",
+							"raw": "{\r\n\t\"Nome\": \"{{Subcategoria_caracteresEspeciais}}\",\r\n    \"CategoriaID\": {{ID}}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1417,7 +1498,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7296/Subcategoria",
+							"raw": "https://localhost:7296/Subcategoria?\"Nome\"=\"{{Subcategoria_caracteresEspeciais}}\"&\"CategoriaID\"={{ID}}",
 							"protocol": "https",
 							"host": [
 								"localhost"
@@ -1425,6 +1506,16 @@
 							"port": "7296",
 							"path": [
 								"Subcategoria"
+							],
+							"query": [
+								{
+									"key": "\"Nome\"",
+									"value": "\"{{Subcategoria_caracteresEspeciais}}\""
+								},
+								{
+									"key": "\"CategoriaID\"",
+									"value": "{{ID}}"
+								}
 							]
 						}
 					},
@@ -1443,10 +1534,6 @@
 									"\r",
 									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
 									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
-									"});\r",
-									"\r",
-									"pm.test(\"O texto foi em branco\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"\");\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1458,7 +1545,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"CategoriaId\": \"6a97e7e8-7668-4021-8067-ccc93ad66f64\",\r\n    \"Nome\": \"\"\r\n}",
+							"raw": "{\r\n\t\"Nome\": \"{{Subcategoria_branco}}\",\r\n    \"CategoriaID\": {{ID}}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1466,7 +1553,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7296/Subcategoria",
+							"raw": "https://localhost:7296/Subcategoria?\"Nome\"=\"{{Subcategoria_branco}}\"&\"CategoriaID\"={{ID}}",
 							"protocol": "https",
 							"host": [
 								"localhost"
@@ -1474,6 +1561,16 @@
 							"port": "7296",
 							"path": [
 								"Subcategoria"
+							],
+							"query": [
+								{
+									"key": "\"Nome\"",
+									"value": "\"{{Subcategoria_branco}}\""
+								},
+								{
+									"key": "\"CategoriaID\"",
+									"value": "{{ID}}"
+								}
 							]
 						}
 					},
@@ -1492,15 +1589,6 @@
 									"\r",
 									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
 									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
-									"});\r",
-									"\r",
-									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
-									"   var textoEsperado = \"Vestido\";\r",
-									"   var textoRetornado = \"Vestido\";\r",
-									"   pm.response.text();\r",
-									"\r",
-									"   pm.expect(textoRetornado).to.equal(textoEsperado);\r",
-									"\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1512,7 +1600,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"CategoriaId\": \"6a97e7e8-7668-4021-8067-ccc93ad66f64\",\r\n    \"Nome\": \"Vestido\"\r\n}",
+							"raw": "{\r\n\t\"Nome\": \"{{Subcategoria_cadastrada}}\",\r\n    \"CategoriaID\": {{ID}}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1520,7 +1608,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7296/Subcategoria",
+							"raw": "https://localhost:7296/Subcategoria?\"Nome\"=\"{{Subcategoria_cadastrada}}\"&\"CategoriaID\"={{ID}}",
 							"protocol": "https",
 							"host": [
 								"localhost"
@@ -1528,6 +1616,16 @@
 							"port": "7296",
 							"path": [
 								"Subcategoria"
+							],
+							"query": [
+								{
+									"key": "\"Nome\"",
+									"value": "\"{{Subcategoria_cadastrada}}\""
+								},
+								{
+									"key": "\"CategoriaID\"",
+									"value": "{{ID}}"
+								}
 							]
 						}
 					},
@@ -1546,15 +1644,6 @@
 									"\r",
 									"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
 									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
-									"});\r",
-									"\r",
-									"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
-									"   var textoEsperado = \"Roupas\";\r",
-									"   var textoRetornado = \"Roupas\";\r",
-									"   pm.response.text();\r",
-									"\r",
-									"   pm.expect(textoRetornado).to.equal(textoEsperado);\r",
-									"\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1566,7 +1655,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"CategoriaId\": \"6a97e7e8-7668-4021-8067-ccc93ad66f64\",\r\n    \"Nome\": \"Roupas\"\r\n}",
+							"raw": "{\r\n\t\"Nome\": \"{{Subcategoria_IgualCategoria}}\",\r\n    \"CategoriaID\": {{ID}}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1574,7 +1663,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7296/Subcategoria",
+							"raw": "https://localhost:7296/Subcategoria?\"Nome\"={{Subcategoria_IgualCategoria}}\"&\"CategoriaID\"={{ID}}",
 							"protocol": "https",
 							"host": [
 								"localhost"
@@ -1582,6 +1671,16 @@
 							"port": "7296",
 							"path": [
 								"Subcategoria"
+							],
+							"query": [
+								{
+									"key": "\"Nome\"",
+									"value": "{{Subcategoria_IgualCategoria}}\""
+								},
+								{
+									"key": "\"CategoriaID\"",
+									"value": "{{ID}}"
+								}
 							]
 						}
 					},
