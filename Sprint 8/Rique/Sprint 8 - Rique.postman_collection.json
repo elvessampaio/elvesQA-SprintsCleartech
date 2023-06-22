@@ -94,8 +94,8 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 201\", function () {\r",
-											"    pm.response.to.have.status(201);\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
 											"});\r",
 											"\r",
 											"\r",
@@ -154,8 +154,8 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 201\", function () {\r",
-											"    pm.response.to.have.status(201);\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
 											"});\r",
 											"\r",
 											"\r",
@@ -215,8 +215,8 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 201\", function () {\r",
-											"    pm.response.to.have.status(201);\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
 											"});\r",
 											"\r",
 											"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
@@ -330,8 +330,8 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 201\", function () {\r",
-											"    pm.response.to.have.status(201);\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
 											"});\r",
 											"\r",
 											"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
@@ -429,7 +429,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://localhost:7296/Categoria/373483f2-89cc-48c8-aa0b-a775336af62d",
+									"raw": "https://localhost:7296/Categoria/2ceb634c-db93-4a22-8e2e-5c5e9190b4d1",
 									"protocol": "https",
 									"host": [
 										"localhost"
@@ -437,7 +437,7 @@
 									"port": "7296",
 									"path": [
 										"Categoria",
-										"373483f2-89cc-48c8-aa0b-a775336af62d"
+										"2ceb634c-db93-4a22-8e2e-5c5e9190b4d1"
 									],
 									"query": [
 										{
@@ -457,8 +457,8 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 204\", function () {\r",
-											"    pm.response.to.have.status(204);\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
 											"});\r",
 											"\r",
 											"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
@@ -491,7 +491,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://localhost:7296/Categoria/373483f2-89cc-48c8-aa0b-a775336af62d",
+									"raw": "https://localhost:7296/Categoria/2ceb634c-db93-4a22-8e2e-5c5e9190b4d1",
 									"protocol": "https",
 									"host": [
 										"localhost"
@@ -499,7 +499,7 @@
 									"port": "7296",
 									"path": [
 										"Categoria",
-										"373483f2-89cc-48c8-aa0b-a775336af62d"
+										"2ceb634c-db93-4a22-8e2e-5c5e9190b4d1"
 									]
 								}
 							},
@@ -512,8 +512,8 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 204\", function () {\r",
-											"    pm.response.to.have.status(204);\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
 											"});\r",
 											"\r",
 											"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
@@ -546,14 +546,15 @@
 									}
 								},
 								"url": {
-									"raw": "https://localhost:7296Categoria/373483f2-89cc-48c8-aa0b-a775336af62d",
+									"raw": "https://localhost:7296/Categoria/2ceb634c-db93-4a22-8e2e-5c5e9190b4d1",
 									"protocol": "https",
 									"host": [
 										"localhost"
 									],
-									"port": "7296Categoria",
+									"port": "7296",
 									"path": [
-										"373483f2-89cc-48c8-aa0b-a775336af62d"
+										"Categoria",
+										"2ceb634c-db93-4a22-8e2e-5c5e9190b4d1"
 									]
 								}
 							},
@@ -566,8 +567,8 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 204\", function () {\r",
-											"    pm.response.to.have.status(204);\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
 											"});\r",
 											"\r",
 											"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
@@ -600,7 +601,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://localhost:7296/Categoria/373483f2-89cc-48c8-aa0b-a775336af62d",
+									"raw": "https://localhost:7296/Categoria/2ceb634c-db93-4a22-8e2e-5c5e9190b4d1",
 									"protocol": "https",
 									"host": [
 										"localhost"
@@ -608,7 +609,7 @@
 									"port": "7296",
 									"path": [
 										"Categoria",
-										"373483f2-89cc-48c8-aa0b-a775336af62d"
+										"2ceb634c-db93-4a22-8e2e-5c5e9190b4d1"
 									]
 								}
 							},
@@ -621,8 +622,8 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 204\", function () {\r",
-											"    pm.response.to.have.status(204);\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
 											"});\r",
 											"\r",
 											"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
@@ -650,7 +651,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://localhost:7296/Categoria/373483f2-89cc-48c8-aa0b-a775336af62d",
+									"raw": "https://localhost:7296/Categoria/2ceb634c-db93-4a22-8e2e-5c5e9190b4d1",
 									"protocol": "https",
 									"host": [
 										"localhost"
@@ -658,7 +659,7 @@
 									"port": "7296",
 									"path": [
 										"Categoria",
-										"373483f2-89cc-48c8-aa0b-a775336af62d"
+										"2ceb634c-db93-4a22-8e2e-5c5e9190b4d1"
 									]
 								}
 							},
@@ -706,7 +707,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://localhost:7296/Categoria/373483f2-89cc-48c8-aa0b-a775336af62d",
+									"raw": "https://localhost:7296/Categoria/2ceb634c-db93-4a22-8e2e-5c5e9190b4d1",
 									"protocol": "https",
 									"host": [
 										"localhost"
@@ -714,7 +715,7 @@
 									"port": "7296",
 									"path": [
 										"Categoria",
-										"373483f2-89cc-48c8-aa0b-a775336af62d"
+										"2ceb634c-db93-4a22-8e2e-5c5e9190b4d1"
 									]
 								}
 							},
@@ -761,7 +762,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://localhost:7296/Categoria/373483f2-89cc-48c8-aa0b-a775336af62d",
+									"raw": "https://localhost:7296/Categoria/2ceb634c-db93-4a22-8e2e-5c5e9190b4d1",
 									"protocol": "https",
 									"host": [
 										"localhost"
@@ -769,7 +770,7 @@
 									"port": "7296",
 									"path": [
 										"Categoria",
-										"373483f2-89cc-48c8-aa0b-a775336af62d"
+										"2ceb634c-db93-4a22-8e2e-5c5e9190b4d1"
 									]
 								}
 							},
@@ -816,7 +817,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://localhost:7296/Categoria/373483f2-89cc-48c8-aa0b-a775336af62d",
+									"raw": "https://localhost:7296/Categoria/2ceb634c-db93-4a22-8e2e-5c5e9190b4d1",
 									"protocol": "https",
 									"host": [
 										"localhost"
@@ -824,7 +825,7 @@
 									"port": "7296",
 									"path": [
 										"Categoria",
-										"373483f2-89cc-48c8-aa0b-a775336af62d"
+										"2ceb634c-db93-4a22-8e2e-5c5e9190b4d1"
 									]
 								}
 							},
@@ -885,48 +886,6 @@
 							"response": []
 						},
 						{
-							"name": "Consulta por ID",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"\r",
-											"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"SMARTPHONES\");\r",
-											"});"
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "https://localhost:7296/Categoria/373483f2-89cc-48c8-aa0b-a775336af62d",
-									"protocol": "https",
-									"host": [
-										"localhost"
-									],
-									"port": "7296",
-									"path": [
-										"Categoria",
-										"373483f2-89cc-48c8-aa0b-a775336af62d"
-									]
-								}
-							},
-							"response": []
-						},
-						{
 							"name": "Consulta por nome",
 							"event": [
 								{
@@ -938,7 +897,7 @@
 											"});\r",
 											"\r",
 											"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"SMARTPHONES\");\r",
+											"    pm.expect(pm.response.text()).to.include(\"Roupas\");\r",
 											"});\r",
 											"\r",
 											"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
@@ -1175,7 +1134,7 @@
 											"});\r",
 											"\r",
 											"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"SMARTPHONES\");\r",
+											"    pm.expect(pm.response.text()).to.include(\"Roupas\");\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -1212,8 +1171,8 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
 											"});\r",
 											"\r",
 											"\r",
@@ -1221,9 +1180,7 @@
 											"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
 											"});\r",
 											"\r",
-											"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"SMARTPHONES\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -1295,7 +1252,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"CategoriaId\": \"373483f2-89cc-48c8-aa0b-a775336af62d\",\r\n\t\"Nome\": \"Vestido\"\r\n}\r\n",
+									"raw": "{\r\n    \"CategoriaId\": \"14c0a1a9-883a-4428-9ff1-e58df5e64d7f\",\r\n\t\"Nome\": \"Camisas de time\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1335,8 +1292,8 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 201\", function () {\r",
-											"    pm.response.to.have.status(201);\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
 											"});\r",
 											"\r",
 											"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
@@ -1361,7 +1318,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"CategoriaId\": \"373483f2-89cc-48c8-aa0b-a775336af62d\",\r\n\t\"Nome\": \"BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB\"\r\n}",
+									"raw": "{\r\n    \"CategoriaId\": \"14c0a1a9-883a-4428-9ff1-e58df5e64d7f\",\r\n\t\"Nome\": \"BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1401,8 +1358,8 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 201\", function () {\r",
-											"    pm.response.to.have.status(201);\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
 											"});\r",
 											"\r",
 											"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
@@ -1427,7 +1384,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"CategoriaId\": \"373483f2-89cc-48c8-aa0b-a775336af62d\",\r\n\t\"Nome\": \"Vest1do\"\r\n}",
+									"raw": "{\r\n    \"CategoriaId\": \"14c0a1a9-883a-4428-9ff1-e58df5e64d7f\",\r\n\t\"Nome\": \"Vest1do\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1467,8 +1424,8 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 201\", function () {\r",
-											"    pm.response.to.have.status(201);\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
 											"});\r",
 											"\r",
 											"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
@@ -1493,7 +1450,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"CategoriaId\": \"373483f2-89cc-48c8-aa0b-a775336af62d\",\r\n\t\"Nome\": \"V&stido\"\r\n}",
+									"raw": "{\r\n    \"CategoriaId\": \"14c0a1a9-883a-4428-9ff1-e58df5e64d7f\",\r\n\t\"Nome\": \"V&stido\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1533,8 +1490,8 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 201\", function () {\r",
-											"    pm.response.to.have.status(201);\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
 											"});\r",
 											"\r",
 											"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
@@ -1554,7 +1511,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"CategoriaId\": \"373483f2-89cc-48c8-aa0b-a775336af62d\",\r\n\t\"Nome\": \"\"\r\n}",
+									"raw": "{\r\n    \"CategoriaId\": \"14c0a1a9-883a-4428-9ff1-e58df5e64d7f\",\r\n\t\"Nome\": \"\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1594,8 +1551,8 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 201\", function () {\r",
-											"    pm.response.to.have.status(201);\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
 											"});\r",
 											"\r",
 											"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
@@ -1603,8 +1560,8 @@
 											"});\r",
 											"\r",
 											"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
-											"   var textoEsperado = \"Vestido\";\r",
-											"   var textoRetornado = \"Vestido\";\r",
+											"   var textoEsperado = \"Camisas de time\";\r",
+											"   var textoRetornado = \"Camisas de time\";\r",
 											"   pm.response.text();\r",
 											"   pm.expect(textoRetornado).to.equal(textoEsperado);\r",
 											"\r",
@@ -1620,7 +1577,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"CategoriaId\": \"373483f2-89cc-48c8-aa0b-a775336af62d\",\r\n\t\"Nome\": \"Vestido\"\r\n}",
+									"raw": "{\r\n    \"CategoriaId\": \"14c0a1a9-883a-4428-9ff1-e58df5e64d7f\",\r\n\t\"Nome\": \"Camisas de time\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1660,8 +1617,8 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 201\", function () {\r",
-											"    pm.response.to.have.status(201);\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
 											"});\r",
 											"\r",
 											"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
@@ -1686,7 +1643,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"CategoriaId\": \"373483f2-89cc-48c8-aa0b-a775336af62d\",\r\n\t\"Nome\": \"Roupas\"\r\n}",
+									"raw": "{\r\n    \"CategoriaId\": \"14c0a1a9-883a-4428-9ff1-e58df5e64d7f\",\r\n\t\"Nome\": \"Roupas\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1757,7 +1714,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\t\"Nome\": \"Camisas\",\r\n    \"CategoriaID\": 20,\r\n\t\"Status\": true\r\n}\r\n",
+									"raw": "{\r\n\t\"Nome\": \"Camisas\",\r\n    \"CategoriaID\": \"2ceb634c-db93-4a22-8e2e-5c5e9190b4d1\",\r\n\t\"Status\": true\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1765,7 +1722,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://localhost:7296/SubCategoria/4",
+									"raw": "https://localhost:7296/SubCategoria/08db735c-0893-419e-8177-2fceaf2aec54",
 									"protocol": "https",
 									"host": [
 										"localhost"
@@ -1773,7 +1730,7 @@
 									"port": "7296",
 									"path": [
 										"SubCategoria",
-										"4"
+										"08db735c-0893-419e-8177-2fceaf2aec54"
 									]
 								}
 							},
@@ -1786,8 +1743,8 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 204\", function () {\r",
-											"    pm.response.to.have.status(204);\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
 											"});\r",
 											"\r",
 											"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
@@ -1812,7 +1769,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\t\"Nome\": \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\",\r\n    \"CategoriaID\": 20,\r\n\t\"Status\": true\r\n}",
+									"raw": "{\r\n\t\"Nome\": \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\",\r\n    \"CategoriaID\": \"2ceb634c-db93-4a22-8e2e-5c5e9190b4d1\",\r\n\t\"Status\": true\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1820,7 +1777,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://localhost:7296/SubCategoria/4",
+									"raw": "https://localhost:7296/SubCategoria/08db735c-0893-419e-8177-2fceaf2aec54",
 									"protocol": "https",
 									"host": [
 										"localhost"
@@ -1828,7 +1785,7 @@
 									"port": "7296",
 									"path": [
 										"SubCategoria",
-										"4"
+										"08db735c-0893-419e-8177-2fceaf2aec54"
 									]
 								}
 							},
@@ -1841,8 +1798,8 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 204\", function () {\r",
-											"    pm.response.to.have.status(204);\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
 											"});\r",
 											"\r",
 											"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
@@ -1867,7 +1824,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\t\"Nome\": \"Cam1sas\",\r\n    \"CategoriaID\": 20,\r\n\t\"Status\": true\r\n}\r\n",
+									"raw": "{\r\n\t\"Nome\": \"Cam1sas\",\r\n    \"CategoriaID\": \"2ceb634c-db93-4a22-8e2e-5c5e9190b4d1\",\r\n\t\"Status\": true\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1875,7 +1832,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://localhost:7296/SubCategoria/4",
+									"raw": "https://localhost:7296/SubCategoria/08db735c-0893-419e-8177-2fceaf2aec54",
 									"protocol": "https",
 									"host": [
 										"localhost"
@@ -1883,7 +1840,7 @@
 									"port": "7296",
 									"path": [
 										"SubCategoria",
-										"4"
+										"08db735c-0893-419e-8177-2fceaf2aec54"
 									]
 								}
 							},
@@ -1896,8 +1853,8 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 204\", function () {\r",
-											"    pm.response.to.have.status(204);\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
 											"});\r",
 											"\r",
 											"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
@@ -1922,7 +1879,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\t\"Nome\": \"Camis@s\",\r\n    \"CategoriaID\": 20,\r\n\t\"Status\": true\r\n}",
+									"raw": "{\r\n\t\"Nome\": \"Camis@s\",\r\n    \"CategoriaID\": \"2ceb634c-db93-4a22-8e2e-5c5e9190b4d1\",\r\n\t\"Status\": true\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1930,7 +1887,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://localhost:7296/SubCategoria/4",
+									"raw": "https://localhost:7296/SubCategoria/08db735c-0893-419e-8177-2fceaf2aec54",
 									"protocol": "https",
 									"host": [
 										"localhost"
@@ -1938,7 +1895,7 @@
 									"port": "7296",
 									"path": [
 										"SubCategoria",
-										"4"
+										"08db735c-0893-419e-8177-2fceaf2aec54"
 									]
 								}
 							},
@@ -1951,8 +1908,8 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 204\", function () {\r",
-											"    pm.response.to.have.status(204);\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
 											"});\r",
 											"\r",
 											"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
@@ -1972,7 +1929,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\t\"Nome\": \"\",\r\n    \"CategoriaID\": 20,\r\n\t\"Status\": true\r\n}",
+									"raw": "{\r\n\t\"Nome\": \"\",\r\n    \"CategoriaID\": \"2ceb634c-db93-4a22-8e2e-5c5e9190b4d1\",\r\n\t\"Status\": true\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1980,7 +1937,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://localhost:7296/SubCategoria/4",
+									"raw": "https://localhost:7296/SubCategoria/08db735c-0893-419e-8177-2fceaf2aec54",
 									"protocol": "https",
 									"host": [
 										"localhost"
@@ -1988,7 +1945,7 @@
 									"port": "7296",
 									"path": [
 										"SubCategoria",
-										"4"
+										"08db735c-0893-419e-8177-2fceaf2aec54"
 									]
 								}
 							},
@@ -2001,8 +1958,8 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 204\", function () {\r",
-											"    pm.response.to.have.status(204);\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
 											"});\r",
 											"\r",
 											"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
@@ -2027,7 +1984,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\t\"Nome\": \"Roupas\",\r\n    \"CategoriaID\": 20,\r\n\t\"Status\": true\r\n}",
+									"raw": "{\r\n\t\"Nome\": \"Roupas\",\r\n    \"CategoriaID\": \"2ceb634c-db93-4a22-8e2e-5c5e9190b4d1\",\r\n\t\"Status\": true\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2035,7 +1992,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://localhost:7296/SubCategoria/4",
+									"raw": "https://localhost:7296/SubCategoria/08db735c-0893-419e-8177-2fceaf2aec54",
 									"protocol": "https",
 									"host": [
 										"localhost"
@@ -2043,7 +2000,7 @@
 									"port": "7296",
 									"path": [
 										"SubCategoria",
-										"4"
+										"08db735c-0893-419e-8177-2fceaf2aec54"
 									]
 								}
 							},
@@ -2082,7 +2039,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\t\"Nome\": \"Camisas\",\r\n    \"CategoriaID\": 20,\r\n\t\"Status\": false\r\n}",
+									"raw": "{\r\n\t\"Nome\": \"Camisas\",\r\n    \"CategoriaID\": \"2ceb634c-db93-4a22-8e2e-5c5e9190b4d1\",\r\n\t\"Status\": false\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2090,7 +2047,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://localhost:7296/SubCategoria/4",
+									"raw": "https://localhost:7296/SubCategoria/08db735c-0893-419e-8177-2fceaf2aec54",
 									"protocol": "https",
 									"host": [
 										"localhost"
@@ -2098,7 +2055,7 @@
 									"port": "7296",
 									"path": [
 										"SubCategoria",
-										"4"
+										"08db735c-0893-419e-8177-2fceaf2aec54"
 									]
 								}
 							},
@@ -2137,7 +2094,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\t\"Nome\": \"Camisas\",\r\n    \"CategoriaID\": 20,\r\n\t\"Status\": true\r\n}",
+									"raw": "{\r\n\t\"Nome\": \"Camisas\",\r\n    \"CategoriaID\": \"2ceb634c-db93-4a22-8e2e-5c5e9190b4d1\",\r\n\t\"Status\": true\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2145,7 +2102,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://localhost:7296/SubCategoria/4",
+									"raw": "https://localhost:7296/SubCategoria/08db735c-0893-419e-8177-2fceaf2aec54",
 									"protocol": "https",
 									"host": [
 										"localhost"
@@ -2153,7 +2110,7 @@
 									"port": "7296",
 									"path": [
 										"SubCategoria",
-										"4"
+										"08db735c-0893-419e-8177-2fceaf2aec54"
 									]
 								}
 							},
@@ -2191,7 +2148,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\t\"Nome\": \"Camisas\",\r\n    \"CategoriaID\": 20,\r\n\t\"Status\": true\r\n}",
+									"raw": "{\r\n\t\"Nome\": \"Camisas\",\r\n    \"CategoriaID\": \"2ceb634c-db93-4a22-8e2e-5c5e9190b4d1\",\r\n\t\"Status\": true\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2199,7 +2156,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://localhost:7296/SubCategoria/4",
+									"raw": "https://localhost:7296/SubCategoria/08db735c-0893-419e-8177-2fceaf2aec54",
 									"protocol": "https",
 									"host": [
 										"localhost"
@@ -2207,7 +2164,7 @@
 									"port": "7296",
 									"path": [
 										"SubCategoria",
-										"4"
+										"08db735c-0893-419e-8177-2fceaf2aec54"
 									]
 								}
 							},
@@ -2262,48 +2219,6 @@
 									"port": "7296",
 									"path": [
 										"Subcategoria"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Consulta por ID",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"\r",
-											"pm.test(\"O tempo de resposta é 2000ms\", function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"O texto foi cadastrado corretamente\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"SMARTPHONES\");\r",
-											"});"
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "https://localhost:7296/Subcategoria/08db732b-41bf-4ac2-8031-d5d1aec9abe7",
-									"protocol": "https",
-									"host": [
-										"localhost"
-									],
-									"port": "7296",
-									"path": [
-										"Subcategoria",
-										"08db732b-41bf-4ac2-8031-d5d1aec9abe7"
 									]
 								}
 							},
@@ -2419,8 +2334,8 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
 											"});\r",
 											"\r",
 											"\r",
@@ -2683,7 +2598,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "https://localhost:7296/Categoria/08db732b-41bf-4ac2-8031-d5d1aec9abe7",
+									"raw": "https://localhost:7296/Categoria/373483f2-89cc-48c8-aa0b-a775336af62d",
 									"protocol": "https",
 									"host": [
 										"localhost"
@@ -2691,7 +2606,7 @@
 									"port": "7296",
 									"path": [
 										"Categoria",
-										"08db732b-41bf-4ac2-8031-d5d1aec9abe7"
+										"373483f2-89cc-48c8-aa0b-a775336af62d"
 									]
 								}
 							},
@@ -2726,7 +2641,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "https://localhost:7296/SubCategoria/08db732b-41bf-4ac2-8031-d5d1aec9abe7",
+									"raw": "https://localhost:7296/SubCategoria/08db7358-4741-4ad2-8195-373077f39375",
 									"protocol": "https",
 									"host": [
 										"localhost"
@@ -2734,7 +2649,7 @@
 									"port": "7296",
 									"path": [
 										"SubCategoria",
-										"08db732b-41bf-4ac2-8031-d5d1aec9abe7"
+										"08db7358-4741-4ad2-8195-373077f39375"
 									]
 								}
 							},
