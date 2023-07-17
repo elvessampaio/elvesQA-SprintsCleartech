@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O3qj9efnavaogrddanTS59aCnM1+sdYpPqYy3Ec/BJuG6lzQ4BXaDxULkMTbi7cFGcCMzIDTGtfwDPl4xJ9sSQ==",
+  "dgSpecHash": "+F4AFxEZJCdmNYKpPVuuqjYY2hK79uW5BvxzquvLjCMIGkvPWbjySH6kEiG3N/rLeWQY0kqsZTlXpcVrh95beg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Cleartech\\OneDrive - Clearsale S.A\\Área de Trabalho\\E-Commerce(API) - Rique\\E-Commerce(API)\\E-Commerce(API)\\E-Commerce(API).csproj",
+  "projectFilePath": "C:\\Users\\Cleartech\\OneDrive - Clearsale S.A\\Área de Trabalho\\ClearTech\\Repositório\\T4-ElvesMoura\\Sprint 7\\API Rique\\E-Commerce(API) - Rique\\E-Commerce(API)\\E-Commerce(API)\\E-Commerce(API).csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cleartech\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Cleartech\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
