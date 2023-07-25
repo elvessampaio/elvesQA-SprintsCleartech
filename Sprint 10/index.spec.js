@@ -80,7 +80,7 @@ it ('Calcula comissão especial', () =>{
 
 // Testes extras 
 
-it ('Calcula comissão anual de 1% (Extra)', () => {
+it ('Calcula comissão mensal de 1% (Extra)', () => {
     const resultadoAtual = calculaComissaoVenda ([{
         precoUnitario: 10000,
         quantidadeVendida: 2
@@ -109,7 +109,7 @@ it ('Calcula comissão Anual de 2% (Extra)', () => {
         },
         {
           id: 'PROD-456',
-          precoUnitario: 2000,
+          precoUnitario: 1000,
           quantidadeVendida: 5,
         },
       ];
