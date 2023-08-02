@@ -1,6 +1,7 @@
 import {testPostCategoria} from "./scenarios/POST-Categories.js";
 import {testPostSubcategoria} from "./scenarios/POST-Subcategories.js";
 import {testPostCD} from "./scenarios/POST-CD.js";
+import {testPostProduct} from "./scenarios/POST-Produtos.js";
 import {check, group} from "k6";
 
 // Cenário 1 - Teste
@@ -24,6 +25,13 @@ export function testPostSubcategoriesScenario() {
       checkMetrics(metricsPostCD);
     });
   }
+
+  export function testPostProductsScenario() {
+    group("Teste POST dos Produtos", () => {
+      let metricsPostProdutos = testPostProduct();
+      checkMetrics(metricsPostProdutos);
+    });
+  }
   
 function checkMetrics(metrics) {
   // Realize aqui as verificações adicionais dos resultados, se necessário
@@ -37,4 +45,5 @@ export default function () {
   testPostCategoriesScenario();
   testPostSubcategoriesScenario();
   testPostCDScenario();
+  testPostProductsScenario();
 }
