@@ -1,6 +1,9 @@
 
 SELECT * FROM categorias;
 SELECT * FROM subcategorias;
+SELECT * FROM centrosdistribuicoes;
+SELECT * FROM produtos;
+
 
 SELECT * FROM categorias WHERE Nome = 'Animais';
 
@@ -25,4 +28,4 @@ UPDATE categorias SET Status = 0
 WHERE Nome = 'ROUPAS';
 
 
-DELETE FROM categorias WHERE Nome =  'Brinquedos';
+DELETE FROM categorias WHERE Nome =  'CATEGORYNAME';
