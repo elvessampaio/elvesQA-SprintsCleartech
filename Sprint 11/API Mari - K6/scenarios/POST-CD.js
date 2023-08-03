@@ -1,6 +1,6 @@
 import http from "k6/http";
 import { check, sleep } from "k6";
-import { cepList } from "../ceps.js";
+import { cepList } from "../Extras/ceps.js";
 
 // Função para gerar nomes aleatórios com letras do alfabeto
 function generateRandomName() {
