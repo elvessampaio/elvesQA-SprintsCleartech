@@ -1,9 +1,6 @@
 import http from "k6/http";
 import { check, sleep } from "k6";
 
-let cep = "03041000";
-let compl = "1"
-
 function generateRandomName() {
   const alphabet = "abcdefghijklmnopqrstuvwxyz";
   let name = "";
@@ -14,33 +11,31 @@ function generateRandomName() {
   return name;
 }
 
-export function testPutCD() {
-  let cdName = generateRandomName(); // Gerar um nome aleatório
+export function testPutCategoria() {
+  let categoryName = generateRandomName(); // Gerar um nome aleatório
   let requestBody = {
-    "Nome": cdName,
-    "Cep": cep, 
-    "Complemento": compl,
+    "Nome": categoryName,
   };
 
   let headers = {
     "Content-Type": "application/json",
   };
 
-  let response = http.put("https://localhost:7161/CentroDistribuicao/3", JSON.stringify(requestBody), { headers: headers });
+  let response = http.put("https://localhost:7161/Categoria/40", JSON.stringify(requestBody), { headers: headers });
 
   check(response, {
-    "Status é 200 - PUT CD": (r) => r.status === 200,
-    "Duração máxima - PUT CD": (r) => r.timings.duration < 1000,
+    "Status é 204 - PUT Categoria": (r) => r.status === 204,
+    "Duração máxima - PUT Categoria": (r) => r.timings.duration < 1000,
   });
 
   let responseTime = response.timings.duration;
 
-  let metricsPutCD = {
+  let metricsPutCategoria = {
     min_response_time: responseTime,
     max_response_time: responseTime,
     avg_response_time: responseTime,
   };
 
   sleep(1); // Intervalo de espera entre as requisições
-  return metricsPutCD;
+  return metricsPutCategoria;
 }

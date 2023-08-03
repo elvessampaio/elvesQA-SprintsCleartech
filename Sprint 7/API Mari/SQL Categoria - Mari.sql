@@ -5,9 +5,9 @@ SELECT * FROM centrosdistribuicoes;
 SELECT * FROM produtos;
 
 
-SELECT * FROM categorias WHERE Nome = 'Animais';
+SELECT * FROM centrosdistribuicoes WHERE Status = 1;
 
-SELECT * FROM categorias WHERE Status = 1;
+SELECT id, categoriaId, SubcategoriaID, CentroDistribuicaoIDFROM produtos WHERE Nome = 'CAHMHSAYIY';
 
 SELECT Id, Nome, Status, DataCriacao, DataModificacao FROM categorias
 ORDER BY DataCriacao DESC;

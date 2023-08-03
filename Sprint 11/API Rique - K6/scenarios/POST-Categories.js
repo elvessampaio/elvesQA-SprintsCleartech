@@ -1,9 +1,7 @@
 import http from "k6/http";
 import { check, sleep } from "k6";
 
-let cep = "03041000";
-let compl = "1"
-
+// Função para gerar nomes aleatórios com letras do alfabeto
 function generateRandomName() {
   const alphabet = "abcdefghijklmnopqrstuvwxyz";
   let name = "";
@@ -14,33 +12,32 @@ function generateRandomName() {
   return name;
 }
 
-export function testPutCD() {
-  let cdName = generateRandomName(); // Gerar um nome aleatório
+// Função para realizar o POST
+export function testPostCategoria() {
+  let categoryName = generateRandomName(); // Gerar um nome aleatório
   let requestBody = {
-    "Nome": cdName,
-    "Cep": cep, 
-    "Complemento": compl,
+    "Nome": categoryName
   };
 
   let headers = {
     "Content-Type": "application/json",
   };
 
-  let response = http.put("https://localhost:7161/CentroDistribuicao/3", JSON.stringify(requestBody), { headers: headers });
+  let response = http.post("https://localhost:7161/Categoria", JSON.stringify(requestBody), { headers: headers });
 
   check(response, {
-    "Status é 200 - PUT CD": (r) => r.status === 200,
-    "Duração máxima - PUT CD": (r) => r.timings.duration < 1000,
+    "Status é 201 - POST Categoria": (r) => r.status === 201,
+    "Duração máxima - POST Categoria": (r) => r.timings.duration < 1000,
   });
 
   let responseTime = response.timings.duration;
 
-  let metricsPutCD = {
+  let metricsPostCategoria = {
     min_response_time: responseTime,
     max_response_time: responseTime,
     avg_response_time: responseTime,
   };
 
   sleep(1); // Intervalo de espera entre as requisições
-  return metricsPutCD;
+  return metricsPostCategoria;
 }
