@@ -4,7 +4,8 @@ it('Teste 1 GET', async () => {
   let {body, responseTime, statusCode} = await spec()
     .get('http://numbersapi.com/1993/year')
     .expectResponseTime(1000)
-    .expectStatus(200);
+    .expectStatus(200)
+    .expectBodyContains("1993 is the year");
     
     console.log(body, 'Tempo de requisição:', responseTime, '|', 'Status Code:', statusCode)
 });
@@ -18,6 +19,7 @@ it('Teste 2 - POST', async () => {
     })
     .expectResponseTime(1000)
     .expectStatus(201)
+    .expectBodyContains("Elves", 29,);
     
     console.log(body, 'Tempo de requisição:', responseTime, '|', 'Status Code:', statusCode)
 });
