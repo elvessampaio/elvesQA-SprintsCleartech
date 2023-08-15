@@ -4,6 +4,7 @@
   "main": "index.js",
   "devDependencies": {
     "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
     "pactum": "^3.4.1"
   },
   "scripts": {
