@@ -6,7 +6,7 @@ it('Teste 1 - GET', async () => {
     .get('https://api.dicebear.com/6.x/pixel-art/svg?seed=Elves')
     .expectResponseTime(1000)
     .expectStatus(200)
-  
+    
     console.log('Tempo de requisição:', responseTime, '|', 'Status Code:', statusCode)
 });
 
@@ -41,16 +41,13 @@ it('Teste 4 - GET (Verificação de body)', async () => {
 });
 
 it('Teste 5 - GET (ID não cadastrado)', async () => {
-  try {
-    const { responseTime, statusCode } = await spec()
-      .get('https://swapi.dev/api/people/150')
-      .expectStatus(404)
-      .expectBodyContains("Not found")
+  let {statusCode} = await spec()
+    .get('https://swapi.dev/api/people/150')
+    .expectStatus(404)
+    .expectResponseTime(5000)
+    .expectBodyContains("Not found");
 
-    console.log('Tempo de requisição:', responseTime, '|', 'Status Code:', statusCode);
-  } catch (error) {
-    console.error('Erro:', error);
-  }
+    console.log('Status Code:', statusCode)
 });
 
 
