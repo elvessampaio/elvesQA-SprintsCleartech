@@ -15,7 +15,7 @@ it('Teste 1 - POST', async () => {
 });
 
 it('Teste 2 - POST (URL que aceita apenas GET)', async () => {
-  let {body, responseTime, statusCode} = await spec()
+  let {responseTime, statusCode} = await spec()
     .post('http://numbersapi.com/1993/year')
     .withBody({
       "nome": "Elves",
@@ -28,3 +28,16 @@ it('Teste 2 - POST (URL que aceita apenas GET)', async () => {
 });
 
 
+it('Teste 3 - POST (Body incorreto)', async () => {
+  let {responseTime, statusCode} = await spec()
+    .post('http://localhost:8080/cliente')
+    .withBody({
+      "none": "Elves",
+      "idade": 30
+      })
+    .expectResponseTime(1000)
+    .expectStatus(400)
+    .expectBodyContains("Bad Request");
+    
+    console.log('Tempo de requisição:', responseTime, '|', 'Status Code:', statusCode)
+});

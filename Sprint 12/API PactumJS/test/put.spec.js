@@ -28,3 +28,32 @@ it('Teste 1 - PUT', async () => {
       console.log('Tempo de requisição:', responseTime, '|', 'Status Code:', statusCode)
   });
   
+  it('Teste 3 - PUT (Cliente não cadastrado)', async () => {
+    let {responseTime, statusCode} = await spec()
+      .put('http://localhost:8080/cliente')
+      .withBody({
+        "nome": "Elves",
+        "idade": 30,
+        "id": "1"
+        })
+      .expectResponseTime(1000)
+      .expectStatus(404)
+      .expectBodyContains("Cliente não encontrado");
+      
+      console.log('Tempo de requisição:', responseTime, '|', 'Status Code:', statusCode)
+  });
+
+  it('Teste 4 - PUT (Body incorreto)', async () => {
+    let {responseTime, statusCode} = await spec()
+      .put('http://localhost:8080/cliente')
+      .withBody({
+        "nomw": "Elves",
+        "idade": 30,
+        "id": "1"
+        })
+      .expectResponseTime(1000)
+      .expectStatus(400)
+      .expectBodyContains("Bad Request");
+      
+      console.log('Tempo de requisição:', responseTime, '|', 'Status Code:', statusCode)
+  });
