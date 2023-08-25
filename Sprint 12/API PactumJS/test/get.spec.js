@@ -41,14 +41,23 @@ it('Teste 4 - GET (Verificação de body)', async () => {
 });
 
 it('Teste 5 - GET (ID não cadastrado)', async () => {
-  let {statusCode} = await spec()
+
+  const timeOutDuration = 5000;
+
+  let {responseTime, statusCode} = await spec()
     .get('https://swapi.dev/api/people/150')
     .expectStatus(404)
-    .expectResponseTime(5000)
-    .expectBodyContains("Not found");
+    .expectBodyContains("Not found")
+    .expectResponseTime(timeOutDuration)
+  
+    console.log('Tempo de requisição:', responseTime, '|', 'Status Code:', statusCode)
 
-    console.log('Status Code:', statusCode)
-});
+    if (responseTime > 1000) { 
+      console.log('Tempo da requisição é superior a 1000 ms. Teste Ok.');
+    } else {
+      console.log('Tempo de requisição está dentro do aceitável.');
+    }
+    });
 
 
 it('Teste 6 - GET (Sem as credencias definidas)', async () => {
@@ -82,13 +91,3 @@ it('Teste 8 - GET (Credencias definidas incorretamente)', async () => {
     console.log('Tempo de requisição:', responseTime, '|', 'Status Code:', statusCode)
 });
 
-it('Teste 8 - GET (Com as credencias definidas incorretas)', async () => {
-  let {responseTime, statusCode} = await spec()
-    .get('http://localhost:8080/risco/7041386')
-    .withAuth('senha', 'aluno')
-    .expectResponseTime(1000)
-    .expectStatus(401)
-    .expectBodyContains("Unauthorized")
-
-    console.log('Tempo de requisição:', responseTime, '|', 'Status Code:', statusCode)
-});
