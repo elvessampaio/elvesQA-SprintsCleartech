@@ -42,21 +42,13 @@ it('Teste 4 - GET (Verificação de body)', async () => {
 
 it('Teste 5 - GET (ID não cadastrado)', async () => {
 
-  const timeOutDuration = 5000;
-
   let {responseTime, statusCode} = await spec()
-    .get('https://swapi.dev/api/people/150')
+    .get('http://localhost:8080/cliente/1')
     .expectStatus(404)
-    .expectBodyContains("Not found")
-    .expectResponseTime(timeOutDuration)
+    .expectBodyContains("Cliente não encontrado")
+    .expectResponseTime(1000)
   
     console.log('Tempo de requisição:', responseTime, '|', 'Status Code:', statusCode)
-
-    if (responseTime > 1000) { 
-      console.log('Tempo da requisição é superior a 1000 ms. Teste Ok.');
-    } else {
-      console.log('Tempo de requisição está dentro do aceitável.');
-    }
     });
 
 
