@@ -1,18 +1,33 @@
 import { test, expect } from '@playwright/test';
+const { generateRandomEmail, generateRandomPassword } = require('./createaccount.js'); 
 
-test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
-
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
+test('Teste de cadastro', async ({ page }) => {
+  await page.goto('http://www.automationpractice.pl/index.php');
+  await page.click('a.login');
+  const randomEmail = generateRandomEmail(); 
+  await page.fill('#email_create', randomEmail); 
+  await page.click('#SubmitCreate');
+  await page.fill('#customer_firstname', 'Usuário');
+  await page.fill('#customer_lastname', 'Teste');
+  const randomPassword = generateRandomPassword(); 
+  await page.fill('#passwd', randomPassword); 
+  await page.selectOption('#days', '10');
+  await page.selectOption('#months', '5');
+  await page.selectOption('#years', '1990');
+  await page.click('#submitAccount');
 });
 
-test('get started link', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
-
-  // Click the get started link.
-  await page.getByRole('link', { name: 'Get started' }).click();
-
-  // Expects page to have a heading with the name of Installation.
-  await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
+test('Teste de login realizado com sucesso', async ({ page }) => {
+  await page.goto('http://www.automationpractice.pl/index.php');
+  await page.click('a.login');
+  await page.fill('#email', 'emoura@cleartech.dev');
+  await page.fill('#passwd', '168618');
+  await page.click('#SubmitLogin');
 });
+
+test('Teste de pesquisa de produto', async ({ page }) => {
+  await page.goto('http://www.automationpractice.pl/index.php');
+  await page.fill('#search_query_top', 'T-SHIRTS');
+  await page.press('#search_query_top', 'Enter');
+});
+
