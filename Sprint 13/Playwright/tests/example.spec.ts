@@ -31,3 +31,25 @@ test('Teste de pesquisa de produto', async ({ page }) => {
   await page.press('#search_query_top', 'Enter');
 });
 
+test('Enviar Mensagem para suporte da loja SEM ANEXO', async ({ page }) => {
+  await page.goto('http://www.automationpractice.pl/index.php');
+  await page.click('#contact-link');
+  await page.selectOption('select#id_contact', 'Customer service');
+  const randomEmail = generateRandomEmail();
+  await page.fill('input#email', randomEmail);
+  await page.fill('textarea#message', 'Mensagem de teste.');
+  await page.click('button#submitMessage'); 
+});
+
+test('Enviar Mensagem para suporte da loja COM ANEXO', async ({ page }) => {
+  await page.goto('http://www.automationpractice.pl/index.php');
+  await page.click('#contact-link');
+  await page.selectOption('select#id_contact', 'Webmaster');
+  const randomEmail = generateRandomEmail();
+  await page.fill('input#email', randomEmail);
+  await page.fill('textarea#message', 'Mensagem de teste.');
+  
+  await page.setInputFiles('input#fileUpload', './tests/upload.png');
+
+  await page.click('button#submitMessage'); 
+});
