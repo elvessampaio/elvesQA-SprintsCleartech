@@ -50,7 +50,7 @@ test('Enviar Mensagem para suporte da loja SEM ANEXO', async ({ page }) => {
   await page.click('button#submitMessage'); 
 });
 
-test('Enviar Mensagem para suporte da loja COM ANEXO', async ({ page }) => {
+test('Enviar mensagem para suporte da loja COM ANEXO', async ({ page }) => {
   await page.goto('http://www.automationpractice.pl/index.php');
   await page.click('#contact-link');
   await page.selectOption('select#id_contact', 'Webmaster');
@@ -65,7 +65,7 @@ test('Enviar Mensagem para suporte da loja COM ANEXO', async ({ page }) => {
 
 test('Teste de seleção do produto', async ({ page }) => {
   await page.goto('http://www.automationpractice.pl/index.php');
-  
+
   await page.fill('#search_query_top', 'T-SHIRTS');
   await page.press('#search_query_top', 'Enter');
 
@@ -87,8 +87,8 @@ test('Teste para acessar seções da página', async ({ page }) => {
   await page.goto('http://www.automationpractice.pl/index.php');
   await page.click('a[title="Women"]');
   //await page.click('a.home');
-  await page.click('text=Dresses');
-  //await page.click('a[title="Blog"]');
+  //await page.click('a[title="Dresses"]:nth-child(2)');
+  await page.click('a[title="Blog"]');
 });
 
 
