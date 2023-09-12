@@ -107,3 +107,4 @@ test('Teste para acessar seções da página', async ({ page }) => {
   await page.click('a[title="Blog"]');
 });
 
+//FAZER TESTES DE FINALIZAÇÃO DE COMPRA 
