@@ -1,6 +1,23 @@
 import { test, expect } from '@playwright/test';
 const { generateRandomEmail, generateRandomPassword } = require('./createaccount.js'); 
 
+test('Teste de carregamento da página', async ({ page }) => {
+  await page.goto('http://www.automationpractice.pl/index.php');
+  
+  await page.waitForLoadState('domcontentloaded');
+  const title = await page.title();
+  expect(title).not.toBeNull();
+});
+
+test('Teste de comportamento responsivo', async ({ page }) => {
+  const sizes = [320, 768, 900, 1024, 1200, 1300, 1420]; 
+
+  for (const size of sizes) {
+    await page.setViewportSize({ width: size, height: 800 });
+    await page.goto('http://www.automationpractice.pl/index.php');
+  }
+});
+
 test('Teste de cadastro', async ({ page }) => {
   await page.goto('http://www.automationpractice.pl/index.php');
   await page.click('a.login');
@@ -90,6 +107,4 @@ test('Teste para acessar seções da página', async ({ page }) => {
   //await page.click('a[title="Dresses"]:nth-child(2)');
   await page.click('a[title="Blog"]');
 });
-
-
 
