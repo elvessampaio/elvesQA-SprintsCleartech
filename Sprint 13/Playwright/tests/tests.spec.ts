@@ -25,6 +25,15 @@ test('Teste de login realizado com sucesso', async ({ page }) => {
   await page.click('#SubmitLogin');
 });
 
+test('Teste de logout realizado com sucesso', async ({ page }) => {
+  await page.goto('http://www.automationpractice.pl/index.php');
+  await page.click('a.login');
+  await page.fill('#email', 'emoura@cleartech.dev');
+  await page.fill('#passwd', '168618');
+  await page.click('#SubmitLogin');
+  await page.click('a.logout')
+});
+
 test('Teste de pesquisa de produto', async ({ page }) => {
   await page.goto('http://www.automationpractice.pl/index.php');
   await page.fill('#search_query_top', 'T-SHIRTS');
@@ -53,3 +62,35 @@ test('Enviar Mensagem para suporte da loja COM ANEXO', async ({ page }) => {
 
   await page.click('button#submitMessage'); 
 });
+
+test('Teste de seleção do produto', async ({ page }) => {
+  await page.goto('http://www.automationpractice.pl/index.php');
+
+  // Pesquise um produto (substitua 'SEU_TERMOS_DE_PESQUISA' pelo termo real)
+  await page.fill('#search_query_top', 'T-SHIRTS');
+  await page.press('#search_query_top', 'Enter');
+
+  await page.click('img.replace-2x');
+
+  await page.click('a#color_11');
+  await page.selectOption('select[name="group_1"]', 'L'); 
+  await page.fill('input[name="qty"]', '2');
+
+  await page.evaluate(() => {
+    window.scrollBy(0, 100); 
+  });
+  await page.waitForTimeout(1000); 
+
+  await page.click('button[name="Submit"]');
+});
+
+test('Teste para acessar seções da página', async ({ page }) => {
+  await page.goto('http://www.automationpractice.pl/index.php');
+  await page.click('a[title="Women"]');
+  //await page.click('a.home');
+  await page.click('text=Dresses');
+  //await page.click('a[title="Blog"]');
+});
+
+
+
