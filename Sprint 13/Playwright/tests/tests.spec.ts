@@ -80,7 +80,7 @@ test('Enviar mensagem para suporte da loja COM ANEXO', async ({ page }) => {
   await page.click('button#submitMessage'); 
 });
 
-test('Teste de seleção do produto', async ({ page }) => {
+test('Teste de seleção do produto e exclusão do carrinho', async ({ page }) => {
   await page.goto('http://www.automationpractice.pl/index.php');
 
   await page.fill('#search_query_top', 'T-SHIRTS');
@@ -91,13 +91,12 @@ test('Teste de seleção do produto', async ({ page }) => {
   await page.click('a#color_11');
   await page.selectOption('select[name="group_1"]', 'L'); 
   await page.fill('input[name="qty"]', '2');
-
-  await page.evaluate(() => {
-    window.scrollBy(0, 100); 
-  });
-  await page.waitForTimeout(1000); 
-
   await page.click('button[name="Submit"]');
+
+  await page.click('a[title="Close"]')
+
+  await page.click('a[title="View my shopping cart"]');
+  await page.click('a[title="Delete"]');
 });
 
 test('Teste para acessar seções da página', async ({ page }) => {
