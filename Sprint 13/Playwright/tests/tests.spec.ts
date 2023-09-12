@@ -65,8 +65,7 @@ test('Enviar Mensagem para suporte da loja COM ANEXO', async ({ page }) => {
 
 test('Teste de seleção do produto', async ({ page }) => {
   await page.goto('http://www.automationpractice.pl/index.php');
-
-  // Pesquise um produto (substitua 'SEU_TERMOS_DE_PESQUISA' pelo termo real)
+  
   await page.fill('#search_query_top', 'T-SHIRTS');
   await page.press('#search_query_top', 'Enter');
 
