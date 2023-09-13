@@ -24,16 +24,15 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     headless: true,
-    
-    //Base URL to use in actions like `await page.goto('/')',
+    // Base URL to use in actions like `await page.goto('/')',
     // baseURL: 'http://127.0.0.1:3000',
-actionTimeout: 0,
-launchOptions:{
-slowMo:300
-},
-video: 'on',
-screenshot: 'on',
-
+    actionTimeout: 0,
+    launchOptions: {
+      slowMo: 300,
+    },
+    video: 'on',
+    screenshot: 'on',
+  
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
   },
@@ -46,9 +45,9 @@ screenshot: 'on',
     },
 
     {
-      name: 'Microsoft Edge',
-      use: { ...devices['Desktop Edge'], channel: 'msedge' },
-      },
+     name: 'Microsoft Edge',
+     use: { ...devices['Desktop Edge'], channel: 'msedge' },
+     },
 
     /* Test against mobile viewports. */
     //{
