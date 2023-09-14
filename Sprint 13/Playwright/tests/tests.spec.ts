@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-const { generateRandomEmail, generateRandomPassword } = require('./createaccount.js'); 
+import { generateRandomEmail, generateRandomPassword } from './createaccount';
 
 //TESTE 1
 test('Teste de carregamento da página', async ({ page }) => {
@@ -86,7 +86,7 @@ test('Enviar mensagem para suporte da loja COM ANEXO', async ({ page }) => {
   await page.fill('input#email', randomEmail);
   await page.fill('textarea#message', 'Mensagem de teste.');
   
-  await page.setInputFiles('input#fileUpload', './tests/upload.png');
+  await page.setInputFiles('input#fileUpload', './anexos/upload.png');
 
   await page.click('button#submitMessage'); 
 });

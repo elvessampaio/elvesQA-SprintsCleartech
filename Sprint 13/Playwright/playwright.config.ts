@@ -28,7 +28,7 @@ export default defineConfig({
     // baseURL: 'http://127.0.0.1:3000',
     actionTimeout: 0,
     launchOptions: {
-      slowMo: 300,
+      slowMo: 400,
     },
     video: 'on',
     screenshot: 'on',
@@ -39,10 +39,10 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
-    {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
-    },
+    //{
+    //  name: 'chromium',
+    //  use: { ...devices['Desktop Chrome'] },
+    //},
 
     {
      name: 'Microsoft Edge',
