@@ -1,0 +1,138 @@
+2023-08-17 16:29:50.651 -03:00 [INF] Inicialização da WEB API...
+2023-08-17 16:29:50.837 -03:00 [INF] User profile is available. Using 'C:\Users\Cleartech\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-17 16:29:50.962 -03:00 [INF] Now listening on: https://localhost:7296
+2023-08-17 16:29:50.962 -03:00 [INF] Now listening on: http://localhost:5090
+2023-08-17 16:29:50.967 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-17 16:29:50.967 -03:00 [INF] Hosting environment: Development
+2023-08-17 16:29:50.967 -03:00 [INF] Content root path: C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\E-Commerce(API)\
+2023-08-17 16:29:51.804 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/index.html - -
+2023-08-17 16:29:52.166 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/index.html - - - 200 - text/html;charset=utf-8 363.6629ms
+2023-08-17 16:29:52.183 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - -
+2023-08-17 16:29:52.183 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - -
+2023-08-17 16:29:52.186 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.1815ms
+2023-08-17 16:29:52.203 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.6661ms
+2023-08-17 16:29:52.437 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - -
+2023-08-17 16:29:52.629 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 191.8579ms
+2023-08-17 16:29:56.346 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/Categoria application/json 31
+2023-08-17 16:29:56.579 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-08-17 16:29:56.583 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2023-08-17 16:29:56.599 -03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (admin|lojista)
+2023-08-17 16:29:56.606 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-17 16:29:56.608 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/Categoria application/json 31 - 401 0 - 261.7279ms
+2023-08-17 16:30:06.363 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/Categoria application/json 31
+2023-08-17 16:30:06.402 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API))'
+2023-08-17 16:30:06.434 -03:00 [INF] Route matched with {action = "CadastrarCategoria", controller = "Categoria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CadastrarCategoria(E_Commerce_API_.Data.DTOs.CategoriaDto.CreateCategoriaDto) on controller E_Commerce_API_.Controllers.CategoriaController (E-Commerce(API)).
+2023-08-17 16:30:07.110 -03:00 [INF] Iniciando verificação do nome: 'Açougue  D'.
+2023-08-17 16:30:07.111 -03:00 [INF] O nome está dentro dos critérios.
+2023-08-17 16:30:07.114 -03:00 [INF] Foi requisitado um cadastro de categoria.
+2023-08-17 16:30:07.115 -03:00 [INF] Iniciada adição de uma nova categoria: 'Açougue  D'.
+2023-08-17 16:30:08.369 -03:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Nome`, `c`.`Status`
+FROM `Categorias` AS `c`
+2023-08-17 16:30:08.484 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CategoriaId`, `s`.`DataEHoraCriacao`, `s`.`DataEHoraModificacao`, `s`.`Nome`, `s`.`Status`
+FROM `Subcategorias` AS `s`
+2023-08-17 16:30:08.532 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-08-17 16:30:08.569 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Bairro`, `c`.`CEP`, `c`.`Cidade`, `c`.`Complemento`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Logradouro`, `c`.`Nome`, `c`.`Numero`, `c`.`Status`, `c`.`UF`
+FROM `CentrosDeDistribuicao` AS `c`
+2023-08-17 16:30:08.628 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API)) in 2171.6749ms
+2023-08-17 16:30:08.628 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API))'
+2023-08-17 16:30:08.632 -03:00 [ERR] Erro: {"TraceId":"142189f7-7432-4dc4-a7f5-47a489598a37","Error":{"Logref":"BadRequest","Message":"O nome 'Açougue  D' já existe.","$type":"ErrorDetailsDto"},"Data":"17/08/2023","$type":"ErrorResponseDto"}
+2023-08-17 16:30:08.682 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/Categoria application/json 31 - 400 - application/json 2318.4808ms
+2023-08-17 16:30:42.178 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7296/Produto/? - -
+2023-08-17 16:30:42.179 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.ProdutoController.PesquisarProduto (E-Commerce(API))'
+2023-08-17 16:30:42.182 -03:00 [INF] Route matched with {action = "PesquisarProduto", controller = "Produto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PesquisarProduto(E_Commerce_API_.Data.DTOs.ProdutoDto.FiltroProdutoDto) on controller E_Commerce_API_.Controllers.ProdutoController (E-Commerce(API)).
+2023-08-17 16:30:42.186 -03:00 [INF] Foi requisitado uma pesquisa de produtos.
+2023-08-17 16:30:42.186 -03:00 [INF] Iniciada a pesquisa de produtos com os filtros informados: {"Nome":null,"Peso":null,"Altura":null,"Largura":null,"Comprimento":null,"Valor":null,"Estoque":null,"CentroDeDistribuicaoId":null,"CategoriaId":null,"SubcategoriaId":null,"Status":"Ativo","Ordem":"Crescente","Registros":30,"Pagina":1,"$type":"FiltroProdutoDto"}
+2023-08-17 16:30:42.187 -03:00 [INF] Criação da querie para pesquisa de produtos.
+2023-08-17 16:30:42.222 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM `E-COMMERCE(API)`.PRODUTOS WHERE PRODUTOS.STATUS = TRUE ORDER BY PRODUTOS.NOME LIMIT 0, 30
+2023-08-17 16:30:42.398 -03:00 [INF] Executed DbCommand (23ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Bairro`, `c`.`CEP`, `c`.`Cidade`, `c`.`Complemento`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Logradouro`, `c`.`Nome`, `c`.`Numero`, `c`.`Status`, `c`.`UF`
+FROM `CentrosDeDistribuicao` AS `c`
+WHERE `c`.`Id` = @__get_Item_0
+2023-08-17 16:30:42.421 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CategoriaId`, `s`.`DataEHoraCriacao`, `s`.`DataEHoraModificacao`, `s`.`Nome`, `s`.`Status`
+FROM `Subcategorias` AS `s`
+WHERE `s`.`Id` = @__get_Item_0
+2023-08-17 16:30:42.439 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Nome`, `c`.`Status`
+FROM `Categorias` AS `c`
+WHERE `c`.`Id` = @__get_Item_0
+2023-08-17 16:30:42.447 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Bairro`, `c`.`CEP`, `c`.`Cidade`, `c`.`Complemento`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Logradouro`, `c`.`Nome`, `c`.`Numero`, `c`.`Status`, `c`.`UF`
+FROM `CentrosDeDistribuicao` AS `c`
+WHERE `c`.`Id` = @__get_Item_0
+2023-08-17 16:30:42.449 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CategoriaId`, `s`.`DataEHoraCriacao`, `s`.`DataEHoraModificacao`, `s`.`Nome`, `s`.`Status`
+FROM `Subcategorias` AS `s`
+WHERE `s`.`Id` = @__get_Item_0
+2023-08-17 16:30:42.451 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Nome`, `c`.`Status`
+FROM `Categorias` AS `c`
+WHERE `c`.`Id` = @__get_Item_0
+2023-08-17 16:30:42.454 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Bairro`, `c`.`CEP`, `c`.`Cidade`, `c`.`Complemento`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Logradouro`, `c`.`Nome`, `c`.`Numero`, `c`.`Status`, `c`.`UF`
+FROM `CentrosDeDistribuicao` AS `c`
+WHERE `c`.`Id` = @__get_Item_0
+2023-08-17 16:30:42.454 -03:00 [INF] Foram encontrados 3 produtos a partir da querie: SELECT * FROM `E-COMMERCE(API)`.PRODUTOS WHERE PRODUTOS.STATUS = TRUE ORDER BY PRODUTOS.NOME LIMIT 0, 30
+2023-08-17 16:30:42.456 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[E_Commerce_API_.Data.DTOs.ProdutoDto.ReadProdutoDto, E-Commerce(API), Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-17 16:30:42.483 -03:00 [INF] Executed action E_Commerce_API_.Controllers.ProdutoController.PesquisarProduto (E-Commerce(API)) in 301.2876ms
+2023-08-17 16:30:42.483 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.ProdutoController.PesquisarProduto (E-Commerce(API))'
+2023-08-17 16:30:42.483 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7296/Produto/? - - - 200 1172 application/json;+charset=utf-8 305.1365ms
+2023-08-17 16:30:47.233 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7296/Produto/? - -
+2023-08-17 16:30:47.234 -03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (cliente)
+2023-08-17 16:30:47.234 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-17 16:30:47.234 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7296/Produto/? - - - 401 0 - 0.8839ms
+2023-08-17 16:30:50.784 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7296/Produto/? - -
+2023-08-17 16:30:50.785 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.ProdutoController.PesquisarProduto (E-Commerce(API))'
+2023-08-17 16:30:50.786 -03:00 [INF] Route matched with {action = "PesquisarProduto", controller = "Produto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PesquisarProduto(E_Commerce_API_.Data.DTOs.ProdutoDto.FiltroProdutoDto) on controller E_Commerce_API_.Controllers.ProdutoController (E-Commerce(API)).
+2023-08-17 16:30:50.788 -03:00 [INF] Foi requisitado uma pesquisa de produtos.
+2023-08-17 16:30:50.789 -03:00 [INF] Iniciada a pesquisa de produtos com os filtros informados: {"Nome":null,"Peso":null,"Altura":null,"Largura":null,"Comprimento":null,"Valor":null,"Estoque":null,"CentroDeDistribuicaoId":null,"CategoriaId":null,"SubcategoriaId":null,"Status":"Ativo","Ordem":"Crescente","Registros":30,"Pagina":1,"$type":"FiltroProdutoDto"}
+2023-08-17 16:30:50.789 -03:00 [INF] Criação da querie para pesquisa de produtos.
+2023-08-17 16:30:50.849 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM `E-COMMERCE(API)`.PRODUTOS WHERE PRODUTOS.STATUS = TRUE ORDER BY PRODUTOS.NOME LIMIT 0, 30
+2023-08-17 16:30:50.853 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Bairro`, `c`.`CEP`, `c`.`Cidade`, `c`.`Complemento`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Logradouro`, `c`.`Nome`, `c`.`Numero`, `c`.`Status`, `c`.`UF`
+FROM `CentrosDeDistribuicao` AS `c`
+WHERE `c`.`Id` = @__get_Item_0
+2023-08-17 16:30:50.855 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CategoriaId`, `s`.`DataEHoraCriacao`, `s`.`DataEHoraModificacao`, `s`.`Nome`, `s`.`Status`
+FROM `Subcategorias` AS `s`
+WHERE `s`.`Id` = @__get_Item_0
+2023-08-17 16:30:50.859 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Nome`, `c`.`Status`
+FROM `Categorias` AS `c`
+WHERE `c`.`Id` = @__get_Item_0
+2023-08-17 16:30:50.861 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Bairro`, `c`.`CEP`, `c`.`Cidade`, `c`.`Complemento`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Logradouro`, `c`.`Nome`, `c`.`Numero`, `c`.`Status`, `c`.`UF`
+FROM `CentrosDeDistribuicao` AS `c`
+WHERE `c`.`Id` = @__get_Item_0
+2023-08-17 16:30:50.862 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CategoriaId`, `s`.`DataEHoraCriacao`, `s`.`DataEHoraModificacao`, `s`.`Nome`, `s`.`Status`
+FROM `Subcategorias` AS `s`
+WHERE `s`.`Id` = @__get_Item_0
+2023-08-17 16:30:50.864 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Nome`, `c`.`Status`
+FROM `Categorias` AS `c`
+WHERE `c`.`Id` = @__get_Item_0
+2023-08-17 16:30:50.865 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Bairro`, `c`.`CEP`, `c`.`Cidade`, `c`.`Complemento`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Logradouro`, `c`.`Nome`, `c`.`Numero`, `c`.`Status`, `c`.`UF`
+FROM `CentrosDeDistribuicao` AS `c`
+WHERE `c`.`Id` = @__get_Item_0
+2023-08-17 16:30:50.865 -03:00 [INF] Foram encontrados 3 produtos a partir da querie: SELECT * FROM `E-COMMERCE(API)`.PRODUTOS WHERE PRODUTOS.STATUS = TRUE ORDER BY PRODUTOS.NOME LIMIT 0, 30
+2023-08-17 16:30:50.866 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[E_Commerce_API_.Data.DTOs.ProdutoDto.ReadProdutoDto, E-Commerce(API), Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-17 16:30:50.866 -03:00 [INF] Executed action E_Commerce_API_.Controllers.ProdutoController.PesquisarProduto (E-Commerce(API)) in 80.2519ms
+2023-08-17 16:30:50.866 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.ProdutoController.PesquisarProduto (E-Commerce(API))'
+2023-08-17 16:30:50.866 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7296/Produto/? - - - 200 1172 application/json;+charset=utf-8 81.9973ms

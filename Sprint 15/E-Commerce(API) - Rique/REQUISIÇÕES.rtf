@@ -1,0 +1,221 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang22 REQUISI\'c7\'d5ES HENRIQUE\par
+LOCAL HOST: 7296\par
+\par
+
+\pard\sa200\sl276\slmult1\qc\b\fs28 CATEGORIAS\b0\fs22\par
+
+\pard\sa200\sl276\slmult1\par
+\ul CADASTRAR\par
+\ulnone VERBO POST\par
+URL: {{\field{\*\fldinst{HYPERLINK https://localhost:7296/Categoria }}{\fldrslt{https://localhost:7296/Categoria\ul0\cf0}}}}\f0\fs22\par
+CORPO NO FORMATO RAW JSON:\par
+\{\par
+\tab "Nome": "Escreva o nome"\par
+\}\par
+\par
+\ul EDITAR\ulnone\par
+VERBO PUT\par
+URL: {{\field{\*\fldinst{HYPERLINK https://localhost:7296/Categoria/ }}{\fldrslt{https://localhost:7296/Categoria/\ul0\cf0}}}}\f0\fs22\par
+PAR\'c2METRO OBRIGAT\'d3RIO: ID (colocar o n\'famero do id direto na requisi\'e7\'e3o)\par
+CORPO NO FORMATO RAW JSON:\par
+\{\par
+\tab "Nome": "Nome",\par
+\tab "Status": true/false\par
+\}\par
+Obs. \'c9 poss\'edvel editar somente o nome ou  status, mas deve-se passar os dois dados no corpo.\par
+\par
+\ul PESQUISAR\ulnone\par
+VERBO GET\par
+URL: {{\field{\*\fldinst{HYPERLINK https://localhost:7296/Categoria/ }}{\fldrslt{https://localhost:7296/Categoria/\ul0\cf0}}}}\f0\fs22\par
+PAR\'c2METROS OPCIONAIS NA URL:\par
+NOME - SOMENTE ALFABETO, ENTRE 3 E 128 CARACTERES\par
+STATUS - VALOR PADR\'c3O "TODOS", "ATIVO" E "INATIVO" \par
+
+\pard\ri70\sa200\sl276\slmult1\tx8236\tx8378 ORDEM - VALOR PADR\'c3O "CRESCENTE", OU "DECRESCENTE"\par
+REGISTROS - VALOR PADR\'c3O 10 (REPRESENTA A QUANTIDADE DE CATEGORIAS A SEREM EXIBIDAS POR P\'c1GINA)\par
+P\'c1GINA - VALOR PADR\'c3O 1 (REPRESENTA A P\'c1GINA A SER EXIBIDA)\par
+
+\pard\sa200\sl276\slmult1\par
+\ul DELETAR\ulnone\par
+VERBO DELETE\par
+URL: {{\field{\*\fldinst{HYPERLINK https://localhost:7296/Categoria/ }}{\fldrslt{https://localhost:7296/Categoria/\ul0\cf0}}}}\f0\fs22\par
+PAR\'c2METRO OBRIGAT\'d3RIO: ID (colocar o n\'famero do id direto na requisi\'e7\'e3o)\par
+\par
+\par
+
+\pard\sa200\sl276\slmult1\qc\b\fs28 SUBCATEGORIAS\par
+\par
+
+\pard\sa200\sl276\slmult1\ul\b0\fs22 CADASTRAR\par
+\ulnone VERBO POST\par
+URL: {{\field{\*\fldinst{HYPERLINK https://localhost:7296/Subcategoria }}{\fldrslt{https://localhost:7296/Subcategoria\ul0\cf0}}}}\f0\fs22\par
+CORPO NO FORMATO RAW JSON:\par
+\{\par
+    "CategoriaId": "ID DA CATEGORIA EM QUE A SUBCATEGORIA SER\'c1 CADASTRADA",\par
+    "Nome": "NOME DA SUBCATEGORIA"\par
+\}\par
+\par
+\ul EDITAR\ulnone\par
+VERBO PUT\par
+URL: {{\field{\*\fldinst{HYPERLINK https://localhost:7296/Subcategoria/ }}{\fldrslt{https://localhost:7296/Subcategoria/\ul0\cf0}}}}\f0\fs22\par
+PAR\'c2METRO OBRIGAT\'d3RIO: ID DA SUBCATEGORIA (colocar o n\'famero do id direto na requisi\'e7\'e3o)\par
+CORPO NO FORMATO RAW JSON:\par
+\{\par
+    "Nome" : "Nome",\par
+    "Status" : true/false\par
+\}\par
+Obs. \'c9 poss\'edvel editar somente o nome ou  status, mas deve-se passar os dois dados no corpo.\par
+\par
+\ul PESQUISAR PELO NOME\ulnone\par
+VERBO GET\par
+URL: {{\field{\*\fldinst{HYPERLINK https://localhost:7296/Subcategoria/ }}{\fldrslt{https://localhost:7296/Subcategoria/\ul0\cf0}}}}\f0\fs22\par
+PAR\'c2METROS OPCIONAIS NA URL:\par
+NOME - SOMENTE ALFABETO, ENTRE 3 E 128 CARACTERES\par
+STATUS - VALOR PADR\'c3O "TODOS", "ATIVO" E "INATIVO" \par
+
+\pard\ri70\sa200\sl276\slmult1\tx8236\tx8378 ORDEM - VALOR PADR\'c3O "CRESCENTE", OU "DECRESCENTE"\par
+REGISTROS - VALOR PADR\'c3O 10 (REPRESENTA A QUANTIDADE DE CATEGORIAS A SEREM EXIBIDAS POR P\'c1GINA)\par
+P\'c1GINA - VALOR PADR\'c3O 1 (REPRESENTA A P\'c1GINA A SER EXIBIDA)\par
+\par
+
+\pard\sa200\sl276\slmult1\ul DELETAR\ulnone\par
+VERBO DELETE\par
+URL: {{\field{\*\fldinst{HYPERLINK https://localhost:7296/Subcategoria/ }}{\fldrslt{https://localhost:7296/Subcategoria/\ul0\cf0}}}}\f0\fs22\par
+PAR\'c2METRO OBRIGAT\'d3RIO: ID (colocar o n\'famero do id direto na requisi\'e7\'e3o)\par
+\par
+\par
+
+\pard\sa200\sl276\slmult1\qc\b\fs28 PRODUTOS\par
+
+\pard\sa200\sl276\slmult1\par
+\ul\b0\fs22 CADASTRAR\par
+\ulnone VERBO POST\par
+URL: {{\field{\*\fldinst{HYPERLINK https://localhost:7296/Produto }}{\fldrslt{https://localhost:7296/Produto\ul0\cf0}}}}\f0\fs22\par
+CORPO NO FORMATO RAW JSON:\par
+\{\par
+  "nome": "Nome do produto",\par
+  "descricao": "Descri\'e7\'e3o do produto",\par
+  "peso": Peso do produto em double ex. 1.2,\par
+  "altura": Altura do produto em double,\par
+  "largura": Largura do produto em double,\par
+  "comprimento": Comprimento do produto em double,\par
+  "valor": Valor do produto em double,\par
+  "quantidadeEmEstoque": Quantidade do produto em estoque em inteiro,\par
+  "centroDeDistribuicaoId": "Id do CD em que o Produto ser\'e1 cadastrado",\par
+  "subcategoriaId": "Id da Subcategoria em que o Produto ser\'e1 cadastrado"\par
+\}\par
+\par
+\ul EDITAR\ulnone\par
+VERBO PUT\par
+URL: {{\field{\*\fldinst{HYPERLINK https://localhost:7296/Produto/ }}{\fldrslt{https://localhost:7296/Produto/\ul0\cf0}}}}\f0\fs22\par
+PAR\'c2METRO OBRIGAT\'d3RIO: ID DO PRODUTO (colocar o n\'famero do id direto na requisi\'e7\'e3o)\par
+CORPO NO FORMATO RAW JSON:\par
+\{\par
+  "nome": "Nome",\par
+  "descricao": "Descri\'e7\'e3o.",\par
+  "peso": 0.01,\par
+  "altura": 0.14,\par
+  "largura": 1.0,\par
+  "comprimento": 0.07,\par
+  "valor": 0.6,\par
+  "quantidadeEmEstoque": 110,\par
+  "status": true/false,\par
+  "subcategoriaId": "Id da Subcategoria",\par
+  "centrodedistribuicaoId": "Id do CD"\par
+\}\b\fs28\par
+\b0\fs22 Obs. \'c9 poss\'edvel editar um ou mais campos, mas deve-se passar todos os dados no corpo.\par
+\par
+\ul PESQUISAR PELO NOME\par
+\ulnone VERBO GET\par
+URL: {{\field{\*\fldinst{HYPERLINK https://localhost:7296/Produto/ }}{\fldrslt{https://localhost:7296/Produto/\ul0\cf0}}}}\f0\fs22\par
+PAR\'c2METROS OPCIONAIS NA URL:\par
+NOME - ALFANUM\'c9RICO, ENTRE 3 E 128 CARACTERES\par
+PESO - DOUBLE ACIMA DE 0\par
+LARGURA - DOUBLE ACIMA DE 0\par
+COMPRIMENTO - DOUBLE ACIMA DE 0\par
+VALOR - DOUBLE ACIMA DE 0\par
+ESTOQUE - INTEIRO ACIMA DE 0\par
+CENTRODEDISTRIBUICAOID - ID DO CD QUE DESEJA PESQUISAR PRODUTOS (PODE SER PESQUISADO 1 OU MAIS, SEPARADOS POR V\'cdRGULA)\par
+CATEGORIAID - ID DA CATEGORIA QUE DESEJA PESQUISAR PRODUTOS (PODE SER PESQUISADO 1 OU MAIS, SEPARADOS POR V\'cdRGULA)\par
+SUCBATEGORIAID - ID DA SUBCATEGORIA QUE DESEJA PESQUISAR PRODUTOS (PODE SER PESQUISADO 1 OU MAIS, SEPARADOS POR V\'cdRGULA)\par
+STATUS - VALOR PADR\'c3O "TODOS", "ATIVO" E "INATIVO" \par
+
+\pard\ri70\sa200\sl276\slmult1\tx8236\tx8378 ORDEM - VALOR PADR\'c3O "CRESCENTE", OU "DECRESCENTE"\par
+REGISTROS - VALOR PADR\'c3O 10 (REPRESENTA A QUANTIDADE DE CATEGORIAS A SEREM EXIBIDAS POR P\'c1GINA)\par
+P\'c1GINA - VALOR PADR\'c3O 1 (REPRESENTA A P\'c1GINA A SER EXIBIDA)\par
+\par
+
+\pard\sa200\sl276\slmult1\ul DELETAR\ulnone\par
+VERBO DELETE\par
+URL: {{\field{\*\fldinst{HYPERLINK https://localhost:7296/Produto/ }}{\fldrslt{https://localhost:7296/Produto/\ul0\cf0}}}}\f0\fs22\par
+PAR\'c2METRO OBRIGAT\'d3RIO: ID (colocar o n\'famero do id direto na requisi\'e7\'e3o)\par
+\par
+OBS: PARA COLOCAR OS PAR\'c2METROS NA URL DEVE-SE UTILIZAR DEPOIS DA / O S\'cdMBOLO DE "?" E EM SEGUIDA O NOME DO PAR\'c2METRO SEGUIDO DO S\'cdMBOLO DE "=" E ENT\'c3O O VALOR, CASO INFORME MAIS DE UM PAR\'c2METRO, DEVE-SE COLOCAR "&" ENTRE ELES. EXEMPLO:\par
+{{\field{\*\fldinst{HYPERLINK https://localhost:7296/Categoria/?odem=decrescente&nome=ida&status=todos }}{\fldrslt{https://localhost:7296/Categoria/?odem=decrescente&nome=ida&status=todos\ul0\cf0}}}}\f0\fs22\par
+\par
+
+\pard\ri70\sa200\sl276\slmult1\tx8236\tx8378\par
+\par
+
+\pard\ri70\sa200\sl276\slmult1\qc\tx8236\tx8378\b\fs28 CENTROS DE DISTRIBUI\'c7\'c3O\b0\fs22\par
+
+\pard\sa200\sl276\slmult1\b\fs28\par
+\ul\b0\fs22 CADASTRAR\par
+\ulnone VERBO POST\par
+URL: {{\field{\*\fldinst{HYPERLINK https://localhost:7296/CentroDeDistribuicao/ }}{\fldrslt{https://localhost:7296/CentroDeDistribuicao/\ul0\cf0}}}}\f0\fs22\par
+CORPO NO FORMATO RAW JSON:\par
+\{\par
+    "nome": "Nome do CD",\par
+    "cep": "CEP que ser\'e1 cadastrado, aceita 8 n\'fameros e CEP que n\'e3o seja geral",\par
+    "complemento": "Complemento do CD",\par
+    "numero": N\'famero do CD\par
+\}\par
+\par
+\ul EDITAR\ulnone\par
+VERBO PUT\par
+URL: {{\field{\*\fldinst{HYPERLINK https://localhost:7296/CentroDeDistribuicao/ }}{\fldrslt{https://localhost:7296/CentroDeDistribuicao/\ul0\cf0}}}}\f0\fs22\par
+PAR\'c2METRO OBRIGAT\'d3RIO: ID DO CD (colocar o n\'famero do id direto na requisi\'e7\'e3o)\par
+CORPO NO FORMATO RAW JSON:\par
+\{\par
+    "nome": "Nome",\par
+    "cep": "CEP que ser\'e1 editado, aceita 8 n\'fameros e CEP que n\'e3o seja geral",\par
+    "numero": Numera\'e7\'e3o do CD,\par
+    "complemento": "Complemento do CD",\par
+    "status": true/false\par
+\}\par
+Obs. \'c9 poss\'edvel editar um ou mais campos, mas deve-se passar todos os dados no corpo.\par
+\par
+\ul PESQUISAR PELO NOME\par
+\ulnone VERBO GET\par
+URL: {{\field{\*\fldinst{HYPERLINK https://localhost:7296/CentroDeDistribuicao/ }}{\fldrslt{https://localhost:7296/CentroDeDistribuicao/\ul0\cf0}}}}\f0\fs22\par
+PAR\'c2METROS OPCIONAIS NO CORPO EM JSON:\par
+NOME - ALFANUM\'c9RICO, ENTRE 3 E 128 CARACTERES\par
+LOGRADOURO - ENTRE 3 E 128 CARACTERES\par
+BAIRRO - ENTRE 3 E 128 CARACTERES\par
+CIDADE - ENTRE 3 E 128 CARACTERES\par
+UF - SOMENTE 2 LETRAS\par
+CEP - 8 NUMEROS\par
+ STATUS - VALOR PADR\'c3O "TODOS", "ATIVO" E "INATIVO" \par
+
+\pard\ri70\sa200\sl276\slmult1\tx8236\tx8378 ORDEM - VALOR PADR\'c3O "CRESCENTE", OU "DECRESCENTE"\par
+REGISTROS - VALOR PADR\'c3O 10 (REPRESENTA A QUANTIDADE DE CATEGORIAS A SEREM EXIBIDAS POR P\'c1GINA)\par
+P\'c1GINA - VALOR PADR\'c3O 1 (REPRESENTA A P\'c1GINA A SER EXIBIDA)\par
+\par
+
+\pard\sa200\sl276\slmult1\ul DELETAR\ulnone\par
+VERBO DELETE\par
+URL: {{\field{\*\fldinst{HYPERLINK https://localhost:7296/CentroDeDistribuicao/ }}{\fldrslt{https://localhost:7296/CentroDeDistribuicao/\ul0\cf0}}}}\f0\fs22\par
+PAR\'c2METRO OBRIGAT\'d3RIO: ID (colocar o n\'famero do id direto na requisi\'e7\'e3o)\par
+
+\pard\ri70\sa200\sl276\slmult1\tx8236\tx8378\par
+
+\pard\sa200\sl276\slmult1\par
+\par
+\b\fs28\par
+\b0\fs22\par
+\par
+}
+ 

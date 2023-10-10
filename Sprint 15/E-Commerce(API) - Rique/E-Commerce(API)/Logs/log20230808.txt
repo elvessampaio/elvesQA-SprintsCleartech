@@ -1,0 +1,14 @@
+2023-08-08 17:07:43.878 -03:00 [INF] Inicialização da WEB API...
+2023-08-08 17:07:44.540 -03:00 [INF] Now listening on: https://localhost:7296
+2023-08-08 17:07:44.542 -03:00 [INF] Now listening on: http://localhost:5090
+2023-08-08 17:07:44.546 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-08 17:07:44.547 -03:00 [INF] Hosting environment: Development
+2023-08-08 17:07:44.547 -03:00 [INF] Content root path: C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\E-Commerce(API)\
+2023-08-08 17:07:45.295 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/index.html - -
+2023-08-08 17:07:45.957 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/index.html - - - 200 - text/html;charset=utf-8 667.2154ms
+2023-08-08 17:07:45.968 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - -
+2023-08-08 17:07:45.968 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - -
+2023-08-08 17:07:45.973 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 4.7318ms
+2023-08-08 17:07:46.277 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 308.0079ms
+2023-08-08 17:07:46.358 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - -
+2023-08-08 17:07:46.557 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 198.4824ms

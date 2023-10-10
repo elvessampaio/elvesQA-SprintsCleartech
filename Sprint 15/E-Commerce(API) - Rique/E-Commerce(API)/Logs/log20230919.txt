@@ -1,0 +1,646 @@
+2023-09-19 14:38:18.303 -03:00 [INF] Inicialização da WEB API...
+2023-09-19 14:38:19.331 -03:00 [INF] User profile is available. Using 'C:\Users\Cleartech\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-19 14:38:19.646 -03:00 [INF] Now listening on: https://localhost:7296
+2023-09-19 14:38:19.646 -03:00 [INF] Now listening on: http://localhost:5090
+2023-09-19 14:38:19.648 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-19 14:38:19.648 -03:00 [INF] Hosting environment: Development
+2023-09-19 14:38:19.648 -03:00 [INF] Content root path: C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\E-Commerce(API)\
+2023-09-19 14:38:19.900 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/index.html - -
+2023-09-19 14:38:20.400 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/index.html - - - 200 - text/html;charset=utf-8 506.3400ms
+2023-09-19 14:38:20.410 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - -
+2023-09-19 14:38:20.413 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 2.7828ms
+2023-09-19 14:38:20.416 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - -
+2023-09-19 14:38:20.461 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 44.6550ms
+2023-09-19 14:38:20.604 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - -
+2023-09-19 14:38:20.748 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 144.0602ms
+2023-09-19 14:38:23.281 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 155
+2023-09-19 14:38:23.414 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:38:23.453 -03:00 [INF] Route matched with {action = "CriarCarrinho", controller = "CarrinhoDeCompras"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CriarCarrinho(E_Commerce_API_.Data.DTOs.CarrinhoDeComprasDto.CreateCarrinhoDeComprasDto) on controller E_Commerce_API_.Controllers.CarrinhoDeComprasController (E-Commerce(API)).
+2023-09-19 14:38:24.487 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API)) in 1030.4487ms
+2023-09-19 14:38:24.487 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:38:24.496 -03:00 [ERR] Ocorreu uma exceção: {"TraceId":"6f749408-6202-4ff6-8720-9a1f2143a2af","Error":{"Logref":"InternalServerError","Message":"Object reference not set to an instance of an object.","$type":"ErrorDetailsDto"},"Data":"19/09/2023","$type":"ErrorResponseDto"}
+2023-09-19 14:38:24.542 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 155 - 500 - application/json 1261.0734ms
+2023-09-19 14:38:53.855 -03:00 [INF] Inicialização da WEB API...
+2023-09-19 14:38:54.089 -03:00 [INF] User profile is available. Using 'C:\Users\Cleartech\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-19 14:38:54.283 -03:00 [INF] Now listening on: https://localhost:7296
+2023-09-19 14:38:54.283 -03:00 [INF] Now listening on: http://localhost:5090
+2023-09-19 14:38:54.286 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-19 14:38:54.287 -03:00 [INF] Hosting environment: Development
+2023-09-19 14:38:54.287 -03:00 [INF] Content root path: C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\E-Commerce(API)\
+2023-09-19 14:38:55.017 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/index.html - -
+2023-09-19 14:38:55.430 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - -
+2023-09-19 14:38:55.432 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - -
+2023-09-19 14:38:55.449 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/index.html - - - 200 - text/html;charset=utf-8 438.8906ms
+2023-09-19 14:38:55.449 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 16.5842ms
+2023-09-19 14:38:55.535 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 105.4090ms
+2023-09-19 14:38:55.639 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - -
+2023-09-19 14:38:55.834 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 195.5673ms
+2023-09-19 14:39:02.537 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 155
+2023-09-19 14:39:02.644 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:39:02.689 -03:00 [INF] Route matched with {action = "CriarCarrinho", controller = "CarrinhoDeCompras"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CriarCarrinho(E_Commerce_API_.Data.DTOs.CarrinhoDeComprasDto.CreateCarrinhoDeComprasDto) on controller E_Commerce_API_.Controllers.CarrinhoDeComprasController (E-Commerce(API)).
+2023-09-19 14:39:21.428 -03:00 [INF] Inicialização da WEB API...
+2023-09-19 14:39:21.774 -03:00 [INF] User profile is available. Using 'C:\Users\Cleartech\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-19 14:39:21.938 -03:00 [INF] Now listening on: https://localhost:7296
+2023-09-19 14:39:21.938 -03:00 [INF] Now listening on: http://localhost:5090
+2023-09-19 14:39:21.941 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-19 14:39:21.942 -03:00 [INF] Hosting environment: Development
+2023-09-19 14:39:21.942 -03:00 [INF] Content root path: C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\E-Commerce(API)\
+2023-09-19 14:39:22.591 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/index.html - -
+2023-09-19 14:39:23.047 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - -
+2023-09-19 14:39:23.047 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - -
+2023-09-19 14:39:23.051 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/index.html - - - 200 - text/html;charset=utf-8 463.0665ms
+2023-09-19 14:39:23.053 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 5.6895ms
+2023-09-19 14:39:23.102 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 55.3651ms
+2023-09-19 14:39:23.166 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - -
+2023-09-19 14:39:23.361 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 194.5716ms
+2023-09-19 14:39:25.178 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 155
+2023-09-19 14:39:25.250 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:39:25.280 -03:00 [INF] Route matched with {action = "CriarCarrinho", controller = "CarrinhoDeCompras"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CriarCarrinho(E_Commerce_API_.Data.DTOs.CarrinhoDeComprasDto.CreateCarrinhoDeComprasDto) on controller E_Commerce_API_.Controllers.CarrinhoDeComprasController (E-Commerce(API)).
+2023-09-19 14:40:16.674 -03:00 [INF] Inicialização da WEB API...
+2023-09-19 14:40:16.870 -03:00 [INF] User profile is available. Using 'C:\Users\Cleartech\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-19 14:40:17.032 -03:00 [INF] Now listening on: https://localhost:7296
+2023-09-19 14:40:17.032 -03:00 [INF] Now listening on: http://localhost:5090
+2023-09-19 14:40:17.035 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-19 14:40:17.036 -03:00 [INF] Hosting environment: Development
+2023-09-19 14:40:17.036 -03:00 [INF] Content root path: C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\E-Commerce(API)\
+2023-09-19 14:40:17.834 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/index.html - -
+2023-09-19 14:40:18.212 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - -
+2023-09-19 14:40:18.212 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - -
+2023-09-19 14:40:18.225 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 12.6824ms
+2023-09-19 14:40:18.226 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/index.html - - - 200 - text/html;charset=utf-8 398.1040ms
+2023-09-19 14:40:18.235 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.4015ms
+2023-09-19 14:40:18.314 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - -
+2023-09-19 14:40:18.525 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 211.2129ms
+2023-09-19 14:40:20.253 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 155
+2023-09-19 14:40:20.321 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:40:20.354 -03:00 [INF] Route matched with {action = "CriarCarrinho", controller = "CarrinhoDeCompras"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CriarCarrinho(E_Commerce_API_.Data.DTOs.CarrinhoDeComprasDto.CreateCarrinhoDeComprasDto) on controller E_Commerce_API_.Controllers.CarrinhoDeComprasController (E-Commerce(API)).
+2023-09-19 14:40:20.966 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-09-19 14:40:21.024 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API)) in 664.704ms
+2023-09-19 14:40:21.024 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:40:21.027 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 155 - 400 566 application/problem+json;+charset=utf-8 773.5855ms
+2023-09-19 14:40:48.724 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 155
+2023-09-19 14:40:48.725 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:40:48.725 -03:00 [INF] Route matched with {action = "CriarCarrinho", controller = "CarrinhoDeCompras"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CriarCarrinho(E_Commerce_API_.Data.DTOs.CarrinhoDeComprasDto.CreateCarrinhoDeComprasDto) on controller E_Commerce_API_.Controllers.CarrinhoDeComprasController (E-Commerce(API)).
+2023-09-19 14:40:48.789 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-09-19 14:40:48.790 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API)) in 64.4468ms
+2023-09-19 14:40:48.790 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:40:48.790 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 155 - 400 566 application/problem+json;+charset=utf-8 65.3775ms
+2023-09-19 14:41:07.155 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 159
+2023-09-19 14:41:07.158 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:41:07.158 -03:00 [INF] Route matched with {action = "CriarCarrinho", controller = "CarrinhoDeCompras"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CriarCarrinho(E_Commerce_API_.Data.DTOs.CarrinhoDeComprasDto.CreateCarrinhoDeComprasDto) on controller E_Commerce_API_.Controllers.CarrinhoDeComprasController (E-Commerce(API)).
+2023-09-19 14:41:32.846 -03:00 [INF] Executed DbCommand (69ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-09-19 14:41:33.008 -03:00 [INF] Iniciada pesquisa do CEP '08598372'.
+2023-09-19 14:41:33.591 -03:00 [INF] Pesquisa do CEP finalizada. Resposta: {
+  "cep": "08598-372",
+  "logradouro": "Rua Cambuci",
+  "complemento": "",
+  "bairro": "Jardim Odete",
+  "localidade": "Itaquaquecetuba",
+  "uf": "SP",
+  "ibge": "3523107",
+  "gia": "3797",
+  "ddd": "11",
+  "siafi": "6563"
+}
+2023-09-19 14:41:33.629 -03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce_API_.Models.CarrinhoDeCompras'.
+2023-09-19 14:41:34.083 -03:00 [INF] Executed DbCommand (43ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Bairro`, `c`.`CEP`, `c`.`Cidade`, `c`.`Complemento`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Logradouro`, `c`.`Nome`, `c`.`Numero`, `c`.`Status`, `c`.`UF`
+FROM `CentrosDeDistribuicao` AS `c`
+WHERE `c`.`Id` = @__get_Item_0
+2023-09-19 14:41:34.161 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+WHERE `p`.`CentroDeDistribuicaoId` = @__get_Item_0
+2023-09-19 14:41:34.173 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API)) in 27014.4859ms
+2023-09-19 14:41:34.174 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:41:34.241 -03:00 [ERR] Ocorreu uma exceção: {"TraceId":"3ceb52c7-0de7-42f5-866e-317d051f0d7b","Error":{"Logref":"InternalServerError","Message":"Self referencing loop detected for property 'centroDeDistribuicao' with type 'Castle.Proxies.CentroDeDistribuicaoProxy'. Path 'produtos[0].centroDeDistribuicao.produtos[0]'.","$type":"ErrorDetailsDto"},"Data":"19/09/2023","$type":"ErrorResponseDto"}
+2023-09-19 14:41:34.278 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 159 - 500 - application/json 27123.0775ms
+2023-09-19 14:41:49.009 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 159
+2023-09-19 14:41:49.009 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:41:49.009 -03:00 [INF] Route matched with {action = "CriarCarrinho", controller = "CarrinhoDeCompras"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CriarCarrinho(E_Commerce_API_.Data.DTOs.CarrinhoDeComprasDto.CreateCarrinhoDeComprasDto) on controller E_Commerce_API_.Controllers.CarrinhoDeComprasController (E-Commerce(API)).
+2023-09-19 14:41:49.015 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-09-19 14:41:49.015 -03:00 [INF] Iniciada pesquisa do CEP '08598372'.
+2023-09-19 14:41:49.541 -03:00 [INF] Pesquisa do CEP finalizada. Resposta: {
+  "cep": "08598-372",
+  "logradouro": "Rua Cambuci",
+  "complemento": "",
+  "bairro": "Jardim Odete",
+  "localidade": "Itaquaquecetuba",
+  "uf": "SP",
+  "ibge": "3523107",
+  "gia": "3797",
+  "ddd": "11",
+  "siafi": "6563"
+}
+2023-09-19 14:41:49.542 -03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce_API_.Models.CarrinhoDeCompras'.
+2023-09-19 14:41:49.549 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Bairro`, `c`.`CEP`, `c`.`Cidade`, `c`.`Complemento`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Logradouro`, `c`.`Nome`, `c`.`Numero`, `c`.`Status`, `c`.`UF`
+FROM `CentrosDeDistribuicao` AS `c`
+WHERE `c`.`Id` = @__get_Item_0
+2023-09-19 14:41:49.553 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+WHERE `p`.`CentroDeDistribuicaoId` = @__get_Item_0
+2023-09-19 14:41:49.556 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API)) in 546.8242ms
+2023-09-19 14:41:49.557 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:41:49.594 -03:00 [ERR] Ocorreu uma exceção: {"TraceId":"7258c599-4ebd-4f62-941a-d257577f31f1","Error":{"Logref":"InternalServerError","Message":"Self referencing loop detected for property 'centroDeDistribuicao' with type 'Castle.Proxies.CentroDeDistribuicaoProxy'. Path 'produtos[0].centroDeDistribuicao.produtos[0]'.","$type":"ErrorDetailsDto"},"Data":"19/09/2023","$type":"ErrorResponseDto"}
+2023-09-19 14:41:49.595 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 159 - 500 - application/json 585.8325ms
+2023-09-19 14:42:25.068 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 159
+2023-09-19 14:42:25.068 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:42:25.068 -03:00 [INF] Route matched with {action = "CriarCarrinho", controller = "CarrinhoDeCompras"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CriarCarrinho(E_Commerce_API_.Data.DTOs.CarrinhoDeComprasDto.CreateCarrinhoDeComprasDto) on controller E_Commerce_API_.Controllers.CarrinhoDeComprasController (E-Commerce(API)).
+2023-09-19 14:42:25.153 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-09-19 14:42:29.855 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Bairro`, `c`.`CEP`, `c`.`Cidade`, `c`.`Complemento`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Logradouro`, `c`.`Nome`, `c`.`Numero`, `c`.`Status`, `c`.`UF`
+FROM `CentrosDeDistribuicao` AS `c`
+WHERE `c`.`Id` = @__get_Item_0
+2023-09-19 14:42:29.928 -03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CategoriaId`, `s`.`DataEHoraCriacao`, `s`.`DataEHoraModificacao`, `s`.`Nome`, `s`.`Status`
+FROM `Subcategorias` AS `s`
+WHERE `s`.`Id` = @__get_Item_0
+2023-09-19 14:43:14.533 -03:00 [INF] Iniciada pesquisa do CEP '08598372'.
+2023-09-19 14:43:15.535 -03:00 [INF] Pesquisa do CEP finalizada. Resposta: {
+  "cep": "08598-372",
+  "logradouro": "Rua Cambuci",
+  "complemento": "",
+  "bairro": "Jardim Odete",
+  "localidade": "Itaquaquecetuba",
+  "uf": "SP",
+  "ibge": "3523107",
+  "gia": "3797",
+  "ddd": "11",
+  "siafi": "6563"
+}
+2023-09-19 14:44:16.534 -03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce_API_.Models.CarrinhoDeCompras'.
+2023-09-19 14:44:16.568 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+WHERE `p`.`CentroDeDistribuicaoId` = @__get_Item_0
+2023-09-19 14:44:16.610 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API)) in 111540.8835ms
+2023-09-19 14:44:16.610 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:44:16.650 -03:00 [ERR] Ocorreu uma exceção: {"TraceId":"16f8341a-8c62-44eb-82cf-cf017c650989","Error":{"Logref":"InternalServerError","Message":"Self referencing loop detected for property 'centroDeDistribuicao' with type 'Castle.Proxies.CentroDeDistribuicaoProxy'. Path 'produtos[0].centroDeDistribuicao.produtos[0]'.","$type":"ErrorDetailsDto"},"Data":"19/09/2023","$type":"ErrorResponseDto"}
+2023-09-19 14:44:16.651 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 159 - 500 - application/json 111582.4260ms
+2023-09-19 14:44:24.428 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7296/Produto/? - -
+2023-09-19 14:44:24.607 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-19 14:44:24.608 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2023-09-19 14:44:24.608 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.ProdutoController.PesquisarProduto (E-Commerce(API))'
+2023-09-19 14:44:24.615 -03:00 [INF] Route matched with {action = "PesquisarProduto", controller = "Produto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PesquisarProduto(E_Commerce_API_.Data.DTOs.ProdutoDto.FiltroProdutoDto) on controller E_Commerce_API_.Controllers.ProdutoController (E-Commerce(API)).
+2023-09-19 14:44:24.624 -03:00 [INF] Foi requisitado uma pesquisa de produtos.
+2023-09-19 14:44:24.624 -03:00 [INF] Iniciada a pesquisa de produtos com os filtros informados: {"Nome":null,"Peso":null,"Altura":null,"Largura":null,"Comprimento":null,"Valor":null,"Estoque":null,"CentroDeDistribuicaoId":null,"CategoriaId":null,"SubcategoriaId":null,"Status":"Ativo","Ordem":"Crescente","Registros":30,"Pagina":1,"$type":"FiltroProdutoDto"}
+2023-09-19 14:44:24.626 -03:00 [INF] Criação da querie para pesquisa de produtos.
+2023-09-19 14:44:24.673 -03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM `E-COMMERCE(API)`.PRODUTOS WHERE PRODUTOS.STATUS = TRUE ORDER BY PRODUTOS.NOME LIMIT 0, 30
+2023-09-19 14:44:24.719 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Bairro`, `c`.`CEP`, `c`.`Cidade`, `c`.`Complemento`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Logradouro`, `c`.`Nome`, `c`.`Numero`, `c`.`Status`, `c`.`UF`
+FROM `CentrosDeDistribuicao` AS `c`
+WHERE `c`.`Id` = @__get_Item_0
+2023-09-19 14:44:24.721 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CategoriaId`, `s`.`DataEHoraCriacao`, `s`.`DataEHoraModificacao`, `s`.`Nome`, `s`.`Status`
+FROM `Subcategorias` AS `s`
+WHERE `s`.`Id` = @__get_Item_0
+2023-09-19 14:44:24.741 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Nome`, `c`.`Status`
+FROM `Categorias` AS `c`
+WHERE `c`.`Id` = @__get_Item_0
+2023-09-19 14:44:24.755 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Bairro`, `c`.`CEP`, `c`.`Cidade`, `c`.`Complemento`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Logradouro`, `c`.`Nome`, `c`.`Numero`, `c`.`Status`, `c`.`UF`
+FROM `CentrosDeDistribuicao` AS `c`
+WHERE `c`.`Id` = @__get_Item_0
+2023-09-19 14:44:24.756 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CategoriaId`, `s`.`DataEHoraCriacao`, `s`.`DataEHoraModificacao`, `s`.`Nome`, `s`.`Status`
+FROM `Subcategorias` AS `s`
+WHERE `s`.`Id` = @__get_Item_0
+2023-09-19 14:44:24.758 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Nome`, `c`.`Status`
+FROM `Categorias` AS `c`
+WHERE `c`.`Id` = @__get_Item_0
+2023-09-19 14:44:24.762 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CategoriaId`, `s`.`DataEHoraCriacao`, `s`.`DataEHoraModificacao`, `s`.`Nome`, `s`.`Status`
+FROM `Subcategorias` AS `s`
+WHERE `s`.`Id` = @__get_Item_0
+2023-09-19 14:44:24.764 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Nome`, `c`.`Status`
+FROM `Categorias` AS `c`
+WHERE `c`.`Id` = @__get_Item_0
+2023-09-19 14:44:24.764 -03:00 [INF] Foram encontrados 3 produtos a partir da querie: SELECT * FROM `E-COMMERCE(API)`.PRODUTOS WHERE PRODUTOS.STATUS = TRUE ORDER BY PRODUTOS.NOME LIMIT 0, 30
+2023-09-19 14:44:24.765 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[E_Commerce_API_.Data.DTOs.ProdutoDto.ReadProdutoDto, E-Commerce(API), Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-19 14:44:24.779 -03:00 [INF] Executed action E_Commerce_API_.Controllers.ProdutoController.PesquisarProduto (E-Commerce(API)) in 163.2683ms
+2023-09-19 14:44:24.779 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.ProdutoController.PesquisarProduto (E-Commerce(API))'
+2023-09-19 14:44:24.779 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7296/Produto/? - - - 200 1233 application/json;+charset=utf-8 351.2623ms
+2023-09-19 14:44:33.602 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7296/CentroDeDistribuicao/ application/json 31
+2023-09-19 14:44:33.602 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CentroDeDistribuicaoController.PesquisarCD (E-Commerce(API))'
+2023-09-19 14:44:33.612 -03:00 [INF] Route matched with {action = "PesquisarCD", controller = "CentroDeDistribuicao"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PesquisarCD(E_Commerce_API_.Data.DTOs.CentroDeDistribuicaoDto.FiltroCentroDeDistribuicaoDto) on controller E_Commerce_API_.Controllers.CentroDeDistribuicaoController (E-Commerce(API)).
+2023-09-19 14:44:33.625 -03:00 [INF] Foi requisitado uma pesquisa de centros de distribuição.
+2023-09-19 14:44:33.626 -03:00 [INF] Iniciada a pesquisa de centros de distribuição com os filtros informados: {"Nome":null,"Logradouro":null,"Bairro":null,"Cidade":null,"UF":null,"CEP":null,"Status":"Inativo","Ordem":"Crescente","Registros":30,"Pagina":1,"$type":"FiltroCentroDeDistribuicaoDto"}
+2023-09-19 14:44:33.720 -03:00 [INF] Criação da querie para pesquisa de centros de distribuição.
+2023-09-19 14:44:34.355 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CentroDeDistribuicaoController.PesquisarCD (E-Commerce(API)) in 743.2738ms
+2023-09-19 14:44:34.356 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CentroDeDistribuicaoController.PesquisarCD (E-Commerce(API))'
+2023-09-19 14:44:34.442 -03:00 [ERR] Ocorreu uma exceção: {"TraceId":"b0283379-1913-4655-999d-d84e553e5480","Error":{"Logref":"InternalServerError","Message":"Unable to connect to any of the specified MySQL hosts.","$type":"ErrorDetailsDto"},"Data":"19/09/2023","$type":"ErrorResponseDto"}
+2023-09-19 14:44:34.442 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7296/CentroDeDistribuicao/ application/json 31 - 500 - application/json 840.2557ms
+2023-09-19 14:44:54.843 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7296/CentroDeDistribuicao/ application/json 11
+2023-09-19 14:44:54.845 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CentroDeDistribuicaoController.PesquisarCD (E-Commerce(API))'
+2023-09-19 14:44:54.845 -03:00 [INF] Route matched with {action = "PesquisarCD", controller = "CentroDeDistribuicao"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PesquisarCD(E_Commerce_API_.Data.DTOs.CentroDeDistribuicaoDto.FiltroCentroDeDistribuicaoDto) on controller E_Commerce_API_.Controllers.CentroDeDistribuicaoController (E-Commerce(API)).
+2023-09-19 14:44:54.846 -03:00 [INF] Foi requisitado uma pesquisa de centros de distribuição.
+2023-09-19 14:44:54.846 -03:00 [INF] Iniciada a pesquisa de centros de distribuição com os filtros informados: {"Nome":null,"Logradouro":null,"Bairro":null,"Cidade":null,"UF":null,"CEP":null,"Status":"Todos","Ordem":"Crescente","Registros":30,"Pagina":1,"$type":"FiltroCentroDeDistribuicaoDto"}
+2023-09-19 14:44:54.846 -03:00 [INF] Criação da querie para pesquisa de centros de distribuição.
+2023-09-19 14:44:55.000 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CentroDeDistribuicaoController.PesquisarCD (E-Commerce(API)) in 154.5615ms
+2023-09-19 14:44:55.000 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CentroDeDistribuicaoController.PesquisarCD (E-Commerce(API))'
+2023-09-19 14:44:55.069 -03:00 [ERR] Ocorreu uma exceção: {"TraceId":"c020499f-1a7b-4e32-b0d0-c5c0abf1a7b1","Error":{"Logref":"InternalServerError","Message":"Unable to connect to any of the specified MySQL hosts.","$type":"ErrorDetailsDto"},"Data":"19/09/2023","$type":"ErrorResponseDto"}
+2023-09-19 14:44:55.070 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7296/CentroDeDistribuicao/ application/json 11 - 500 - application/json 226.2950ms
+2023-09-19 14:44:59.535 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7296/Produto/? - -
+2023-09-19 14:44:59.536 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-19 14:44:59.536 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2023-09-19 14:44:59.536 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.ProdutoController.PesquisarProduto (E-Commerce(API))'
+2023-09-19 14:44:59.536 -03:00 [INF] Route matched with {action = "PesquisarProduto", controller = "Produto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PesquisarProduto(E_Commerce_API_.Data.DTOs.ProdutoDto.FiltroProdutoDto) on controller E_Commerce_API_.Controllers.ProdutoController (E-Commerce(API)).
+2023-09-19 14:44:59.545 -03:00 [INF] Foi requisitado uma pesquisa de produtos.
+2023-09-19 14:44:59.546 -03:00 [INF] Iniciada a pesquisa de produtos com os filtros informados: {"Nome":null,"Peso":null,"Altura":null,"Largura":null,"Comprimento":null,"Valor":null,"Estoque":null,"CentroDeDistribuicaoId":null,"CategoriaId":null,"SubcategoriaId":null,"Status":"Ativo","Ordem":"Crescente","Registros":30,"Pagina":1,"$type":"FiltroProdutoDto"}
+2023-09-19 14:44:59.550 -03:00 [INF] Criação da querie para pesquisa de produtos.
+2023-09-19 14:44:59.552 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM `E-COMMERCE(API)`.PRODUTOS WHERE PRODUTOS.STATUS = TRUE ORDER BY PRODUTOS.NOME LIMIT 0, 30
+2023-09-19 14:44:59.554 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Bairro`, `c`.`CEP`, `c`.`Cidade`, `c`.`Complemento`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Logradouro`, `c`.`Nome`, `c`.`Numero`, `c`.`Status`, `c`.`UF`
+FROM `CentrosDeDistribuicao` AS `c`
+WHERE `c`.`Id` = @__get_Item_0
+2023-09-19 14:44:59.555 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CategoriaId`, `s`.`DataEHoraCriacao`, `s`.`DataEHoraModificacao`, `s`.`Nome`, `s`.`Status`
+FROM `Subcategorias` AS `s`
+WHERE `s`.`Id` = @__get_Item_0
+2023-09-19 14:44:59.557 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Nome`, `c`.`Status`
+FROM `Categorias` AS `c`
+WHERE `c`.`Id` = @__get_Item_0
+2023-09-19 14:44:59.559 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Bairro`, `c`.`CEP`, `c`.`Cidade`, `c`.`Complemento`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Logradouro`, `c`.`Nome`, `c`.`Numero`, `c`.`Status`, `c`.`UF`
+FROM `CentrosDeDistribuicao` AS `c`
+WHERE `c`.`Id` = @__get_Item_0
+2023-09-19 14:44:59.560 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CategoriaId`, `s`.`DataEHoraCriacao`, `s`.`DataEHoraModificacao`, `s`.`Nome`, `s`.`Status`
+FROM `Subcategorias` AS `s`
+WHERE `s`.`Id` = @__get_Item_0
+2023-09-19 14:44:59.561 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Nome`, `c`.`Status`
+FROM `Categorias` AS `c`
+WHERE `c`.`Id` = @__get_Item_0
+2023-09-19 14:44:59.564 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CategoriaId`, `s`.`DataEHoraCriacao`, `s`.`DataEHoraModificacao`, `s`.`Nome`, `s`.`Status`
+FROM `Subcategorias` AS `s`
+WHERE `s`.`Id` = @__get_Item_0
+2023-09-19 14:44:59.565 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Nome`, `c`.`Status`
+FROM `Categorias` AS `c`
+WHERE `c`.`Id` = @__get_Item_0
+2023-09-19 14:44:59.565 -03:00 [INF] Foram encontrados 3 produtos a partir da querie: SELECT * FROM `E-COMMERCE(API)`.PRODUTOS WHERE PRODUTOS.STATUS = TRUE ORDER BY PRODUTOS.NOME LIMIT 0, 30
+2023-09-19 14:44:59.565 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[E_Commerce_API_.Data.DTOs.ProdutoDto.ReadProdutoDto, E-Commerce(API), Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-19 14:44:59.565 -03:00 [INF] Executed action E_Commerce_API_.Controllers.ProdutoController.PesquisarProduto (E-Commerce(API)) in 29.2128ms
+2023-09-19 14:44:59.565 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.ProdutoController.PesquisarProduto (E-Commerce(API))'
+2023-09-19 14:44:59.565 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7296/Produto/? - - - 200 1233 application/json;+charset=utf-8 30.4261ms
+2023-09-19 14:45:11.056 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7296/CentroDeDistribuicao/ application/json 11
+2023-09-19 14:45:11.057 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CentroDeDistribuicaoController.PesquisarCD (E-Commerce(API))'
+2023-09-19 14:45:11.057 -03:00 [INF] Route matched with {action = "PesquisarCD", controller = "CentroDeDistribuicao"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PesquisarCD(E_Commerce_API_.Data.DTOs.CentroDeDistribuicaoDto.FiltroCentroDeDistribuicaoDto) on controller E_Commerce_API_.Controllers.CentroDeDistribuicaoController (E-Commerce(API)).
+2023-09-19 14:45:11.059 -03:00 [INF] Foi requisitado uma pesquisa de centros de distribuição.
+2023-09-19 14:45:11.059 -03:00 [INF] Iniciada a pesquisa de centros de distribuição com os filtros informados: {"Nome":null,"Logradouro":null,"Bairro":null,"Cidade":null,"UF":null,"CEP":null,"Status":"Todos","Ordem":"Crescente","Registros":30,"Pagina":1,"$type":"FiltroCentroDeDistribuicaoDto"}
+2023-09-19 14:45:11.059 -03:00 [INF] Criação da querie para pesquisa de centros de distribuição.
+2023-09-19 14:45:11.254 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CentroDeDistribuicaoController.PesquisarCD (E-Commerce(API)) in 196.864ms
+2023-09-19 14:45:11.254 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CentroDeDistribuicaoController.PesquisarCD (E-Commerce(API))'
+2023-09-19 14:45:11.376 -03:00 [ERR] Ocorreu uma exceção: {"TraceId":"d6b1c17d-1e35-4db6-8e0f-2fa7215794bd","Error":{"Logref":"InternalServerError","Message":"Unable to connect to any of the specified MySQL hosts.","$type":"ErrorDetailsDto"},"Data":"19/09/2023","$type":"ErrorResponseDto"}
+2023-09-19 14:45:11.376 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7296/CentroDeDistribuicao/ application/json 11 - 500 - application/json 319.9296ms
+2023-09-19 14:54:00.301 -03:00 [INF] Inicialização da WEB API...
+2023-09-19 14:54:00.424 -03:00 [INF] User profile is available. Using 'C:\Users\Cleartech\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-19 14:54:00.502 -03:00 [INF] Now listening on: https://localhost:7296
+2023-09-19 14:54:00.502 -03:00 [INF] Now listening on: http://localhost:5090
+2023-09-19 14:54:00.504 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-19 14:54:00.504 -03:00 [INF] Hosting environment: Development
+2023-09-19 14:54:00.504 -03:00 [INF] Content root path: C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\E-Commerce(API)\
+2023-09-19 14:54:01.231 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/index.html - -
+2023-09-19 14:54:01.512 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/index.html - - - 200 - text/html;charset=utf-8 283.0678ms
+2023-09-19 14:54:01.513 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - -
+2023-09-19 14:54:01.516 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 2.7618ms
+2023-09-19 14:54:01.519 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - -
+2023-09-19 14:54:01.535 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.2512ms
+2023-09-19 14:54:01.605 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - -
+2023-09-19 14:54:01.741 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 135.6284ms
+2023-09-19 14:54:03.746 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7296/CentroDeDistribuicao/ application/json 11
+2023-09-19 14:54:03.769 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CentroDeDistribuicaoController.PesquisarCD (E-Commerce(API))'
+2023-09-19 14:54:03.791 -03:00 [INF] Route matched with {action = "PesquisarCD", controller = "CentroDeDistribuicao"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PesquisarCD(E_Commerce_API_.Data.DTOs.CentroDeDistribuicaoDto.FiltroCentroDeDistribuicaoDto) on controller E_Commerce_API_.Controllers.CentroDeDistribuicaoController (E-Commerce(API)).
+2023-09-19 14:54:04.132 -03:00 [INF] Foi requisitado uma pesquisa de centros de distribuição.
+2023-09-19 14:54:04.133 -03:00 [INF] Iniciada a pesquisa de centros de distribuição com os filtros informados: {"Nome":null,"Logradouro":null,"Bairro":null,"Cidade":null,"UF":null,"CEP":null,"Status":"Todos","Ordem":"Crescente","Registros":30,"Pagina":1,"$type":"FiltroCentroDeDistribuicaoDto"}
+2023-09-19 14:54:04.139 -03:00 [INF] Criação da querie para pesquisa de centros de distribuição.
+2023-09-19 14:54:04.272 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CentroDeDistribuicaoController.PesquisarCD (E-Commerce(API)) in 477.6272ms
+2023-09-19 14:54:04.272 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CentroDeDistribuicaoController.PesquisarCD (E-Commerce(API))'
+2023-09-19 14:54:04.278 -03:00 [ERR] Ocorreu uma exceção: {"TraceId":"864deff6-3cae-4b35-99e2-70d79cd4ff2e","Error":{"Logref":"InternalServerError","Message":"Unable to connect to any of the specified MySQL hosts.","$type":"ErrorDetailsDto"},"Data":"19/09/2023","$type":"ErrorResponseDto"}
+2023-09-19 14:54:04.303 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7296/CentroDeDistribuicao/ application/json 11 - 500 - application/json 556.5541ms
+2023-09-19 14:54:11.432 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 159
+2023-09-19 14:54:11.433 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:54:11.441 -03:00 [INF] Route matched with {action = "CriarCarrinho", controller = "CarrinhoDeCompras"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CriarCarrinho(E_Commerce_API_.Data.DTOs.CarrinhoDeComprasDto.CreateCarrinhoDeComprasDto) on controller E_Commerce_API_.Controllers.CarrinhoDeComprasController (E-Commerce(API)).
+2023-09-19 14:54:11.493 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API)) in 51.7707ms
+2023-09-19 14:54:11.493 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:54:11.493 -03:00 [ERR] Erro: {"TraceId":"c2da0080-bd01-4f08-9fd4-8223fd169bb9","Error":{"Logref":"BadRequest","Message":" O campo ProdutosId é obrigatório.","$type":"ErrorDetailsDto"},"Data":"19/09/2023","$type":"ErrorResponseDto"}
+2023-09-19 14:54:11.494 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 159 - 400 - application/json 61.6566ms
+2023-09-19 14:54:16.738 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 160
+2023-09-19 14:54:16.742 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:54:16.742 -03:00 [INF] Route matched with {action = "CriarCarrinho", controller = "CarrinhoDeCompras"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CriarCarrinho(E_Commerce_API_.Data.DTOs.CarrinhoDeComprasDto.CreateCarrinhoDeComprasDto) on controller E_Commerce_API_.Controllers.CarrinhoDeComprasController (E-Commerce(API)).
+2023-09-19 14:54:17.926 -03:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-09-19 14:54:18.003 -03:00 [INF] Iniciada pesquisa do CEP '08598372'.
+2023-09-19 14:54:18.561 -03:00 [INF] Pesquisa do CEP finalizada. Resposta: {
+  "cep": "08598-372",
+  "logradouro": "Rua Cambuci",
+  "complemento": "",
+  "bairro": "Jardim Odete",
+  "localidade": "Itaquaquecetuba",
+  "uf": "SP",
+  "ibge": "3523107",
+  "gia": "3797",
+  "ddd": "11",
+  "siafi": "6563"
+}
+2023-09-19 14:54:18.601 -03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce_API_.Models.CarrinhoDeCompras'.
+2023-09-19 14:54:18.612 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API)) in 1869.8634ms
+2023-09-19 14:54:18.612 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:54:18.616 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 160 - 200 246 application/json;+charset=utf-8 1877.8495ms
+2023-09-19 14:54:40.836 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 160
+2023-09-19 14:54:40.837 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:54:40.837 -03:00 [INF] Route matched with {action = "CriarCarrinho", controller = "CarrinhoDeCompras"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CriarCarrinho(E_Commerce_API_.Data.DTOs.CarrinhoDeComprasDto.CreateCarrinhoDeComprasDto) on controller E_Commerce_API_.Controllers.CarrinhoDeComprasController (E-Commerce(API)).
+2023-09-19 14:54:40.850 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-09-19 14:54:40.850 -03:00 [INF] Iniciada pesquisa do CEP '08598372'.
+2023-09-19 14:54:41.514 -03:00 [INF] Pesquisa do CEP finalizada. Resposta: {
+  "cep": "08598-372",
+  "logradouro": "Rua Cambuci",
+  "complemento": "",
+  "bairro": "Jardim Odete",
+  "localidade": "Itaquaquecetuba",
+  "uf": "SP",
+  "ibge": "3523107",
+  "gia": "3797",
+  "ddd": "11",
+  "siafi": "6563"
+}
+2023-09-19 14:54:41.515 -03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce_API_.Models.CarrinhoDeCompras'.
+2023-09-19 14:54:41.516 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API)) in 679.108ms
+2023-09-19 14:54:41.516 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:54:41.516 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 160 - 200 246 application/json;+charset=utf-8 679.7371ms
+2023-09-19 14:54:44.866 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 160
+2023-09-19 14:54:44.866 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:54:44.866 -03:00 [INF] Route matched with {action = "CriarCarrinho", controller = "CarrinhoDeCompras"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CriarCarrinho(E_Commerce_API_.Data.DTOs.CarrinhoDeComprasDto.CreateCarrinhoDeComprasDto) on controller E_Commerce_API_.Controllers.CarrinhoDeComprasController (E-Commerce(API)).
+2023-09-19 14:54:44.922 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-09-19 14:54:44.923 -03:00 [INF] Iniciada pesquisa do CEP '08598372'.
+2023-09-19 14:54:45.350 -03:00 [INF] Pesquisa do CEP finalizada. Resposta: {
+  "cep": "08598-372",
+  "logradouro": "Rua Cambuci",
+  "complemento": "",
+  "bairro": "Jardim Odete",
+  "localidade": "Itaquaquecetuba",
+  "uf": "SP",
+  "ibge": "3523107",
+  "gia": "3797",
+  "ddd": "11",
+  "siafi": "6563"
+}
+2023-09-19 14:54:45.351 -03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce_API_.Models.CarrinhoDeCompras'.
+2023-09-19 14:54:45.351 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API)) in 484.7263ms
+2023-09-19 14:54:45.351 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:54:45.351 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 160 - 200 246 application/json;+charset=utf-8 485.2800ms
+2023-09-19 14:55:43.766 -03:00 [INF] Inicialização da WEB API...
+2023-09-19 14:55:43.897 -03:00 [INF] User profile is available. Using 'C:\Users\Cleartech\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-19 14:55:43.972 -03:00 [INF] Now listening on: https://localhost:7296
+2023-09-19 14:55:43.972 -03:00 [INF] Now listening on: http://localhost:5090
+2023-09-19 14:55:43.975 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-19 14:55:43.975 -03:00 [INF] Hosting environment: Development
+2023-09-19 14:55:43.975 -03:00 [INF] Content root path: C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\E-Commerce(API)\
+2023-09-19 14:55:44.388 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/index.html - -
+2023-09-19 14:55:44.593 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/index.html - - - 200 - text/html;charset=utf-8 206.8252ms
+2023-09-19 14:55:44.593 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - -
+2023-09-19 14:55:44.593 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - -
+2023-09-19 14:55:44.595 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 2.0431ms
+2023-09-19 14:55:44.603 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 9.2799ms
+2023-09-19 14:55:44.821 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - -
+2023-09-19 14:55:44.958 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 137.1510ms
+2023-09-19 14:55:48.436 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 160
+2023-09-19 14:55:48.460 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:55:48.484 -03:00 [INF] Route matched with {action = "CriarCarrinho", controller = "CarrinhoDeCompras"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CriarCarrinho(E_Commerce_API_.Data.DTOs.CarrinhoDeComprasDto.CreateCarrinhoDeComprasDto) on controller E_Commerce_API_.Controllers.CarrinhoDeComprasController (E-Commerce(API)).
+2023-09-19 14:55:49.623 -03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-09-19 14:55:49.692 -03:00 [INF] Iniciada pesquisa do CEP '08598372'.
+2023-09-19 14:55:50.526 -03:00 [INF] Pesquisa do CEP finalizada. Resposta: {
+  "cep": "08598-372",
+  "logradouro": "Rua Cambuci",
+  "complemento": "",
+  "bairro": "Jardim Odete",
+  "localidade": "Itaquaquecetuba",
+  "uf": "SP",
+  "ibge": "3523107",
+  "gia": "3797",
+  "ddd": "11",
+  "siafi": "6563"
+}
+2023-09-19 14:55:50.550 -03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce_API_.Models.CarrinhoDeCompras'.
+2023-09-19 14:55:50.581 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API)) in 2092.877ms
+2023-09-19 14:55:50.582 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:55:50.587 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 160 - 200 246 application/json;+charset=utf-8 2150.2731ms
+2023-09-19 14:55:55.935 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 161
+2023-09-19 14:55:55.936 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:55:55.936 -03:00 [INF] Route matched with {action = "CriarCarrinho", controller = "CarrinhoDeCompras"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CriarCarrinho(E_Commerce_API_.Data.DTOs.CarrinhoDeComprasDto.CreateCarrinhoDeComprasDto) on controller E_Commerce_API_.Controllers.CarrinhoDeComprasController (E-Commerce(API)).
+2023-09-19 14:55:55.944 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-09-19 14:55:55.945 -03:00 [INF] Iniciada pesquisa do CEP '08598372'.
+2023-09-19 14:55:56.970 -03:00 [INF] Pesquisa do CEP finalizada. Resposta: {
+  "cep": "08598-372",
+  "logradouro": "Rua Cambuci",
+  "complemento": "",
+  "bairro": "Jardim Odete",
+  "localidade": "Itaquaquecetuba",
+  "uf": "SP",
+  "ibge": "3523107",
+  "gia": "3797",
+  "ddd": "11",
+  "siafi": "6563"
+}
+2023-09-19 14:55:56.971 -03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce_API_.Models.CarrinhoDeCompras'.
+2023-09-19 14:55:56.972 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API)) in 1035.9058ms
+2023-09-19 14:55:56.972 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:55:56.972 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 161 - 200 247 application/json;+charset=utf-8 1036.8839ms
+2023-09-19 14:56:13.287 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 200
+2023-09-19 14:56:13.290 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:56:13.290 -03:00 [INF] Route matched with {action = "CriarCarrinho", controller = "CarrinhoDeCompras"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CriarCarrinho(E_Commerce_API_.Data.DTOs.CarrinhoDeComprasDto.CreateCarrinhoDeComprasDto) on controller E_Commerce_API_.Controllers.CarrinhoDeComprasController (E-Commerce(API)).
+2023-09-19 14:56:13.303 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API)) in 12.3184ms
+2023-09-19 14:56:13.303 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:56:13.312 -03:00 [ERR] Erro: {"TraceId":"efa39207-6ef9-4d91-a0c9-8cea749497f6","Error":{"Logref":"BadRequest","Message":"produtoId e quantidades devem possuir a mesma quantidade.","$type":"ErrorDetailsDto"},"Data":"19/09/2023","$type":"ErrorResponseDto"}
+2023-09-19 14:56:13.326 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 200 - 400 - application/json 39.5315ms
+2023-09-19 14:56:20.522 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 204
+2023-09-19 14:56:20.522 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:56:20.522 -03:00 [INF] Route matched with {action = "CriarCarrinho", controller = "CarrinhoDeCompras"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CriarCarrinho(E_Commerce_API_.Data.DTOs.CarrinhoDeComprasDto.CreateCarrinhoDeComprasDto) on controller E_Commerce_API_.Controllers.CarrinhoDeComprasController (E-Commerce(API)).
+2023-09-19 14:56:20.604 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-09-19 14:56:20.605 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-09-19 14:56:20.606 -03:00 [INF] Iniciada pesquisa do CEP '08598372'.
+2023-09-19 14:56:21.746 -03:00 [INF] Pesquisa do CEP finalizada. Resposta: {
+  "cep": "08598-372",
+  "logradouro": "Rua Cambuci",
+  "complemento": "",
+  "bairro": "Jardim Odete",
+  "localidade": "Itaquaquecetuba",
+  "uf": "SP",
+  "ibge": "3523107",
+  "gia": "3797",
+  "ddd": "11",
+  "siafi": "6563"
+}
+2023-09-19 14:56:21.747 -03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce_API_.Models.CarrinhoDeCompras'.
+2023-09-19 14:56:21.747 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API)) in 1225.2384ms
+2023-09-19 14:56:21.747 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:56:21.748 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 204 - 200 285 application/json;+charset=utf-8 1225.7716ms
+2023-09-19 14:57:31.899 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 203
+2023-09-19 14:57:31.899 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:57:31.899 -03:00 [INF] Route matched with {action = "CriarCarrinho", controller = "CarrinhoDeCompras"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CriarCarrinho(E_Commerce_API_.Data.DTOs.CarrinhoDeComprasDto.CreateCarrinhoDeComprasDto) on controller E_Commerce_API_.Controllers.CarrinhoDeComprasController (E-Commerce(API)).
+2023-09-19 14:57:31.902 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-09-19 14:57:31.903 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-09-19 14:57:31.904 -03:00 [INF] Iniciada pesquisa do CEP '08598372'.
+2023-09-19 14:57:32.525 -03:00 [INF] Pesquisa do CEP finalizada. Resposta: {
+  "cep": "08598-372",
+  "logradouro": "Rua Cambuci",
+  "complemento": "",
+  "bairro": "Jardim Odete",
+  "localidade": "Itaquaquecetuba",
+  "uf": "SP",
+  "ibge": "3523107",
+  "gia": "3797",
+  "ddd": "11",
+  "siafi": "6563"
+}
+2023-09-19 14:57:32.525 -03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce_API_.Models.CarrinhoDeCompras'.
+2023-09-19 14:57:32.526 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API)) in 626.3959ms
+2023-09-19 14:57:32.526 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:57:32.526 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 203 - 200 285 application/json;+charset=utf-8 627.0772ms
+2023-09-19 14:57:35.177 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 203
+2023-09-19 14:57:35.177 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:57:35.177 -03:00 [INF] Route matched with {action = "CriarCarrinho", controller = "CarrinhoDeCompras"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CriarCarrinho(E_Commerce_API_.Data.DTOs.CarrinhoDeComprasDto.CreateCarrinhoDeComprasDto) on controller E_Commerce_API_.Controllers.CarrinhoDeComprasController (E-Commerce(API)).
+2023-09-19 14:57:35.179 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-09-19 14:57:35.181 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-09-19 14:57:35.181 -03:00 [INF] Iniciada pesquisa do CEP '08598372'.
+2023-09-19 14:57:35.597 -03:00 [INF] Pesquisa do CEP finalizada. Resposta: {
+  "cep": "08598-372",
+  "logradouro": "Rua Cambuci",
+  "complemento": "",
+  "bairro": "Jardim Odete",
+  "localidade": "Itaquaquecetuba",
+  "uf": "SP",
+  "ibge": "3523107",
+  "gia": "3797",
+  "ddd": "11",
+  "siafi": "6563"
+}
+2023-09-19 14:57:35.598 -03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce_API_.Models.CarrinhoDeCompras'.
+2023-09-19 14:57:35.598 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API)) in 421.2318ms
+2023-09-19 14:57:35.598 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:57:35.598 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 203 - 200 285 application/json;+charset=utf-8 421.6745ms
+2023-09-19 14:58:45.332 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 204
+2023-09-19 14:58:45.333 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:58:45.333 -03:00 [INF] Route matched with {action = "CriarCarrinho", controller = "CarrinhoDeCompras"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CriarCarrinho(E_Commerce_API_.Data.DTOs.CarrinhoDeComprasDto.CreateCarrinhoDeComprasDto) on controller E_Commerce_API_.Controllers.CarrinhoDeComprasController (E-Commerce(API)).
+2023-09-19 14:58:45.336 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-09-19 14:58:45.337 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-09-19 14:58:45.338 -03:00 [INF] Iniciada pesquisa do CEP '08598372'.
+2023-09-19 14:58:46.570 -03:00 [INF] Pesquisa do CEP finalizada. Resposta: {
+  "cep": "08598-372",
+  "logradouro": "Rua Cambuci",
+  "complemento": "",
+  "bairro": "Jardim Odete",
+  "localidade": "Itaquaquecetuba",
+  "uf": "SP",
+  "ibge": "3523107",
+  "gia": "3797",
+  "ddd": "11",
+  "siafi": "6563"
+}
+2023-09-19 14:58:46.571 -03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce_API_.Models.CarrinhoDeCompras'.
+2023-09-19 14:58:46.571 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API)) in 1238.2652ms
+2023-09-19 14:58:46.571 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:58:46.571 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 204 - 200 286 application/json;+charset=utf-8 1238.9500ms
+2023-09-19 14:59:03.564 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 203
+2023-09-19 14:59:03.565 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:59:03.565 -03:00 [INF] Route matched with {action = "CriarCarrinho", controller = "CarrinhoDeCompras"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CriarCarrinho(E_Commerce_API_.Data.DTOs.CarrinhoDeComprasDto.CreateCarrinhoDeComprasDto) on controller E_Commerce_API_.Controllers.CarrinhoDeComprasController (E-Commerce(API)).
+2023-09-19 14:59:03.567 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-09-19 14:59:03.568 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-09-19 14:59:03.568 -03:00 [INF] Iniciada pesquisa do CEP '08598372'.
+2023-09-19 14:59:04.578 -03:00 [INF] Pesquisa do CEP finalizada. Resposta: {
+  "cep": "08598-372",
+  "logradouro": "Rua Cambuci",
+  "complemento": "",
+  "bairro": "Jardim Odete",
+  "localidade": "Itaquaquecetuba",
+  "uf": "SP",
+  "ibge": "3523107",
+  "gia": "3797",
+  "ddd": "11",
+  "siafi": "6563"
+}
+2023-09-19 14:59:04.578 -03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce_API_.Models.CarrinhoDeCompras'.
+2023-09-19 14:59:04.579 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API)) in 1014.0039ms
+2023-09-19 14:59:04.579 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:59:04.579 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 203 - 200 285 application/json;+charset=utf-8 1014.4733ms
+2023-09-19 14:59:09.115 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 203
+2023-09-19 14:59:09.115 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:59:09.115 -03:00 [INF] Route matched with {action = "CriarCarrinho", controller = "CarrinhoDeCompras"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CriarCarrinho(E_Commerce_API_.Data.DTOs.CarrinhoDeComprasDto.CreateCarrinhoDeComprasDto) on controller E_Commerce_API_.Controllers.CarrinhoDeComprasController (E-Commerce(API)).
+2023-09-19 14:59:09.117 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-09-19 14:59:09.118 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-09-19 14:59:09.118 -03:00 [INF] Iniciada pesquisa do CEP '08598372'.
+2023-09-19 14:59:10.520 -03:00 [INF] Pesquisa do CEP finalizada. Resposta: {
+  "cep": "08598-372",
+  "logradouro": "Rua Cambuci",
+  "complemento": "",
+  "bairro": "Jardim Odete",
+  "localidade": "Itaquaquecetuba",
+  "uf": "SP",
+  "ibge": "3523107",
+  "gia": "3797",
+  "ddd": "11",
+  "siafi": "6563"
+}
+2023-09-19 14:59:10.521 -03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce_API_.Models.CarrinhoDeCompras'.
+2023-09-19 14:59:10.521 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API)) in 1406.0279ms
+2023-09-19 14:59:10.521 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CarrinhoDeComprasController.CriarCarrinho (E-Commerce(API))'
+2023-09-19 14:59:10.521 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/CarrinhoDeCompras application/json 203 - 200 285 application/json;+charset=utf-8 1406.4792ms

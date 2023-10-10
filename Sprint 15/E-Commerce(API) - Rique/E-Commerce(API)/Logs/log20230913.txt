@@ -1,0 +1,99 @@
+2023-09-13 16:35:11.046 -03:00 [INF] Inicialização da WEB API...
+2023-09-13 16:35:11.247 -03:00 [INF] User profile is available. Using 'C:\Users\Cleartech\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-13 16:35:11.366 -03:00 [INF] Now listening on: https://localhost:7296
+2023-09-13 16:35:11.366 -03:00 [INF] Now listening on: http://localhost:5090
+2023-09-13 16:35:11.369 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-13 16:35:11.369 -03:00 [INF] Hosting environment: Development
+2023-09-13 16:35:11.369 -03:00 [INF] Content root path: C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\E-Commerce(API)\
+2023-09-13 16:35:11.995 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/index.html - -
+2023-09-13 16:35:12.375 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/index.html - - - 200 - text/html;charset=utf-8 382.5896ms
+2023-09-13 16:35:12.388 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - -
+2023-09-13 16:35:12.388 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - -
+2023-09-13 16:35:12.392 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 4.6216ms
+2023-09-13 16:35:12.426 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.6767ms
+2023-09-13 16:35:12.622 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - -
+2023-09-13 16:35:12.758 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 135.2080ms
+2023-09-13 16:35:40.345 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/Categoria application/json 4
+2023-09-13 16:35:40.534 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-13 16:35:40.537 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2023-09-13 16:35:40.549 -03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (admin|lojista)
+2023-09-13 16:35:40.553 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-13 16:35:40.555 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/Categoria application/json 4 - 401 0 - 209.6516ms
+2023-09-13 16:36:11.732 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/Categoria application/json 4
+2023-09-13 16:36:11.761 -03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (admin|lojista)
+2023-09-13 16:36:11.762 -03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2023-09-13 16:36:11.762 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/Categoria application/json 4 - 403 0 - 30.6158ms
+2023-09-13 16:36:30.821 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/Categoria application/json 4
+2023-09-13 16:36:30.827 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API))'
+2023-09-13 16:36:30.856 -03:00 [INF] Route matched with {action = "CadastrarCategoria", controller = "Categoria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CadastrarCategoria(E_Commerce_API_.Data.DTOs.CategoriaDto.CreateCategoriaDto) on controller E_Commerce_API_.Controllers.CategoriaController (E-Commerce(API)).
+2023-09-13 16:36:31.351 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API)) in 491.2538ms
+2023-09-13 16:36:31.352 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API))'
+2023-09-13 16:36:31.356 -03:00 [ERR] Erro: {"TraceId":"58ab5fa2-1ac8-4120-82ee-4905d51257ea","Error":{"Logref":"BadRequest","Message":" O campo Nome é obrigatório.","$type":"ErrorDetailsDto"},"Data":"13/09/2023","$type":"ErrorResponseDto"}
+2023-09-13 16:36:31.386 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/Categoria application/json 4 - 400 - application/json 565.5222ms
+2023-09-13 16:48:10.333 -03:00 [INF] Inicialização da WEB API...
+2023-09-13 16:48:10.465 -03:00 [INF] User profile is available. Using 'C:\Users\Cleartech\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-13 16:48:10.549 -03:00 [INF] Now listening on: https://localhost:7296
+2023-09-13 16:48:10.549 -03:00 [INF] Now listening on: http://localhost:5090
+2023-09-13 16:48:10.552 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-13 16:48:10.552 -03:00 [INF] Hosting environment: Development
+2023-09-13 16:48:10.552 -03:00 [INF] Content root path: C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\E-Commerce(API)\
+2023-09-13 16:48:10.919 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/index.html - -
+2023-09-13 16:48:11.120 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - -
+2023-09-13 16:48:11.120 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - -
+2023-09-13 16:48:11.121 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/index.html - - - 200 - text/html;charset=utf-8 203.7090ms
+2023-09-13 16:48:11.122 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 1.5129ms
+2023-09-13 16:48:11.149 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.9532ms
+2023-09-13 16:48:11.456 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - -
+2023-09-13 16:48:11.557 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 101.0314ms
+2023-09-13 16:48:51.786 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/Categoria application/json 26
+2023-09-13 16:48:51.913 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API))'
+2023-09-13 16:48:51.929 -03:00 [INF] Route matched with {action = "CadastrarCategoria", controller = "Categoria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CadastrarCategoria(E_Commerce_API_.Data.DTOs.CategoriaDto.CreateCategoriaDto) on controller E_Commerce_API_.Controllers.CategoriaController (E-Commerce(API)).
+2023-09-13 16:48:52.269 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API)) in 336.7094ms
+2023-09-13 16:48:52.269 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API))'
+2023-09-13 16:48:52.272 -03:00 [ERR] Erro: {"TraceId":"aa312978-aed8-4616-a436-35cb8ff7f335","Error":{"Logref":"BadRequest","Message":" O campo Nome é obrigatório.","$type":"ErrorDetailsDto"},"Data":"13/09/2023","$type":"ErrorResponseDto"}
+2023-09-13 16:48:52.298 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/Categoria application/json 26 - 400 - application/json 511.9672ms
+2023-09-13 16:48:55.126 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/Categoria application/json 26
+2023-09-13 16:48:55.130 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API))'
+2023-09-13 16:48:55.130 -03:00 [INF] Route matched with {action = "CadastrarCategoria", controller = "Categoria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CadastrarCategoria(E_Commerce_API_.Data.DTOs.CategoriaDto.CreateCategoriaDto) on controller E_Commerce_API_.Controllers.CategoriaController (E-Commerce(API)).
+2023-09-13 16:48:55.142 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API)) in 11.5144ms
+2023-09-13 16:48:55.142 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API))'
+2023-09-13 16:48:55.142 -03:00 [ERR] Erro: {"TraceId":"ba142887-ada5-4c1d-9451-270d79617d96","Error":{"Logref":"BadRequest","Message":" O campo Nome é obrigatório.","$type":"ErrorDetailsDto"},"Data":"13/09/2023","$type":"ErrorResponseDto"}
+2023-09-13 16:48:55.142 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/Categoria application/json 26 - 400 - application/json 15.9223ms
+2023-09-13 17:04:12.479 -03:00 [INF] Inicialização da WEB API...
+2023-09-13 17:04:12.629 -03:00 [INF] User profile is available. Using 'C:\Users\Cleartech\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-13 17:04:12.747 -03:00 [INF] Now listening on: https://localhost:7296
+2023-09-13 17:04:12.747 -03:00 [INF] Now listening on: http://localhost:5090
+2023-09-13 17:04:12.750 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-13 17:04:12.750 -03:00 [INF] Hosting environment: Development
+2023-09-13 17:04:12.750 -03:00 [INF] Content root path: C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\E-Commerce(API)\
+2023-09-13 17:04:13.015 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/index.html - -
+2023-09-13 17:04:13.249 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/index.html - - - 200 - text/html;charset=utf-8 237.6395ms
+2023-09-13 17:04:13.256 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - -
+2023-09-13 17:04:13.256 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - -
+2023-09-13 17:04:13.260 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.9061ms
+2023-09-13 17:04:13.268 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.7008ms
+2023-09-13 17:04:13.591 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - -
+2023-09-13 17:04:13.705 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 113.2400ms
+2023-09-13 17:04:56.490 -03:00 [INF] Inicialização da WEB API...
+2023-09-13 17:04:56.648 -03:00 [INF] User profile is available. Using 'C:\Users\Cleartech\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-13 17:04:56.769 -03:00 [INF] Now listening on: https://localhost:7296
+2023-09-13 17:04:56.769 -03:00 [INF] Now listening on: http://localhost:5090
+2023-09-13 17:04:56.771 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-13 17:04:56.771 -03:00 [INF] Hosting environment: Development
+2023-09-13 17:04:56.771 -03:00 [INF] Content root path: C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\E-Commerce(API)\
+2023-09-13 17:04:57.094 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/index.html - -
+2023-09-13 17:04:57.339 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/index.html - - - 200 - text/html;charset=utf-8 248.8982ms
+2023-09-13 17:04:57.347 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - -
+2023-09-13 17:04:57.347 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - -
+2023-09-13 17:04:57.350 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 2.4021ms
+2023-09-13 17:04:57.455 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 108.0369ms
+2023-09-13 17:04:57.558 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - -
+2023-09-13 17:04:57.679 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 120.8381ms

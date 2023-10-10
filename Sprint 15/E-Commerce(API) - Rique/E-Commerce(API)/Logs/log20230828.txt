@@ -1,0 +1,193 @@
+2023-08-28 17:22:59.658 -03:00 [INF] Inicialização da WEB API...
+2023-08-28 17:22:59.795 -03:00 [INF] User profile is available. Using 'C:\Users\Cleartech\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-28 17:22:59.880 -03:00 [INF] Now listening on: https://localhost:7296
+2023-08-28 17:22:59.880 -03:00 [INF] Now listening on: http://localhost:5090
+2023-08-28 17:22:59.882 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-28 17:22:59.882 -03:00 [INF] Hosting environment: Development
+2023-08-28 17:22:59.882 -03:00 [INF] Content root path: C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\E-Commerce(API)\
+2023-08-28 17:23:00.294 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/index.html - -
+2023-08-28 17:23:00.598 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/swagger-ui-standalone-preset.js - -
+2023-08-28 17:23:00.598 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/swagger-ui.css - -
+2023-08-28 17:23:00.598 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/swagger-ui-bundle.js - -
+2023-08-28 17:23:00.599 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/index.html - - - 200 - text/html;charset=utf-8 307.8710ms
+2023-08-28 17:23:00.610 -03:00 [INF] The file /swagger-ui-bundle.js was not modified
+2023-08-28 17:23:00.610 -03:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2023-08-28 17:23:00.610 -03:00 [INF] The file /swagger-ui.css was not modified
+2023-08-28 17:23:00.610 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/swagger-ui-bundle.js - - - 304 - application/javascript 11.8907ms
+2023-08-28 17:23:00.610 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/swagger-ui.css - - - 304 - text/css 11.8903ms
+2023-08-28 17:23:00.610 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/swagger-ui-standalone-preset.js - - - 304 - application/javascript 11.8908ms
+2023-08-28 17:23:00.622 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - -
+2023-08-28 17:23:00.626 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 4.6791ms
+2023-08-28 17:23:00.630 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - -
+2023-08-28 17:23:00.644 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.0573ms
+2023-08-28 17:23:00.907 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - -
+2023-08-28 17:23:00.942 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/favicon-32x32.png - -
+2023-08-28 17:23:00.942 -03:00 [INF] The file /favicon-32x32.png was not modified
+2023-08-28 17:23:00.942 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/favicon-32x32.png - - - 304 - image/png 0.4954ms
+2023-08-28 17:23:01.001 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 93.1655ms
+2023-08-28 17:23:02.159 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/Categoria application/json 31
+2023-08-28 17:23:02.369 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-08-28 17:23:02.373 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2023-08-28 17:23:02.383 -03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (admin|lojista)
+2023-08-28 17:23:02.388 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-28 17:23:02.389 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/Categoria application/json 31 - 401 0 - 230.4873ms
+2023-08-28 17:23:25.073 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/Categoria application/json 31
+2023-08-28 17:23:25.099 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API))'
+2023-08-28 17:23:25.117 -03:00 [INF] Route matched with {action = "CadastrarCategoria", controller = "Categoria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CadastrarCategoria(E_Commerce_API_.Data.DTOs.CategoriaDto.CreateCategoriaDto) on controller E_Commerce_API_.Controllers.CategoriaController (E-Commerce(API)).
+2023-08-28 17:23:25.601 -03:00 [INF] Iniciando verificação do nome: 'Açougue  D'.
+2023-08-28 17:23:25.603 -03:00 [INF] O nome está dentro dos critérios.
+2023-08-28 17:23:25.606 -03:00 [INF] Foi requisitado um cadastro de categoria pelo usuário: id: db82dc95-bb75-47ba-84a6-8547ddb7c948.
+2023-08-28 17:23:25.606 -03:00 [INF] Iniciada adição de uma nova categoria: 'Açougue  D'.
+2023-08-28 17:23:26.489 -03:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Nome`, `c`.`Status`
+FROM `Categorias` AS `c`
+2023-08-28 17:23:26.562 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CategoriaId`, `s`.`DataEHoraCriacao`, `s`.`DataEHoraModificacao`, `s`.`Nome`, `s`.`Status`
+FROM `Subcategorias` AS `s`
+2023-08-28 17:23:26.593 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-08-28 17:23:26.622 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Bairro`, `c`.`CEP`, `c`.`Cidade`, `c`.`Complemento`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Logradouro`, `c`.`Nome`, `c`.`Numero`, `c`.`Status`, `c`.`UF`
+FROM `CentrosDeDistribuicao` AS `c`
+2023-08-28 17:23:26.647 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API)) in 1526.7804ms
+2023-08-28 17:23:26.647 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API))'
+2023-08-28 17:23:26.651 -03:00 [ERR] Erro: {"TraceId":"25626b6e-2ab4-4c47-b412-31cbbf36a25c","Error":{"Logref":"BadRequest","Message":"O nome 'Açougue  D' já existe.","$type":"ErrorDetailsDto"},"Data":"28/08/2023","$type":"ErrorResponseDto"}
+2023-08-28 17:23:26.686 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/Categoria application/json 31 - 400 - application/json 1612.0470ms
+2023-08-28 17:24:38.169 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/index.html - -
+2023-08-28 17:24:38.179 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/index.html - - - 200 - text/html;charset=utf-8 10.0144ms
+2023-08-28 17:24:38.189 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - -
+2023-08-28 17:24:38.189 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - -
+2023-08-28 17:24:38.189 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 0.3449ms
+2023-08-28 17:24:38.195 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 6.7581ms
+2023-08-28 17:24:38.367 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - -
+2023-08-28 17:24:38.379 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 11.4668ms
+2023-08-28 17:24:41.201 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/Categoria application/json 31
+2023-08-28 17:24:41.202 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API))'
+2023-08-28 17:24:41.203 -03:00 [INF] Route matched with {action = "CadastrarCategoria", controller = "Categoria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CadastrarCategoria(E_Commerce_API_.Data.DTOs.CategoriaDto.CreateCategoriaDto) on controller E_Commerce_API_.Controllers.CategoriaController (E-Commerce(API)).
+2023-08-28 17:24:41.205 -03:00 [INF] Iniciando verificação do nome: 'Açougue  D'.
+2023-08-28 17:24:41.205 -03:00 [INF] O nome está dentro dos critérios.
+2023-08-28 17:24:41.205 -03:00 [INF] Foi requisitado um cadastro de categoria pelo usuário: id: db82dc95-bb75-47ba-84a6-8547ddb7c948.
+2023-08-28 17:24:41.205 -03:00 [INF] Iniciada adição de uma nova categoria: 'Açougue  D'.
+2023-08-28 17:24:41.211 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Nome`, `c`.`Status`
+FROM `Categorias` AS `c`
+2023-08-28 17:24:41.213 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CategoriaId`, `s`.`DataEHoraCriacao`, `s`.`DataEHoraModificacao`, `s`.`Nome`, `s`.`Status`
+FROM `Subcategorias` AS `s`
+2023-08-28 17:24:41.216 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-08-28 17:24:41.217 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Bairro`, `c`.`CEP`, `c`.`Cidade`, `c`.`Complemento`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Logradouro`, `c`.`Nome`, `c`.`Numero`, `c`.`Status`, `c`.`UF`
+FROM `CentrosDeDistribuicao` AS `c`
+2023-08-28 17:24:41.217 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API)) in 14.3995ms
+2023-08-28 17:24:41.218 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API))'
+2023-08-28 17:24:41.218 -03:00 [ERR] Erro: {"TraceId":"2f768582-b67f-4e29-915f-ea7bcd40fcd6","Error":{"Logref":"BadRequest","Message":"O nome 'Açougue  D' já existe.","$type":"ErrorDetailsDto"},"Data":"28/08/2023","$type":"ErrorResponseDto"}
+2023-08-28 17:24:41.218 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/Categoria application/json 31 - 400 - application/json 17.4544ms
+2023-08-28 17:24:54.685 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/Categoria application/json 31
+2023-08-28 17:24:54.686 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API))'
+2023-08-28 17:24:54.686 -03:00 [INF] Route matched with {action = "CadastrarCategoria", controller = "Categoria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CadastrarCategoria(E_Commerce_API_.Data.DTOs.CategoriaDto.CreateCategoriaDto) on controller E_Commerce_API_.Controllers.CategoriaController (E-Commerce(API)).
+2023-08-28 17:24:54.693 -03:00 [INF] Iniciando verificação do nome: 'Açougue  D'.
+2023-08-28 17:24:54.693 -03:00 [INF] O nome está dentro dos critérios.
+2023-08-28 17:24:54.693 -03:00 [INF] Foi requisitado um cadastro de categoria pelo usuário: id: db82dc95-bb75-47ba-84a6-8547ddb7c948.
+2023-08-28 17:24:54.693 -03:00 [INF] Iniciada adição de uma nova categoria: 'Açougue  D'.
+2023-08-28 17:24:54.737 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Nome`, `c`.`Status`
+FROM `Categorias` AS `c`
+2023-08-28 17:24:54.738 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CategoriaId`, `s`.`DataEHoraCriacao`, `s`.`DataEHoraModificacao`, `s`.`Nome`, `s`.`Status`
+FROM `Subcategorias` AS `s`
+2023-08-28 17:24:54.740 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-08-28 17:24:54.743 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Bairro`, `c`.`CEP`, `c`.`Cidade`, `c`.`Complemento`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Logradouro`, `c`.`Nome`, `c`.`Numero`, `c`.`Status`, `c`.`UF`
+FROM `CentrosDeDistribuicao` AS `c`
+2023-08-28 17:24:54.743 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API)) in 56.9849ms
+2023-08-28 17:24:54.743 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API))'
+2023-08-28 17:24:54.744 -03:00 [ERR] Erro: {"TraceId":"1550d194-8eee-461c-a31c-25eae1efbe00","Error":{"Logref":"BadRequest","Message":"O nome 'Açougue  D' já existe.","$type":"ErrorDetailsDto"},"Data":"28/08/2023","$type":"ErrorResponseDto"}
+2023-08-28 17:24:54.744 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/Categoria application/json 31 - 400 - application/json 58.3927ms
+2023-08-28 17:25:06.942 -03:00 [INF] Inicialização da WEB API...
+2023-08-28 17:25:07.069 -03:00 [INF] User profile is available. Using 'C:\Users\Cleartech\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-28 17:25:07.160 -03:00 [INF] Now listening on: https://localhost:7296
+2023-08-28 17:25:07.160 -03:00 [INF] Now listening on: http://localhost:5090
+2023-08-28 17:25:07.162 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-28 17:25:07.162 -03:00 [INF] Hosting environment: Development
+2023-08-28 17:25:07.162 -03:00 [INF] Content root path: C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\E-Commerce(API)\
+2023-08-28 17:25:07.573 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/index.html - -
+2023-08-28 17:25:07.782 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - -
+2023-08-28 17:25:07.782 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - -
+2023-08-28 17:25:07.783 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/index.html - - - 200 - text/html;charset=utf-8 212.2423ms
+2023-08-28 17:25:07.784 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 2.1702ms
+2023-08-28 17:25:07.791 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 8.6288ms
+2023-08-28 17:25:07.900 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - -
+2023-08-28 17:25:08.015 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 114.7389ms
+2023-08-28 17:25:10.946 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/Categoria application/json 31
+2023-08-28 17:25:11.083 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API))'
+2023-08-28 17:25:11.107 -03:00 [INF] Route matched with {action = "CadastrarCategoria", controller = "Categoria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CadastrarCategoria(E_Commerce_API_.Data.DTOs.CategoriaDto.CreateCategoriaDto) on controller E_Commerce_API_.Controllers.CategoriaController (E-Commerce(API)).
+2023-08-28 17:25:11.468 -03:00 [INF] Iniciando verificação do nome: 'Açougue  D'.
+2023-08-28 17:25:11.469 -03:00 [INF] O nome está dentro dos critérios.
+2023-08-28 17:25:11.471 -03:00 [INF] Foi requisitado um cadastro de categoria pelo usuário: db82dc95-bb75-47ba-84a6-8547ddb7c948.
+2023-08-28 17:25:11.471 -03:00 [INF] Iniciada adição de uma nova categoria: 'Açougue  D'.
+2023-08-28 17:25:12.255 -03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Nome`, `c`.`Status`
+FROM `Categorias` AS `c`
+2023-08-28 17:25:12.338 -03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CategoriaId`, `s`.`DataEHoraCriacao`, `s`.`DataEHoraModificacao`, `s`.`Nome`, `s`.`Status`
+FROM `Subcategorias` AS `s`
+2023-08-28 17:25:12.368 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-08-28 17:25:12.394 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Bairro`, `c`.`CEP`, `c`.`Cidade`, `c`.`Complemento`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Logradouro`, `c`.`Nome`, `c`.`Numero`, `c`.`Status`, `c`.`UF`
+FROM `CentrosDeDistribuicao` AS `c`
+2023-08-28 17:25:12.422 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API)) in 1311.4988ms
+2023-08-28 17:25:12.422 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API))'
+2023-08-28 17:25:12.426 -03:00 [ERR] Erro: {"TraceId":"54c24b8b-701a-4180-9e03-aefb5ad6b56e","Error":{"Logref":"BadRequest","Message":"O nome 'Açougue  D' já existe.","$type":"ErrorDetailsDto"},"Data":"28/08/2023","$type":"ErrorResponseDto"}
+2023-08-28 17:25:12.454 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/Categoria application/json 31 - 400 - application/json 1507.9649ms
+2023-08-28 17:25:30.101 -03:00 [INF] Inicialização da WEB API...
+2023-08-28 17:25:30.247 -03:00 [INF] User profile is available. Using 'C:\Users\Cleartech\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-28 17:25:30.342 -03:00 [INF] Now listening on: https://localhost:7296
+2023-08-28 17:25:30.342 -03:00 [INF] Now listening on: http://localhost:5090
+2023-08-28 17:25:30.345 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-28 17:25:30.345 -03:00 [INF] Hosting environment: Development
+2023-08-28 17:25:30.345 -03:00 [INF] Content root path: C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\E-Commerce(API)\
+2023-08-28 17:25:30.730 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/index.html - -
+2023-08-28 17:25:30.964 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - -
+2023-08-28 17:25:30.964 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - -
+2023-08-28 17:25:30.965 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/index.html - - - 200 - text/html;charset=utf-8 239.9141ms
+2023-08-28 17:25:30.966 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 2.0244ms
+2023-08-28 17:25:30.973 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 9.1548ms
+2023-08-28 17:25:31.105 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - -
+2023-08-28 17:25:31.219 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 114.0125ms
+2023-08-28 17:25:32.759 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7296/Categoria application/json 31
+2023-08-28 17:25:32.897 -03:00 [INF] Executing endpoint 'E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API))'
+2023-08-28 17:25:32.917 -03:00 [INF] Route matched with {action = "CadastrarCategoria", controller = "Categoria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CadastrarCategoria(E_Commerce_API_.Data.DTOs.CategoriaDto.CreateCategoriaDto) on controller E_Commerce_API_.Controllers.CategoriaController (E-Commerce(API)).
+2023-08-28 17:25:33.289 -03:00 [INF] Iniciando verificação do nome: 'Açougue  D'.
+2023-08-28 17:25:33.290 -03:00 [INF] O nome está dentro dos critérios.
+2023-08-28 17:25:33.292 -03:00 [INF] Foi requisitado um cadastro de categoria pelo usuário: 'db82dc95-bb75-47ba-84a6-8547ddb7c948'.
+2023-08-28 17:25:33.293 -03:00 [INF] Iniciada adição de uma nova categoria: 'Açougue  D'.
+2023-08-28 17:25:34.103 -03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Nome`, `c`.`Status`
+FROM `Categorias` AS `c`
+2023-08-28 17:25:34.184 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CategoriaId`, `s`.`DataEHoraCriacao`, `s`.`DataEHoraModificacao`, `s`.`Nome`, `s`.`Status`
+FROM `Subcategorias` AS `s`
+2023-08-28 17:25:34.220 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Altura`, `p`.`CentroDeDistribuicaoId`, `p`.`Comprimento`, `p`.`DataEHoraCriacao`, `p`.`DataEHoraModificacao`, `p`.`Descricao`, `p`.`Largura`, `p`.`Nome`, `p`.`Peso`, `p`.`QuantidadeEmEstoque`, `p`.`Status`, `p`.`SubcategoriaId`, `p`.`Valor`
+FROM `Produtos` AS `p`
+2023-08-28 17:25:34.248 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Bairro`, `c`.`CEP`, `c`.`Cidade`, `c`.`Complemento`, `c`.`DataEHoraCriacao`, `c`.`DataEHoraModificacao`, `c`.`Logradouro`, `c`.`Nome`, `c`.`Numero`, `c`.`Status`, `c`.`UF`
+FROM `CentrosDeDistribuicao` AS `c`
+2023-08-28 17:25:34.272 -03:00 [INF] Executed action E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API)) in 1351.9889ms
+2023-08-28 17:25:34.273 -03:00 [INF] Executed endpoint 'E_Commerce_API_.Controllers.CategoriaController.CadastrarCategoria (E-Commerce(API))'
+2023-08-28 17:25:34.278 -03:00 [ERR] Erro: {"TraceId":"78f18b1c-dac7-4969-a1c6-a3e60edf6d48","Error":{"Logref":"BadRequest","Message":"O nome 'Açougue  D' já existe.","$type":"ErrorDetailsDto"},"Data":"28/08/2023","$type":"ErrorResponseDto"}
+2023-08-28 17:25:34.313 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7296/Categoria application/json 31 - 400 - application/json 1554.4965ms
