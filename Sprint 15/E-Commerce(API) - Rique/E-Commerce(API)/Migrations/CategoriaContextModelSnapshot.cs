@@ -29,33 +29,32 @@ namespace E_Commerce_API_.Migrations
                         .HasColumnType("char(36)");
 
                     b.Property<string>("Bairro")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("CEP")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Cidade")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Complemento")
-                        .IsRequired()
                         .HasColumnType("longtext");
+
+                    b.Property<Guid?>("CupomDeDescontoId")
+                        .HasColumnType("char(36)");
 
                     b.Property<string>("Logradouro")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<uint>("Numero")
+                    b.Property<uint?>("Numero")
                         .HasColumnType("int unsigned");
 
                     b.Property<string>("UF")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CupomDeDescontoId");
 
                     b.ToTable("CarrinhosDeCompras");
                 });
@@ -140,6 +139,38 @@ namespace E_Commerce_API_.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("CentrosDeDistribuicao");
+                });
+
+            modelBuilder.Entity("E_Commerce_API_.Models.CupomDeDesconto", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)");
+
+                    b.Property<string>("Cupom")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<Guid>("SetorDeDesconto")
+                        .HasColumnType("char(36)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("TipoDeDesconto")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Uso")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<double>("ValorDoDesconto")
+                        .HasColumnType("double");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CuponsDeDesconto");
                 });
 
             modelBuilder.Entity("E_Commerce_API_.Models.Produto", b =>
@@ -250,6 +281,15 @@ namespace E_Commerce_API_.Migrations
                     b.ToTable("Subcategorias");
                 });
 
+            modelBuilder.Entity("E_Commerce_API_.Models.CarrinhoDeCompras", b =>
+                {
+                    b.HasOne("E_Commerce_API_.Models.CupomDeDesconto", "CupomDeDesconto")
+                        .WithMany("CarrinhosDeCompras")
+                        .HasForeignKey("CupomDeDescontoId");
+
+                    b.Navigation("CupomDeDesconto");
+                });
+
             modelBuilder.Entity("E_Commerce_API_.Models.Produto", b =>
                 {
                     b.HasOne("E_Commerce_API_.Models.CentroDeDistribuicao", "CentroDeDistribuicao")
@@ -312,6 +352,11 @@ namespace E_Commerce_API_.Migrations
             modelBuilder.Entity("E_Commerce_API_.Models.CentroDeDistribuicao", b =>
                 {
                     b.Navigation("Produtos");
+                });
+
+            modelBuilder.Entity("E_Commerce_API_.Models.CupomDeDesconto", b =>
+                {
+                    b.Navigation("CarrinhosDeCompras");
                 });
 
             modelBuilder.Entity("E_Commerce_API_.Models.Subcategoria", b =>

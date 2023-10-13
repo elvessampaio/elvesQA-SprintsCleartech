@@ -1,0 +1,23 @@
+2023-09-25 17:38:23.439 -03:00 [INF] Iniciando Ecommerce API
+2023-09-25 17:38:24.949 -03:00 [INF] Entity Framework Core 6.0.10 initialized 'EcommerceContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.1' with options: using lazy loading proxies ServerVersion 8.0.32-mysql 
+2023-09-25 17:38:25.171 -03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='EcommerceAPI' AND TABLE_NAME='__EFMigrationsHistory';
+2023-09-25 17:38:25.188 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2023-09-25 17:39:06.973 -03:00 [INF] Iniciando Ecommerce API
+2023-09-25 17:39:07.289 -03:00 [INF] User profile is available. Using 'C:\Users\Cleartech\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-25 17:39:07.379 -03:00 [INF] Now listening on: https://localhost:7161
+2023-09-25 17:39:07.379 -03:00 [INF] Now listening on: http://localhost:5037
+2023-09-25 17:39:07.382 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-25 17:39:07.383 -03:00 [INF] Hosting environment: Development
+2023-09-25 17:39:07.383 -03:00 [INF] Content root path: C:\Users\Cleartech\Desktop\DESAFIOS\T4-MarianaCardoso\API\Ecommerce-API\Ecommerce-API\
+2023-09-25 17:39:07.702 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/index.html - -
+2023-09-25 17:39:07.924 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/index.html - - - 200 - text/html;charset=utf-8 225.2077ms
+2023-09-25 17:39:07.928 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7161/_framework/aspnetcore-browser-refresh.js - -
+2023-09-25 17:39:07.928 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7161/_vs/browserLink - -
+2023-09-25 17:39:07.930 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7161/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 2.3531ms
+2023-09-25 17:39:07.936 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7161/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 8.4083ms
+2023-09-25 17:39:08.063 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/v1/swagger.json - -
+2023-09-25 17:39:08.184 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 120.0453ms

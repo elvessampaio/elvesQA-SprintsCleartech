@@ -1,0 +1,29 @@
+2023-09-25 17:37:04.641 -03:00 [INF] Iniciando Ecommerce API
+2023-09-25 17:37:04.964 -03:00 [INF] User profile is available. Using 'C:\Users\Cleartech\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-25 17:37:05.098 -03:00 [INF] Now listening on: https://localhost:7161
+2023-09-25 17:37:05.098 -03:00 [INF] Now listening on: http://localhost:5037
+2023-09-25 17:37:05.101 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-25 17:37:05.102 -03:00 [INF] Hosting environment: Development
+2023-09-25 17:37:05.102 -03:00 [INF] Content root path: C:\Users\Cleartech\Desktop\DESAFIOS\T4-MarianaCardoso\API\Ecommerce-API\Ecommerce-API\
+2023-09-25 17:37:05.469 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/index.html - -
+2023-09-25 17:37:05.788 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/index.html - - - 200 - text/html;charset=utf-8 321.3943ms
+2023-09-25 17:37:05.796 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7161/_vs/browserLink - -
+2023-09-25 17:37:05.796 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7161/_framework/aspnetcore-browser-refresh.js - -
+2023-09-25 17:37:05.799 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7161/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 2.4270ms
+2023-09-25 17:37:05.816 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7161/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.9695ms
+2023-09-25 17:37:05.923 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/v1/swagger.json - -
+2023-09-25 17:37:06.088 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 165.3575ms
+2023-09-25 17:37:31.815 -03:00 [INF] Iniciando Ecommerce API
+2023-09-25 17:37:32.970 -03:00 [INF] Entity Framework Core 6.0.10 initialized 'EcommerceContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.1' with options: using lazy loading proxies ServerVersion 8.0.32-mysql 
+2023-09-25 17:37:33.118 -03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='EcommerceAPI' AND TABLE_NAME='__EFMigrationsHistory';
+2023-09-25 17:37:33.133 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='EcommerceAPI' AND TABLE_NAME='__EFMigrationsHistory';
+2023-09-25 17:37:33.151 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2023-09-25 17:37:33.164 -03:00 [INF] Applying migration '20230925203706_CriandoTabelaCarrinhoDeCompras'.
+2023-09-25 17:37:33.193 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20230925203706_CriandoTabelaCarrinhoDeCompras', '6.0.10');

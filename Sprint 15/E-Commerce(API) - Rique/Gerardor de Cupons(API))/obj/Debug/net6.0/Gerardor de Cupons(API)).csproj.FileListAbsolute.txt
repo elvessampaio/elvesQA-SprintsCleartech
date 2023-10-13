@@ -1,0 +1,37 @@
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\bin\Debug\net6.0\appsettings.json
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\bin\Debug\net6.0\Gerardor de Cupons(API)).exe
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\bin\Debug\net6.0\Gerardor de Cupons(API)).deps.json
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\bin\Debug\net6.0\Gerardor de Cupons(API)).runtimeconfig.json
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\bin\Debug\net6.0\Gerardor de Cupons(API)).dll
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\bin\Debug\net6.0\Gerardor de Cupons(API)).pdb
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\obj\Debug\net6.0\Gerardor de Cupons(API)).csproj.AssemblyReference.cache
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\obj\Debug\net6.0\Gerardor de Cupons(API)).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\obj\Debug\net6.0\Gerardor de Cupons(API)).AssemblyInfoInputs.cache
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\obj\Debug\net6.0\Gerardor de Cupons(API)).AssemblyInfo.cs
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\obj\Debug\net6.0\Gerardor de Cupons(API)).csproj.CoreCompileInputs.cache
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\obj\Debug\net6.0\Gerardor de Cupons(API)).MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\obj\Debug\net6.0\Gerardor de Cupons(API)).MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\obj\Debug\net6.0\staticwebassets\msbuild.Gerardor de Cupons(API)).Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\obj\Debug\net6.0\staticwebassets\msbuild.build.Gerardor de Cupons(API)).props
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Gerardor de Cupons(API)).props
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Gerardor de Cupons(API)).props
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\obj\Debug\net6.0\scopedcss\bundle\Gerardor de Cupons(API)).styles.css
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\obj\Debug\net6.0\Gerardor de Cupons(API)).csproj.CopyComplete
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\obj\Debug\net6.0\Gerardor de Cupons(API)).dll
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\obj\Debug\net6.0\refint\Gerardor de Cupons(API)).dll
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\obj\Debug\net6.0\Gerardor de Cupons(API)).pdb
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\obj\Debug\net6.0\Gerardor de Cupons(API)).genruntimeconfig.cache
+C:\Users\Cleartech\AzureDevOps\T4-ManoelAlves\E-Commerce(API)\Gerardor de Cupons(API))\obj\Debug\net6.0\ref\Gerardor de Cupons(API)).dll

@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Commerce(API)", "E-Commer
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Usuarios(API)", "Usuarios(API)\Usuarios(API).csproj", "{80F591DA-7CE3-45D2-AD5D-D0244184CFF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Commerce(API).Testes", "E-Commerce(API).Testes\E-Commerce(API).Testes.csproj", "{A77858F5-7B92-46AB-9052-13E19AD87FA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Commerce(API).Testes", "E-Commerce(API).Testes\E-Commerce(API).Testes.csproj", "{A77858F5-7B92-46AB-9052-13E19AD87FA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

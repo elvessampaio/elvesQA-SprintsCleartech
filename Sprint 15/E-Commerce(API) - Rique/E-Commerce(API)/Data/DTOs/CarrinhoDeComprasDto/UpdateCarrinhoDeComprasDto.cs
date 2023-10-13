@@ -2,6 +2,5 @@
 
 public class UpdateCarrinhoDeComprasDto
 {
-    public Guid ProdutoId { get; set; }
     public uint Quantidade { get; set; }
 }

@@ -27,6 +27,6 @@ public class ECommerceContext : DbContext
 	public DbSet<CentroDeDistribuicao> CentrosDeDistribuicao { get; set; }
 	public DbSet<CarrinhoDeCompras> CarrinhosDeCompras { get; set; }
 	public DbSet<ProdutoNoCarrinho> ProdutosNoCarrinho { get; set; }
-
+	public DbSet<CupomDeDesconto> CuponsDeDesconto { get; set; }
    
 }

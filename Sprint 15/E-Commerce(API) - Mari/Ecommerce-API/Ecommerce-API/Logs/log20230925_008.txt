@@ -1,0 +1,17 @@
+2023-09-25 17:36:11.509 -03:00 [INF] Iniciando Ecommerce API
+2023-09-25 17:36:11.820 -03:00 [INF] User profile is available. Using 'C:\Users\Cleartech\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-25 17:36:11.942 -03:00 [INF] Now listening on: https://localhost:7161
+2023-09-25 17:36:11.942 -03:00 [INF] Now listening on: http://localhost:5037
+2023-09-25 17:36:11.947 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-25 17:36:11.948 -03:00 [INF] Hosting environment: Development
+2023-09-25 17:36:11.948 -03:00 [INF] Content root path: C:\Users\Cleartech\Desktop\DESAFIOS\T4-MarianaCardoso\API\Ecommerce-API\Ecommerce-API\
+2023-09-25 17:36:12.182 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/index.html - -
+2023-09-25 17:36:12.424 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/index.html - - - 200 - text/html;charset=utf-8 243.4169ms
+2023-09-25 17:36:12.429 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7161/_vs/browserLink - -
+2023-09-25 17:36:12.429 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7161/_framework/aspnetcore-browser-refresh.js - -
+2023-09-25 17:36:12.432 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7161/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 2.3574ms
+2023-09-25 17:36:12.448 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7161/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.5718ms
+2023-09-25 17:36:12.537 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/v1/swagger.json - -
+2023-09-25 17:36:12.685 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 147.8071ms
+2023-09-25 17:36:30.725 -03:00 [INF] Iniciando Ecommerce API
+2023-09-25 17:36:32.156 -03:00 [INF] Entity Framework Core 6.0.10 initialized 'EcommerceContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.1' with options: using lazy loading proxies ServerVersion 8.0.32-mysql 

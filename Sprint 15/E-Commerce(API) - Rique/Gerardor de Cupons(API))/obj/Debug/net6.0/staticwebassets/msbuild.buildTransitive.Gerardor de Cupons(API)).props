@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Gerardor de Cupons(API)).props" />
+</Project>
