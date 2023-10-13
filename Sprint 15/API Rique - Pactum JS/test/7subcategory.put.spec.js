@@ -4,39 +4,41 @@ const { generateRandomNameWithCedilla } = require ('../Extras/random2.js');
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
-it('Teste 1 - POST (Nome de categoria correta com autenticação)', async () => {
-  let categoryName = generateRandomName()
+it('Teste 1 - PUT (Alterando status da subcategoria)', async () => {
   let { responseTime, statusCode } = await spec()
-    .post('https://localhost:7296/Categoria')
+    .put('https://localhost:7296/Subcategoria/aea43c0a-df50-4dc6-80a1-aed34dbef454')
     .withBody({
-      "nome": categoryName
-    })
+      "nome": "Armazém nível senior",
+      "status": false
+  })
     .expectResponseTime(1000)
-    .expectStatus(201)
+    .expectStatus(204)
 
   console.log('Tempo de requisição:', responseTime, '|', 'Status Code:', statusCode)
 });
 
 
-it('Teste 2 - POST (Categoria já cadastrada)', async () => {
+it('Teste 2 - PUT (Alterando o nome da subcategoria)', async () => {
+  let subcategoryName = generateRandomName()
   let {responseTime, statusCode } = await spec()
-    .post('https://localhost:7296/Categoria')
+    .put('https://localhost:7296/Subcategoria/aea43c0a-df50-4dc6-80a1-aed34dbef454')
     .withBody({
-      "nome": "Teste"
-    })
+      "nome": subcategoryName,
+      "status": true
+  })
     .expectResponseTime(1000)
-    .expectStatus(400)
-    .expectBodyContains("O nome 'Teste' já existe.");
+    .expectStatus(204)
 
   console.log('Tempo de requisição:', responseTime, '|', 'Status Code:', statusCode)
 });
 
 
-it('Teste 3 - POST (Categoria com mais de 128 caracteres)', async () => {
+it('Teste 3 - PUT (Subcategoria com mais de 128 caracteres)', async () => {
   let { responseTime, statusCode } = await spec()
-    .post('https://localhost:7296/Categoria')
+    .put('https://localhost:7296/Subcategoria/aea43c0a-df50-4dc6-80a1-aed34dbef454')
     .withBody({
-      "nome": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      "nome": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "status": true
     })
     .expectResponseTime(1000)
     .expectStatus(400)
@@ -45,9 +47,9 @@ it('Teste 3 - POST (Categoria com mais de 128 caracteres)', async () => {
   console.log('Tempo de requisição:', responseTime, '|', 'Status Code:', statusCode)
 });
 
-it('Teste 4 - POST (Categoria com caracteres especiais)', async () => {
+it('Teste 4 - PUT (Subcategoria com caracteres especiais)', async () => {
   let { responseTime, statusCode } = await spec()
-    .post('https://localhost:7296/Categoria')
+    .put('https://localhost:7296/Subcategoria/aea43c0a-df50-4dc6-80a1-aed34dbef454')
     .withBody({
       "nome": "L3ite"
     })
@@ -58,10 +60,10 @@ it('Teste 4 - POST (Categoria com caracteres especiais)', async () => {
   console.log('Tempo de requisição:', responseTime, '|', 'Status Code:', statusCode)
 });
 
-it('Teste 5 - POST (Cadastro da categoria com palavras usando acentos ou “ç”.)', async () => {
+it('Teste 5 - PUT (Alteração da subcategoria com palavras usando acentos ou “ç”.)', async () => {
   let categoryNameCedilla = generateRandomNameWithCedilla()
   let { responseTime, statusCode } = await spec()
-    .post('https://localhost:7296/Categoria')
+    .put('https://localhost:7296/Subcategoria/aea43c0a-df50-4dc6-80a1-aed34dbef454')
     .withBody({
       "nome": categoryNameCedilla
     })
@@ -71,15 +73,15 @@ it('Teste 5 - POST (Cadastro da categoria com palavras usando acentos ou “ç�
   console.log('Tempo de requisição:', responseTime, '|', 'Status Code:', statusCode)
 });
 
-it('Teste 6 - POST (Categoria em branco)', async () => {
+it('Teste 6 - PUT (Subcategoria em branco)', async () => {
   let { responseTime, statusCode } = await spec()
-    .post('https://localhost:7296/Categoria')
+    .put('https://localhost:7296/Subcategoria/aea43c0a-df50-4dc6-80a1-aed34dbef454')
     .withBody({
       "nome": " "
     })
     .expectResponseTime(1000)
     .expectStatus(400)
-    .expectBodyContains("O campo Nome é obrigatório.");
+    .expectBodyContains("The Nome field is required.");
 
   console.log('Tempo de requisição:', responseTime, '|', 'Status Code:', statusCode)
 });
