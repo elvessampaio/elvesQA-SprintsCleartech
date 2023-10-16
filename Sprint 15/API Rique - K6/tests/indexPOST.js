@@ -4,6 +4,12 @@ import {testPostCD} from "../scenarios/POST-CD.js";
 import {testPostProduct} from "../scenarios/POST-Products.js";
 import {testPostCart} from "../scenarios/POST-Cart.js";
 import {check, group} from "k6";
+import { htmlReport } from "https://raw.githubusercontent.com/benc-uk/k6-reporter/main/dist/bundle.js"
+export function handleSummary(data) {
+return {
+   "summary.html": htmlReport(data),
+ };
+}
 
 export function testPostCategoriesScenario() {
   group("Teste POST das categorias", () => {

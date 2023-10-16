@@ -17,7 +17,7 @@ export function testPutCartAndress() {
     "Content-Type": "application/json",
   };
 
-  let response = http.put("https://localhost:7296/Subcategoria/08db735c-0893-419e-8177-2fceaf2aec54", JSON.stringify(requestBody), { headers: headers });
+  let response = http.put("https://localhost:7296/carrinhodeCompras/0827d0bc-e7bd-4f48-91a1-7709b3cf83f8/enderecodeentrega", JSON.stringify(requestBody), { headers: headers });
 
   check(response, {
     "Status é 204 - PUT Carrinho de compras": (r) => r.status === 204,

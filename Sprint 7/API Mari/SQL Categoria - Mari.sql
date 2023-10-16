@@ -1,7 +1,7 @@
 
 SELECT * FROM categorias;
 SELECT * FROM subcategorias;
-SELECT * FROM centrosdistribuicoes;
+SELECT * FROM centrosdedistribuicao;
 SELECT * FROM produtos;
 
 
